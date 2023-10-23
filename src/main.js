@@ -28,15 +28,21 @@ const toc = [];
 
 const headings = $("h2");
 headings.each((index, heading) => {
-  const title = $(heading).text().replace(/ /g, "-");
+  const title = $(heading).text().replace(/s+/g, "-");
+  // TODO 中文空格
+  // let title = $(heading)
+  //   .text()
+  //   .replace(/[\\s\uFEFF\xA0]+/g, "-");
   const chapterNumber = index + 1;
+  // console.log($(heading).text());
 
   // 找到该二级标题的起始和结束位置，在 Markdown 中截取出该部分内容
   const start = $(heading).next();
   const end = start.nextUntil("h2");
 
   // 将截取出来的内容写入一个新的 Markdown 文件
-  const filename = `${bookname}-${chapterNumber}-${title}`;
+  // const filename = `${bookname}-${chapterNumber}-${title}`;
+  const filename = `${bookname}-${chapterNumber}`;
 
   const link = `[${filename}](#${filename})`;
   toc.push(link);
