@@ -3,12 +3,15 @@ const cheerio = require("cheerio");
 const path = require("path");
 const md = require("markdown-it")();
 const prompt = require("prompt");
+const { rimraf } = require("rimraf");
 
 // TODO: prompt
 // 读取 Markdown 文件
 const outputDir = "plugins";
-const bookname = "球状闪电";
+const bookname = "肖申克的救赎";
 const bookOutputDir = path.join(outputDir, bookname, "files");
+
+rimraf.moveRemoveSync(path.join(outputDir, bookname));
 
 const markdown = fs.readFileSync(
   path.join("markdown", `${bookname}.md`),
@@ -25,7 +28,9 @@ const $ = cheerio.load(md.render(markdown));
 const toc = [];
 
 function processHeading(heading, level, parentTitle) {
-  const title = $(heading).text().replace(/[\/\s]/g, "-");
+  const title = $(heading)
+    .text()
+    .replace(/[\/\s]/g, "-");
 
   const chapterNumber = toc.filter((item) => item.level === level).length + 1;
   const headingTitle = parentTitle ? `${parentTitle}-${title}` : title;
@@ -59,7 +64,7 @@ headings.each((index, heading) => {
 
 // 生成目录文件
 const tocContent = toc
-  .map((item) => `${"#".repeat(item.level)} ${item.title}`)
+  .map((item) => `${"##".repeat(item.level)} ${item.title}`)
   .join("\n");
 fs.writeFileSync(path.join(bookOutputDir, `${bookname}-toc.md`), tocContent);
 
