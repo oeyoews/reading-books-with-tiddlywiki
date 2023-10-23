@@ -5,7 +5,7 @@ const path = require("path");
 // TODO: prompt
 // 读取 Markdown 文件
 const outputDir = "plugins";
-const bookname = "红楼梦";
+const bookname = "平凡的世界";
 const bookOutputDir = path.join(outputDir, bookname, "files");
 
 const markdown = fs.readFileSync(
@@ -48,6 +48,7 @@ fs.writeFileSync(
   path.join(bookOutputDir, `${bookname}-toc.md`),
   toc.join("\n")
 );
+
 const tiddlywikifiles = {
   directories: [
     {
@@ -67,7 +68,7 @@ const tiddlywikifiles = {
 
 fs.writeFileSync(
   `${bookOutputDir}/tiddlywiki.files`,
-  JSON.stringify(tiddlywikifiles)
+  JSON.stringify(tiddlywikifiles, null, 2)
 );
 
 
