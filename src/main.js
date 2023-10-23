@@ -5,7 +5,7 @@ const path = require("path");
 // TODO: prompt
 // 读取 Markdown 文件
 const outputDir = "plugins";
-const bookname = "球状闪电";
+const bookname = "肖申克的救赎";
 const bookOutputDir = path.join(outputDir, bookname, "files");
 
 const markdown = fs.readFileSync(
