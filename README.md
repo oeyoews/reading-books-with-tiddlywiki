@@ -1,3 +1,5 @@
+[reading book with tiddlywiki demo](https://oeyoews.github.io/reading-books-with-tiddlywiki/)
+
 ## books
 
 * 平凡的世界
@@ -9,6 +11,7 @@
 
 * [x] learn use calibre to make better epub with markdown-output calibre plugins
 * [x] 改进脚本
+* [x] add books plugin library
 * [ ] 使用交互, 完全自动化插件生成脚本
 * [ ] convert single markdown to multi markdownfiles [main](./src/main.js)
 * toc metadat to better support
