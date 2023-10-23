@@ -44,7 +44,6 @@ headings.each((index, heading) => {
 
   const link = `[${filename}](#${filename})`;
   toc.push(link);
-  // const content = `## ${$(heading).text()}\n\n${start.html()}${end.html()}`;
   const content = `## ${$(heading).text()}\n\n${$(heading)
     .nextUntil("h2")
     .text()}`;
