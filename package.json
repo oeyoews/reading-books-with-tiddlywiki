@@ -1,18 +1,19 @@
 {
   "name": "epub-to-markdow",
   "version": "1.0.0",
-  "description": "",
+  "description": "reading book with tiddlywiki",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tiddlywiki --listen",
+    "build": "tiddlywiki books --build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "books",
+    "markdown"
+  ],
+  "author": "oeyoews",
+  "license": "MIT",
   "dependencies": {
-    "cheerio": "1.0.0-rc.12",
-    "epub": "^1.2.1",
-    "html-to-markdown": "^1.0.0",
-    "markdown-it": "^13.0.2"
+    "cheerio": "1.0.0-rc.12"
   }
 }

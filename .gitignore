@@ -1,4 +1,3 @@
 node_modules/
-epub/
-test/
-input.md
+markdown/
+.tiddlywiki/

@@ -1,0 +1,18 @@
+{
+	"directories": [
+		{
+			"path": ".",
+			"filesRegExp": "^.*\\.md$",
+			"isTiddlerFile": false,
+			"fields": {
+				"title": {
+					"source": "basename"
+				},
+				"type": "text/markdown",
+				"tags": [
+					""
+				]
+			}
+		}
+	]
+}
