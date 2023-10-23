@@ -24,8 +24,6 @@ const toc = [];
 
 if (!fs.existsSync(bookOutputDir)) {
   fs.mkdirSync(bookOutputDir, { recursive: true });
-} else {
-  console.log("更新", bookOutputDir);
 }
 
 divs.each((index, element) => {
