@@ -41,9 +41,17 @@ module.exports = (bookname) => {
     const filename = `${bookname}-${chapterNumber}-${headingTitle}`;
     const link = `[${filename}](#${filename})`;
     toc.push({ level, title: link });
-    const content = `## ${$(heading).text()}\n\n${$(heading)
-      .nextUntil(`h${level}, h${level + 1}`)
-      .text()}`;
+    // const content = `## ${$(heading).text()}\n\n${$(heading)
+    //   .nextUntil(`h${level}, h${level + 1}`)
+    //   .text()}`;
+    let content = `## ${titleText}\n\n`;
+
+    let nextElement = title.next();
+    while (nextElement && !nextElement.is(`h${level}, h${level + 1}`)) {
+      content += `${nextElement.html()}\n\n`; // 使用 .html() 方法保留空白行
+      nextElement = nextElement.next();
+    }
+
     fs.writeFileSync(path.join(bookOutputDir, `${filename}.md`), content);
 
     // 处理下一级标题

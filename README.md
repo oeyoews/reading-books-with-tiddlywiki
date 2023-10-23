@@ -14,6 +14,7 @@
 * [x] add books plugin library
 * [x] 使用插件的形式分发书籍(不确定版权相关问题)
 * [ ] pin story river list
+* [ ] 分段
 * [ ] 使用交互, 完全自动化插件生成脚本
 * [ ] convert single markdown to multi markdownfiles [main](./src/main.js)
 * toc metadat to better support
