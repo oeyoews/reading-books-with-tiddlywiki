@@ -8,7 +8,7 @@ const { rimraf } = require("rimraf");
 // TODO: prompt
 // 读取 Markdown 文件
 const outputDir = "plugins";
-const bookname = "肖申克的救赎";
+const bookname = "球状闪电";
 const bookOutputDir = path.join(outputDir, bookname, "files");
 
 rimraf.moveRemoveSync(path.join(outputDir, bookname));
@@ -64,7 +64,7 @@ headings.each((index, heading) => {
 
 // 生成目录文件
 const tocContent = toc
-  .map((item) => `${"##".repeat(item.level)} ${item.title}`)
+  .map((item) => `${"###".repeat(item.level)} ${item.title}`)
   .join("\n");
 fs.writeFileSync(path.join(bookOutputDir, `${bookname}-toc.md`), tocContent);
 
