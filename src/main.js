@@ -4,9 +4,9 @@ const path = require("path");
 
 // TODO: prompt
 // 读取 Markdown 文件
-const outputDir = "books/tiddlers";
-const bookname = "平凡的世界";
-const bookOutputDir = path.join(outputDir, bookname);
+const bookname = "红楼梦";
+const outputDir = "plugins";
+const bookOutputDir = path.join(outputDir, "files", bookname);
 
 const markdown = fs.readFileSync(
   path.resolve(`markdown/${bookname}.md`),
@@ -42,8 +42,9 @@ divs.each((index, element) => {
   fs.writeFileSync(fileName, divContent);
 });
 
-// 将目录内容写入 toc.md 文件
 fs.writeFileSync(`${outputDir}/${bookname}-toc.md`, toc.join("\n"));
+// TODO 插件模板生成, 动态tag生成
+// 将目录内容写入 toc.md 文件
 fs.copyFileSync(
   path.join("templates/tiddlywiki.files"),
   `${bookOutputDir}/tiddlywiki.files`
