@@ -10,6 +10,7 @@
 * [ ] 使用交互, 完全自动化插件生成脚本
 * [ ] 改进脚本
 * [ ] convert single markdown to multi markdownfiles [main](./src/main.js)
+* toc metadat to better support
 
 * ~~不同来源的epub,的制作方法不同, 导致转换成的markdown格式也不同.~~
 
