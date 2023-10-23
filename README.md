@@ -12,6 +12,7 @@
 * [x] learn use calibre to make better epub with markdown-output calibre plugins
 * [x] 改进脚本
 * [x] add books plugin library
+* [ ] pin story river list
 * [ ] 使用交互, 完全自动化插件生成脚本
 * [ ] convert single markdown to multi markdownfiles [main](./src/main.js)
 * toc metadat to better support
