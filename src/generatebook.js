@@ -86,9 +86,7 @@ module.exports = (bookname) => {
 
   const readmecontent = `title: ${bookname}/readme
 
-> ${bookname}
-
-[[${bookname}-toc]]`;
+> ${bookname}[[目录|${bookname}-toc]]`;
 
   const plugininfo = {
     title: bookname,
