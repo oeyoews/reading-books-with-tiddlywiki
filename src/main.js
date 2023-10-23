@@ -7,7 +7,7 @@ const prompt = require("prompt");
 // TODO: prompt
 // 读取 Markdown 文件
 const outputDir = "plugins";
-const bookname = "球状闪电";
+const bookname = "劫持";
 const bookOutputDir = path.join(outputDir, bookname, "files");
 
 const markdown = fs.readFileSync(
@@ -29,11 +29,8 @@ const toc = [];
 
 const headings = $("h2");
 headings.each((index, heading) => {
-  const title = $(heading).text().replace(/s+/g, "-");
   // TODO 中文空格
-  // let title = $(heading)
-  //   .text()
-  //   .replace(/[\\s\uFEFF\xA0]+/g, "-");
+  const title = $(heading).text().replace(/ /g, "-");
   const chapterNumber = index + 1;
   // console.log($(heading).text());
 
@@ -42,12 +39,16 @@ headings.each((index, heading) => {
   const end = start.nextUntil("h2");
 
   // 将截取出来的内容写入一个新的 Markdown 文件
-  // const filename = `${bookname}-${chapterNumber}-${title}`;
-  const filename = `${bookname}-${chapterNumber}`;
+  const filename = `${bookname}-${chapterNumber}-${title}`;
+  // const filename = `${bookname}-${chapterNumber}`;
 
   const link = `[${filename}](#${filename})`;
   toc.push(link);
-  const content = `## ${$(heading).text()}\n\n${start.html()}${end.html()}`;
+  // const content = `## ${$(heading).text()}\n\n${start.html()}${end.html()}`;
+  const content = `## ${$(heading).text()}\n\n${$(heading)
+    .nextUntil("h2")
+    .text()}`;
+  // const content = $(heading).nextUntil("h2").text();
   fs.writeFileSync(path.join(bookOutputDir, `${filename}.md`), content);
 });
 

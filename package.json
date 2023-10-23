@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "tiddlywiki --listen",
+    "format:md": "lint-md ** --fix",
     "build": "tiddlywiki --build"
   },
   "keywords": [
@@ -14,6 +15,7 @@
   "author": "oeyoews",
   "license": "MIT",
   "dependencies": {
+    "@lint-md/cli": "^2.0.0",
     "cheerio": "1.0.0-rc.12",
     "markdown-it": "^13.0.2",
     "prompt": "^1.3.0",
