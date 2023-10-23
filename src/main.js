@@ -20,42 +20,50 @@ if (!fs.existsSync(bookOutputDir)) {
 }
 
 // 使用 cheerio 解析 HTML
-// const $ = cheerio.load(markdown, { xmlMode: true, decodeEntities: false });
-
-// 将 Markdown 转换为 HTML，并使用 cheerio 解析
 const $ = cheerio.load(md.render(markdown));
 
 const toc = [];
 
-const headings = $("h2");
-headings.each((index, heading) => {
-  // TODO 中文空格
-  const title = $(heading).text().replace(/ /g, "-");
-  const chapterNumber = index + 1;
-  // console.log($(heading).text());
+function processHeading(heading, level, parentTitle) {
+  const title = $(heading).text().replace(/[\/\s]/g, "-");
 
-  // 找到该二级标题的起始和结束位置，在 Markdown 中截取出该部分内容
+  const chapterNumber = toc.filter((item) => item.level === level).length + 1;
+  const headingTitle = parentTitle ? `${parentTitle}-${title}` : title;
+
+  // 找到该标题的起始和结束位置，在 Markdown 中截取出该部分内容
   const start = $(heading).next();
-  const end = start.nextUntil("h2");
+  const end = start.nextUntil(`h${level}, h${level + 1}`);
 
   // 将截取出来的内容写入一个新的 Markdown 文件
-  const filename = `${bookname}-${chapterNumber}-${title}`;
-  // const filename = `${bookname}-${chapterNumber}`;
-
+  const filename = `${bookname}-${chapterNumber}-${headingTitle}`;
   const link = `[${filename}](#${filename})`;
-  toc.push(link);
+  toc.push({ level, title: link });
   const content = `## ${$(heading).text()}\n\n${$(heading)
-    .nextUntil("h2")
+    .nextUntil(`h${level}, h${level + 1}`)
     .text()}`;
-  // const content = $(heading).nextUntil("h2").text();
   fs.writeFileSync(path.join(bookOutputDir, `${filename}.md`), content);
+
+  // 处理下一级标题
+  const nextLevel = level + 1;
+  const nextHeadings = $(`h${nextLevel}`, start);
+  nextHeadings.each((index, nextHeading) => {
+    processHeading(nextHeading, nextLevel, headingTitle);
+  });
+}
+
+// 遍历所有标题
+const headings = $("h1, h2, h3");
+headings.each((index, heading) => {
+  processHeading(heading, 1);
 });
 
-fs.writeFileSync(
-  path.join(bookOutputDir, `${bookname}-toc.md`),
-  toc.join("\n")
-);
+// 生成目录文件
+const tocContent = toc
+  .map((item) => `${"#".repeat(item.level)} ${item.title}`)
+  .join("\n");
+fs.writeFileSync(path.join(bookOutputDir, `${bookname}-toc.md`), tocContent);
 
+// 生成 TiddlyWiki 文件和目录结构
 const tiddlywikifiles = {
   directories: [
     {
@@ -96,4 +104,3 @@ fs.writeFileSync(
   `${bookOutputDir}/tiddlywiki.files`,
   JSON.stringify(tiddlywikifiles, null, 2)
 );
-
