@@ -7,7 +7,7 @@ const prompt = require("prompt");
 // TODO: prompt
 // 读取 Markdown 文件
 const outputDir = "plugins";
-const bookname = "劫持";
+const bookname = "球状闪电";
 const bookOutputDir = path.join(outputDir, bookname, "files");
 
 const markdown = fs.readFileSync(
