@@ -9,9 +9,7 @@
 					"source": "basename"
 				},
 				"type": "text/markdown",
-				"tags": [
-					""
-				]
+				"tags": []
 			}
 		}
 	]

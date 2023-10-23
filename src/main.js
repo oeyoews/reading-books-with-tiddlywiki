@@ -43,7 +43,7 @@ divs.each((index, element) => {
 });
 
 // 将目录内容写入 toc.md 文件
-fs.writeFileSync(`${bookOutputDir}/${bookname}-toc.md`, toc.join("\n"));
+fs.writeFileSync(`${outputDir}/${bookname}-toc.md`, toc.join("\n"));
 fs.copyFileSync(
   path.join("templates/tiddlywiki.files"),
   `${bookOutputDir}/tiddlywiki.files`
