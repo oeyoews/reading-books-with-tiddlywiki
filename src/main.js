@@ -4,12 +4,12 @@ const path = require("path");
 
 // TODO: prompt
 // 读取 Markdown 文件
-const bookname = "红楼梦";
 const outputDir = "plugins";
-const bookOutputDir = path.join(outputDir, "files", bookname);
+const bookname = "红楼梦";
+const bookOutputDir = path.join(outputDir, bookname, "files");
 
 const markdown = fs.readFileSync(
-  path.resolve(`markdown/${bookname}.md`),
+  path.join("markdown", `${bookname}.md`),
   "utf-8"
 );
 
@@ -23,7 +23,9 @@ const divs = $("div");
 const toc = [];
 
 if (!fs.existsSync(bookOutputDir)) {
-  fs.mkdirSync(bookOutputDir);
+  fs.mkdirSync(bookOutputDir, { recursive: true });
+} else {
+  console.log("更新", bookOutputDir);
 }
 
 divs.each((index, element) => {
@@ -42,10 +44,51 @@ divs.each((index, element) => {
   fs.writeFileSync(fileName, divContent);
 });
 
-fs.writeFileSync(`${outputDir}/${bookname}-toc.md`, toc.join("\n"));
-// TODO 插件模板生成, 动态tag生成
-// 将目录内容写入 toc.md 文件
-fs.copyFileSync(
-  path.join("templates/tiddlywiki.files"),
-  `${bookOutputDir}/tiddlywiki.files`
+fs.writeFileSync(
+  path.join(bookOutputDir, `${bookname}-toc.md`),
+  toc.join("\n")
+);
+const tiddlywikifiles = {
+  directories: [
+    {
+      path: ".",
+      filesRegExp: "^.*\\.md$",
+      isTiddlerFile: false,
+      fields: {
+        title: {
+          source: "basename",
+        },
+        type: "text/markdown",
+        tags: `${bookname}`,
+      },
+    },
+  ],
+};
+
+fs.writeFileSync(
+  `${bookOutputDir}/tiddlywiki.files`,
+  JSON.stringify(tiddlywikifiles)
+);
+
+
+const readmecontent = `title: ${bookname}/readme
+
+> ${bookname}
+
+[[${bookname}-toc]]`
+
+const plugininfo = {
+  title: bookname,
+  type: "plugin",
+  version: "0.0.1",
+  list: `readme`,
+};
+
+fs.writeFileSync(
+  path.join(outputDir, bookname, "readme.tid"),
+  readmecontent
+);
+fs.writeFileSync(
+  path.join(outputDir, bookname, "plugin.info"),
+  JSON.stringify(plugininfo, null, 2)
 );
