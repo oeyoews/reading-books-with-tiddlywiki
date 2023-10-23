@@ -1,11 +1,12 @@
 const fs = require("fs");
 const cheerio = require("cheerio");
 const path = require("path");
+const md = require("markdown-it")();
 
 // TODO: prompt
 // 读取 Markdown 文件
 const outputDir = "plugins";
-const bookname = "肖申克的救赎";
+const bookname = "球状闪电";
 const bookOutputDir = path.join(outputDir, bookname, "files");
 
 const markdown = fs.readFileSync(
@@ -13,33 +14,34 @@ const markdown = fs.readFileSync(
   "utf-8"
 );
 
-// 使用 cheerio 解析 HTML
-const $ = cheerio.load(markdown, { xmlMode: true, decodeEntities: false });
-
-// 获取所有的 <div> 元素
-const divs = $("div");
-
-// 创建目录文件
-const toc = [];
-
 if (!fs.existsSync(bookOutputDir)) {
   fs.mkdirSync(bookOutputDir, { recursive: true });
 }
 
-divs.each((index, element) => {
-  // 创建一个新的 Markdown 文件名
-  const fileName = `${bookOutputDir}/${bookname}-chapter-${index + 1}.md`;
+// 使用 cheerio 解析 HTML
+// const $ = cheerio.load(markdown, { xmlMode: true, decodeEntities: false });
 
-  // 获取 <div> 元素的内容
-  const divContent = $(element).html().trim();
+// 将 Markdown 转换为 HTML，并使用 cheerio 解析
+const $ = cheerio.load(md.render(markdown));
 
-  const link = `[${bookname}-chapter-${index + 1}](#${bookname}-chapter-${
-    index + 1
-  })`;
+const toc = [];
+
+const headings = $("h2");
+headings.each((index, heading) => {
+  const title = $(heading).text().replace(/ /g, "-");
+  const chapterNumber = index + 1;
+
+  // 找到该二级标题的起始和结束位置，在 Markdown 中截取出该部分内容
+  const start = $(heading).next();
+  const end = start.nextUntil("h2");
+
+  // 将截取出来的内容写入一个新的 Markdown 文件
+  const filename = `${bookname}-${chapterNumber}-${title}`;
+
+  const link = `[${filename}](#${filename})`;
   toc.push(link);
-
-  // 将内容写入新的 Markdown 文件
-  fs.writeFileSync(fileName, divContent);
+  const content = `## ${$(heading).text()}\n\n${start.html()}${end.html()}`;
+  fs.writeFileSync(path.join(bookOutputDir, `${filename}.md`), content);
 });
 
 fs.writeFileSync(
@@ -64,17 +66,11 @@ const tiddlywikifiles = {
   ],
 };
 
-fs.writeFileSync(
-  `${bookOutputDir}/tiddlywiki.files`,
-  JSON.stringify(tiddlywikifiles, null, 2)
-);
-
-
 const readmecontent = `title: ${bookname}/readme
 
 > ${bookname}
 
-[[${bookname}-toc]]`
+[[${bookname}-toc]]`;
 
 const plugininfo = {
   title: bookname,
@@ -83,11 +79,14 @@ const plugininfo = {
   list: `readme`,
 };
 
-fs.writeFileSync(
-  path.join(outputDir, bookname, "readme.tid"),
-  readmecontent
-);
+fs.writeFileSync(path.join(outputDir, bookname, "readme.tid"), readmecontent);
 fs.writeFileSync(
   path.join(outputDir, bookname, "plugin.info"),
   JSON.stringify(plugininfo, null, 2)
 );
+
+fs.writeFileSync(
+  `${bookOutputDir}/tiddlywiki.files`,
+  JSON.stringify(tiddlywikifiles, null, 2)
+);
+
