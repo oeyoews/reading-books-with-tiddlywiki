@@ -2,6 +2,7 @@ const fs = require("fs");
 const cheerio = require("cheerio");
 const path = require("path");
 const md = require("markdown-it")();
+const prompt = require("prompt");
 
 // TODO: prompt
 // 读取 Markdown 文件
