@@ -12,6 +12,7 @@
 * [x] learn use calibre to make better epub with markdown-output calibre plugins
 * [x] 改进脚本
 * [x] add books plugin library
+* [x] 使用插件的形式分发书籍(不确定版权相关问题)
 * [ ] pin story river list
 * [ ] 使用交互, 完全自动化插件生成脚本
 * [ ] convert single markdown to multi markdownfiles [main](./src/main.js)
@@ -27,3 +28,7 @@
 <!-- ```bash
 vertopal convert EPUB_INPUT_FILE --to markdown
 ``` -->
+
+## Creadits
+
+* 此仓库一切内容来源网络.
