@@ -1,10 +1,9 @@
 ![](banner.png)
 
-[reading book with tiddlywiki page](https://oeyoews.github.io/reading-books-with-tiddlywiki/)
+##  [Get Started](https://tw-read.vercel.app/#reading-with-tiddlywiki-%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C)
 
-> 只需要上传通过 calibre 转换后的 markdown 文件， 即可自动制作对应的书籍插件, 支持 wikitext(这很 tiddlywiki)
-
-*  [Get Started](https://tw-read.vercel.app/#reading-with-tiddlywiki-%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C)
+> [!NOTE]
+> 正在更新完善中
 
 ## TODO
 
