@@ -11,7 +11,7 @@ const md = new MarkdownIt({
   typographer: true,
 });
 
-module.exports = (bookname) => {
+module.exports = (bookname, level) => {
   const outputDir = "plugins";
   const bookOutputDir = path.join(outputDir, bookname, "files");
 
@@ -74,8 +74,9 @@ module.exports = (bookname) => {
 
   // 遍历所有标题
   const headings = $("h1, h2, h3");
+
   headings.each((index, heading) => {
-    processHeading(heading, 2);
+    processHeading(heading, level);
   });
 
   // 生成目录文件
