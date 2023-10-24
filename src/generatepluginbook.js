@@ -36,7 +36,9 @@ module.exports = (bookinfo) => {
   /* */
   const toc = [];
 
-  function processHeading(heading, currentChapterIndex) {
+  function processHeading(heading) {
+    const realtitle = $(heading).text(); // 获取标题文本
+    const paragraphs = []; // 存储段落内容的数组
     const title = $(heading)
       .text()
       .replace(/[\/\s]/g, "-");
@@ -46,16 +48,11 @@ module.exports = (bookinfo) => {
     }
 
     const chapterNumber = toc.length + 1;
-
-    const realtitle = $(heading).text(); // 获取标题文本
-    // 将截取出来的内容写入一个新的 Markdown 文件
-    const filename = `${chapterNumber}-${title}@${bookname}`;
-
-    const paragraphs = []; // 存储段落内容的数组
+    const currentLink = `${chapterNumber}-${title}@${bookname}`;
 
     $(heading)
       .nextUntil("h1, h2, h3, h4")
-      .each((_index, element) => {
+      .each((_, element) => {
         const paragraph = $(element).text(); // 获取每个元素的 HTML 内容
         paragraphs.push(`&emsp;&emsp;${paragraph}`); // 将 HTML 内容添加到数组中
       });
@@ -66,19 +63,22 @@ module.exports = (bookinfo) => {
       return;
     }
 
-    toc.push({ title: filename, realtitle });
+    toc.push({ currentLink, realtitle });
 
-    // 处理上一章节和下一章节的链接
-    // TODO: 也许可以使用递归,代替重复
+    // 处理上一章节link
     const prevChapterLink =
-      toc.length > 1 ? `[[« ${realtitle}|${toc[toc.length - 2].title}]]` : "";
+      toc.length > 1
+        ? `[[« ${toc[toc.length - 2].realtitle}|${
+            toc[toc.length - 2].currentLink
+          }]]`
+        : "";
 
     const content = `!! ${realtitle}\n\n${paragraphs.join(
       "\n\n"
     )}\n\n${prevChapterLink}`;
 
     try {
-      fs.writeFileSync(path.join(bookOutputDir, `${filename}.tid`), content);
+      fs.writeFileSync(path.join(bookOutputDir, `${currentLink}.tid`), content);
     } catch (error) {
       console.error(`Failed to save file: ${error.message}`);
       return; // 跳过保存操作
@@ -96,7 +96,7 @@ module.exports = (bookinfo) => {
 
   // 生成目录文件
   const tocContent = toc
-    .map(({ title, realtitle }) => `# [[${realtitle}|${title}]]`)
+    .map(({ currentLink, realtitle }) => `# [[${realtitle}|${currentLink}]]`)
     .join("\n");
 
   fs.writeFileSync(path.join(bookOutputDir, `${bookname}目录.tid`), tocContent);
