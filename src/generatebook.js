@@ -47,8 +47,8 @@ module.exports = (bookname) => {
     const realtitle = $(heading).text(); // 获取标题文本
     // 将截取出来的内容写入一个新的 Markdown 文件
     const filename = `${bookname}-${chapterNumber}-${realtitle}`;
-    const link = `[${filename}](#${filename})`;
-    toc.push({ title: link });
+
+    toc.push({ title: filename });
 
     const paragraphs = []; // 存储段落内容的数组
 
@@ -78,14 +78,23 @@ module.exports = (bookname) => {
   });
 
   // 生成目录文件
-  const tocContent = toc
-    .map((item) => `## ${item.title}`)
-    // .map((item) => `${"##"} ${item.title}`)
-    .join("\n");
-  fs.writeFileSync(path.join(bookOutputDir, `${bookname}-toc.md`), tocContent);
+  const tocContent = toc.map((item) => `!! [[${item.title}]]`).join("\n");
+  fs.writeFileSync(path.join(bookOutputDir, `${bookname}-toc.tid`), tocContent);
 
   // 生成 TiddlyWiki 文件和目录结构
   const tiddlywikifiles = {
+    tiddlers: [
+      {
+        file: `${bookname}-toc.tid`,
+        fields: {
+          title: {
+            source: "basename",
+          },
+          type: "text/vnd.tiddlywiki",
+          tags: ["toc", bookname],
+        },
+      },
+    ],
     directories: [
       {
         path: ".",

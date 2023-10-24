@@ -1,4 +1,19 @@
 {
+  "tiddlers": [
+    {
+      "file": "劫持-toc.tid",
+      "fields": {
+        "title": {
+          "source": "basename"
+        },
+        "type": "text/vnd.tiddlywiki",
+        "tags": [
+          "toc",
+          "劫持"
+        ]
+      }
+    }
+  ],
   "directories": [
     {
       "path": ".",

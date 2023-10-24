@@ -1,4 +1,19 @@
 {
+  "tiddlers": [
+    {
+      "file": "平凡的世界-toc.tid",
+      "fields": {
+        "title": {
+          "source": "basename"
+        },
+        "type": "text/vnd.tiddlywiki",
+        "tags": [
+          "toc",
+          "平凡的世界"
+        ]
+      }
+    }
+  ],
   "directories": [
     {
       "path": ".",

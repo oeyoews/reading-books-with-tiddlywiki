@@ -1,4 +1,19 @@
 {
+  "tiddlers": [
+    {
+      "file": "球状闪电-toc.tid",
+      "fields": {
+        "title": {
+          "source": "basename"
+        },
+        "type": "text/vnd.tiddlywiki",
+        "tags": [
+          "toc",
+          "球状闪电"
+        ]
+      }
+    }
+  ],
   "directories": [
     {
       "path": ".",
