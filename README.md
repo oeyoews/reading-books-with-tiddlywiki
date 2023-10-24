@@ -1,5 +1,7 @@
 [reading book with tiddlywiki demo](https://oeyoews.github.io/reading-books-with-tiddlywiki/)
 
+>　支持wikitext
+
 ## books
 
 - 平凡的世界
