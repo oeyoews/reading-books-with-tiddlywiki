@@ -3,3 +3,4 @@ node_modules/
 .tiddlywiki/
 \$__StoryList.tid
 Draft**
+plugins/
