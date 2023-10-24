@@ -1,4 +1,4 @@
-// NOTE: 书名一定要有对应的文件, markdown/<bookname>.md
+// NOTE: 书名markdown/<bookname>.md 文件
 module.exports = [
   {
     bookname: "平凡的世界",
