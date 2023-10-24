@@ -4,6 +4,8 @@
 
 > 只需要上传通过 calibre 转换后的 markdown 文件， 即可自动制作对应的书籍插件, 支持 wikitext(这很 tiddlywiki)
 
+*  [Get Started](https://tw-read.vercel.app/#reading-with-tiddlywiki-%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C)
+
 ## TODO
 
 - [x] learn use calibre to make better epub with markdown-output calibre plugins
@@ -26,7 +28,4 @@
 - [ ] 重新排列 tag list, 也许是使用 list: xxx(增加了插件大小)
 - [ ] 统计插件大小
 - [ ] plugin version automatic update by github tag
-
-## Get Started
-
-*
+- [ ] 更完善的标题检测, 目前不能包含符号
