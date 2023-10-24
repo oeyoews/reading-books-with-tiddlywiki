@@ -1,6 +1,11 @@
 // NOTE: 书名markdown/<bookname>.md 文件
 module.exports = [
   {
+    bookname: "明朝那些事儿",
+    author: "",
+    description: "",
+  },
+  {
     bookname: "平凡的世界",
     author: "路遥",
     description:
