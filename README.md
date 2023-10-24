@@ -31,6 +31,7 @@
 - [ ] 重新排列tag list, 也许是使用list: xxx(增加了插件大小)
 - [ ] 书籍封面图片: 如何自动化这个过程
 - [ ] 书籍metadata信息: 自动化
+- [ ] plugin version automatic update
 
 - ~~不同来源的 epub,的制作方法不同, 导致转换成的 markdown 格式也不同.~~
 
