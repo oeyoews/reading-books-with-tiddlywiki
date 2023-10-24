@@ -1,0 +1,8 @@
+created: 20231024091418486
+modified: 20231024092519586
+title: $:/config/EmptyStoryMessage
+type: text/vnd.tiddlywiki
+
+<div class="prose max-w-none prose-indigo m-auto sm:w-auto md:w-2/3">
+{{{ [[books]] [plugin-type[plugin]author[oeyoews]has[book]]||$:/core/ui/ViewTemplate }}}
+</div>

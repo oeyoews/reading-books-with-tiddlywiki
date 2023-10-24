@@ -1,0 +1,10 @@
+author: oeyoews
+core-version: >=5.3.1
+dependents: 
+description: nprogress
+list: readme
+name: nprogress
+plugin-type: plugin
+title: $:/plugins/oeyoews/nprogress
+type: application/json
+version: 0.0.1

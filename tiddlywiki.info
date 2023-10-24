@@ -25,7 +25,13 @@
       "--render",
       "$:/core/templates/tiddlywiki5.js",
       "[[tiddlywikicore-]addsuffix<version>addsuffix[.js]]",
-      "text/plain"
+      "text/plain",
+      "--savetiddler",
+      "$:/manifest.json",
+      "manifest.json",
+      "--savetiddler",
+      "$:/tiddlywiki.png",
+      "tiddlywiki.png"
     ]
   }
 }

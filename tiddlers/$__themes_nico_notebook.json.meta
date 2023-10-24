@@ -1,0 +1,10 @@
+author: NicolasPetton
+core-version: >=5.2.7
+dependents: $:/themes/tiddlywiki/vanilla $:/plugins/oeyoews/tailwindcss-plus
+description: A clean, uncluttered TiddlyWiki theme
+list: readme
+name: Notebook theme
+plugin-type: theme
+title: $:/themes/nico/notebook
+type: application/json
+version: v2.0.1
