@@ -41,7 +41,7 @@
 vertopal convert EPUB_INPUT_FILE --to markdown
 ``` -->
 
-> 此项目还是14个小时左右(写了一天)
+> 此项目从想法诞生到基本完成耗时14个小时左右(写了一天)
 
 ## 添加书籍流程
 
