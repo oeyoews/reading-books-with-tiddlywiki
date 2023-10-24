@@ -16,8 +16,8 @@
 * [x] 分段
 * [x] 使用交互, 完全自动化插件生成脚本
 * [x] convert single markdown to multi markdownfiles [main](./src/main.js)
-* [ ] pin story river list
-* [ ] toc metadat to better support
+* [x] pin story river list
+* [-] toc metadat to better support
 * [ ] 也支持wikitext, 为了符合中文阅读习惯, 段落开头空两格. 但是tw会自动trim, 需要特殊处理一下
 
 
