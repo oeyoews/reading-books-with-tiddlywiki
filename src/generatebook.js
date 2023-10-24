@@ -79,7 +79,7 @@ module.exports = (bookname) => {
 
   // 生成目录文件
   const tocContent = toc
-    .map(({ title, realtitle }) => `!! [[${realtitle}|${title}]]`)
+    .map(({ title, realtitle }) => `# [[${realtitle}|${title}]]`)
     .join("\n");
   fs.writeFileSync(path.join(bookOutputDir, `${bookname}-toc.tid`), tocContent);
 
