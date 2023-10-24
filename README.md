@@ -18,10 +18,13 @@
 - [x] 分段
 - [x] convert single markdown to multi markdownfiles [main](./src/main.js)
 - [x] pin story river list
-- [-] toc metadat to better support
+- [x] toc metadat to better support
 - [x] 也支持wikitext, 为了符合中文阅读习惯, 段落开头空两格. ~~但是tw会自动trim, 需要特殊处理一下~~, markdown-it 本身就不支持
 - [x] 空格文件保存失败
 - [x] 使用prompt, chalk, ora
+- [ ] 重新排列tag list, 也许是使用list: xxx(增加了插件大小)
+- [ ] 书籍封面图片: 如何自动化这个过程
+- [ ] 书籍metadata信息: 自动化
 
 - ~~不同来源的 epub,的制作方法不同, 导致转换成的 markdown 格式也不同.~~
 
