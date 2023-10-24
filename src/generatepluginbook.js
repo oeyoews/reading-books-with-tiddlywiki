@@ -36,6 +36,7 @@ module.exports = (bookinfo) => {
     decodeEntities: false,
   });
 
+  /* */
   const toc = [];
 
   function processHeading(heading, currentChapterIndex) {
@@ -74,29 +75,10 @@ module.exports = (bookinfo) => {
     // TODO: 也许可以使用递归,代替重复
     const prevChapterLink =
       toc.length > 1 ? `[[« ${realtitle}|${toc[toc.length - 2].title}]]` : "";
-    let nextChapterLink = "";
-    if (currentChapterIndex < headings.length - 1) {
-      const nextHeading = headings[currentChapterIndex + 1];
-      const nextTitle = $(nextHeading)
-        .text()
-        .replace(/[\/\s]/g, "-");
-      const nextParagraphs = [];
-      $(nextHeading)
-        .nextUntil("h1, h2, h3, h4")
-        .each((_index, element) => {
-          const paragraph = $(element).text(); // 获取每个元素的 HTML 内容
-          nextParagraphs.push(paragraph);
-        });
-      if (nextParagraphs.length) {
-        nextChapterLink = `[[${nextTitle} »|${
-          toc.length + 1
-        }-${nextTitle}@${bookname}]]`;
-      }
-    }
 
     const content = `!! ${realtitle}\n\n${paragraphs.join(
       "\n\n"
-    )}\n\n${prevChapterLink}⦿${nextChapterLink}`;
+    )}\n\n${prevChapterLink}`;
 
     try {
       fs.writeFileSync(path.join(bookOutputDir, `${filename}.tid`), content);
@@ -113,11 +95,13 @@ module.exports = (bookinfo) => {
   headings.each((index, heading) => {
     processHeading(heading, index);
   });
+  /* */
 
   // 生成目录文件
   const tocContent = toc
     .map(({ title, realtitle }) => `# [[${realtitle}|${title}]]`)
     .join("\n");
+
   fs.writeFileSync(path.join(bookOutputDir, `${bookname}目录.tid`), tocContent);
 
   // 生成 TiddlyWiki 文件和目录结构
