@@ -90,7 +90,7 @@ module.exports = (bookname) => {
           title: {
             source: "basename",
           },
-          type: "text/vnd.tiddlywiki",
+          // type: "text/vnd.tiddlywiki",
           tags: ["toc", bookname],
         },
       },

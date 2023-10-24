@@ -6,7 +6,6 @@
         "title": {
           "source": "basename"
         },
-        "type": "text/vnd.tiddlywiki",
         "tags": [
           "toc",
           "肖申克的救赎"
