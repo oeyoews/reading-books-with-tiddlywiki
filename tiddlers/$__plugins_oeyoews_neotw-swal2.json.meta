@@ -1,0 +1,10 @@
+author: oeyoews
+core-version: >=5.2.7
+dependents: $:/plugins/oeyoews/tiddlywiki-tailwindcss-plus
+description: Neotw Swal2
+list: readme
+name: Neotw Swal2
+plugin-type: plugin
+title: $:/plugins/oeyoews/neotw-swal2
+type: application/json
+version: 0.0.1
