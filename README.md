@@ -18,7 +18,7 @@
 * [x] convert single markdown to multi markdownfiles [main](./src/main.js)
 * [x] pin story river list
 * [-] toc metadat to better support
-* [ ] 也支持wikitext, 为了符合中文阅读习惯, 段落开头空两格. 但是tw会自动trim, 需要特殊处理一下
+* [x] 也支持wikitext, 为了符合中文阅读习惯, 段落开头空两格. ~~但是tw会自动trim, 需要特殊处理一下~~, markdown-it 本身就不支持
 
 
 

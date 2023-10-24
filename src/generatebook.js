@@ -56,7 +56,7 @@ module.exports = (bookname) => {
       .nextUntil("h1, h2, h3")
       .each((_index, element) => {
         const paragraph = $(element).text(); // 获取每个元素的 HTML 内容
-        paragraphs.push(`  ${paragraph}`); // 将 HTML 内容添加到数组中
+        paragraphs.push(`&emsp;&emsp;${paragraph}`); // 将 HTML 内容添加到数组中
       });
 
     const content = `## ${realtitle}\n\n${paragraphs.join("\n\n")}`;
