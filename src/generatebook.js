@@ -19,7 +19,7 @@ module.exports = (bookname) => {
 
   const markdown = fs.readFileSync(
     path.join("markdown", `${bookname}.md`),
-    "utf-8"
+    "utf-8",
   );
 
   if (!fs.existsSync(bookOutputDir)) {
@@ -127,11 +127,11 @@ module.exports = (bookname) => {
   fs.writeFileSync(path.join(outputDir, bookname, "readme.tid"), readmecontent);
   fs.writeFileSync(
     path.join(outputDir, bookname, "plugin.info"),
-    JSON.stringify(plugininfo, null, 2)
+    JSON.stringify(plugininfo, null, 2),
   );
 
   fs.writeFileSync(
     `${bookOutputDir}/tiddlywiki.files`,
-    JSON.stringify(tiddlywikifiles, null, 2)
+    JSON.stringify(tiddlywikifiles, null, 2),
   );
 };

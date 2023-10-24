@@ -6,8 +6,8 @@
   "scripts": {
     "start": "tiddlywiki --listen",
     "build:books": "node ./src/main.js",
-    "format:md": "lint-md ** --fix",
-    "format": "prettier --write .",
+    "format:md": "lint-md markdown/** --fix",
+    "format": "prettier  --write markdown/**",
     "build": "tiddlywiki --build"
   },
   "keywords": [
