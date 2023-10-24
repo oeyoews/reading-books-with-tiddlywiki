@@ -68,10 +68,10 @@ module.exports = (bookinfo) => {
     // 处理上一章节link
     const prevChapterLink =
       toc.length > 1
-        ? `[[« ${toc[toc.length - 2].realtitle}|${
-            toc[toc.length - 2].currentLink
-          }]]`
-        : "";
+        ? `@@display: flex;justify-content: space-between;[[« ${
+            toc[toc.length - 2].realtitle
+          }|${toc[toc.length - 2].currentLink}]]`
+        : "@@";
 
     const content = `!! ${realtitle}\n\n${paragraphs.join(
       "\n\n"
@@ -94,15 +94,16 @@ module.exports = (bookinfo) => {
   });
 
   for (let i = 0; i < toc.length; i++) {
-    console.log("patch");
-    console.log(toc.length);
     const currentChapter = toc[i];
     const nextChapter = toc[i + 1];
 
     let nextLink = "";
 
+    // TODO
     if (nextChapter) {
-      nextLink = `[[下一章：${nextChapter.realtitle} »|${nextChapter.currentLink}]]`;
+      nextLink = `[[${nextChapter.realtitle} »|${nextChapter.currentLink}]] \n@@`;
+    } else {
+      nextLink = `\n@@`;
     }
 
     // 读取当前章节文件
