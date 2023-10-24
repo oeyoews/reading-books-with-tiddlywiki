@@ -70,7 +70,13 @@ module.exports = (bookinfo) => {
 
     toc.push({ title: filename, realtitle });
 
-    const content = `!! ${realtitle}\n\n${paragraphs.join("\n\n")}`;
+    // 处理上一章节和下一章节的链接
+    const prevChapterLink =
+      toc.length > 1 ? `[[${toc[toc.length - 2].title}]]` : "";
+
+    const content = `!! ${realtitle}\n\n${paragraphs.join(
+      "\n\n"
+    )}\n\n« ${prevChapterLink}`;
 
     try {
       fs.writeFileSync(path.join(bookOutputDir, `${filename}.tid`), content);
