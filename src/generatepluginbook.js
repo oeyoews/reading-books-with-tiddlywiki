@@ -33,7 +33,6 @@ module.exports = (bookinfo) => {
     decodeEntities: false,
   });
 
-  /* */
   const toc = [];
 
   function processHeading(heading) {
@@ -68,10 +67,10 @@ module.exports = (bookinfo) => {
     // 处理上一章节link
     const prevChapterLink =
       toc.length > 1
-        ? `@@display: flex;justify-content: space-between;[[« ${
+        ? `@@display: flex;justify-content: space-between;\n[[« ${
             toc[toc.length - 2].realtitle
           }|${toc[toc.length - 2].currentLink}]]`
-        : "@@";
+        : "@@display: flex;justify-content: flex-end;\n";
 
     const content = `!! ${realtitle}\n\n${paragraphs.join(
       "\n\n"
@@ -81,9 +80,8 @@ module.exports = (bookinfo) => {
       fs.writeFileSync(path.join(bookOutputDir, `${currentLink}.tid`), content);
     } catch (error) {
       console.error(`Failed to save file: ${error.message}`);
-      return; // 跳过保存操作
+      return;
     }
-    // console.log(path.join(bookOutputDir, `${filename}.md`));
   }
 
   // 遍历所有标题
@@ -93,31 +91,25 @@ module.exports = (bookinfo) => {
     processHeading(heading, index);
   });
 
-  for (let i = 0; i < toc.length; i++) {
-    const currentChapter = toc[i];
+  toc.forEach((currentChapter, i) => {
     const nextChapter = toc[i + 1];
 
-const nextLink = nextChapter
-  ? `[[${nextChapter.realtitle} »|${nextChapter.currentLink}]] \n@@`
-  : `\n@@`;
+    const nextLink = nextChapter
+      ? `[[${nextChapter.realtitle} »|${nextChapter.currentLink}]] \n@@`
+      : `\n@@`;
 
-    // 读取当前章节文件
     const currentChapterFile = fs.readFileSync(
       path.join(bookOutputDir, `${currentChapter.currentLink}.tid`),
       "utf-8"
     );
 
-    // 在当前章节文件的末尾追加"next link"
     const updatedChapterFile = `${currentChapterFile}\t${nextLink}`;
 
-    // 将更新后的内容保存回文件
     fs.writeFileSync(
       path.join(bookOutputDir, `${currentChapter.currentLink}.tid`),
       updatedChapterFile
     );
-  }
-
-  /* */
+  });
 
   // 生成目录文件
   const tocContent = toc
