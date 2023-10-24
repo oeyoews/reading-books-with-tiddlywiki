@@ -20,15 +20,12 @@ module.exports = (bookinfo) => {
   const bookOutputDir = path.join(outputDir, bookname, "files");
 
   rimraf.moveRemoveSync(path.join(outputDir, bookname));
+  fs.mkdirSync(bookOutputDir, { recursive: true });
 
   const markdown = fs.readFileSync(
     path.join("markdown", `${bookname}.md`),
     "utf-8"
   );
-
-  if (!fs.existsSync(bookOutputDir)) {
-    fs.mkdirSync(bookOutputDir, { recursive: true });
-  }
 
   // use markdown-it convert markdown to html, use cheerio to parse
   const $ = cheerio.load(md.render(markdown), {
