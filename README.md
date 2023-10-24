@@ -1,11 +1,8 @@
 ![](banner.png)
 
-
 [reading book with tiddlywiki page](https://oeyoews.github.io/reading-books-with-tiddlywiki/)
 
-> 只需要上传通过calibre 转换后的markdown文件， 即可自动制作对应的书籍插件
-
->　支持wikitext(这很 tiddlywiki)
+> 只需要上传通过 calibre 转换后的 markdown 文件， 即可自动制作对应的书籍插件, 支持 wikitext(这很 tiddlywiki)
 
 ## books
 
@@ -27,35 +24,39 @@
 - [x] convert single markdown to multi markdownfiles [main](./src/main.js)
 - [x] pin story river list
 - [x] toc metadat to better support
-- [x] 也支持wikitext, 为了符合中文阅读习惯, 段落开头空两格. ~~但是tw会自动trim, 需要特殊处理一下~~, markdown-it 本身就不支持
+- [x] 也支持 wikitext, 为了符合中文阅读习惯, 段落开头空两格. ~~但是 tw 会自动 trim, 需要特殊处理一下~~, markdown-it 本身就不支持
 - [x] 空格文件保存失败
-- [x] 使用prompt, chalk, ora
-- [x] 测试脚本的细微bug, 比如部分文本丢失， 如何处理链接
-- [x] 添加相关cover图片到images文件夹
+- [x] 使用 prompt, chalk, ora
+- [x] 测试脚本的细微 bug, 比如部分文本丢失， 如何处理链接
+- [x] 添加相关 cover 图片到 images 文件夹
 - [x] 书籍封面图片: 如何自动化这个过程
-- [x] 书籍metadata信息: 自动化
-- [ ] add books plugin library, 也许使用modern.dev也可以
-- [ ] 重新排列tag list, 也许是使用list: xxx(增加了插件大小)
+- [x] 书籍 metadata 信息: 自动化
+- [ ] add books plugin library, 也许使用 modern.dev 也可以
+- [ ] 重新排列 tag list, 也许是使用 list: xxx(增加了插件大小)
 - [ ] 统计插件大小
 - [ ] plugin version automatic update by github tag
 
-- ~~不同来源的 epub,的制作方法不同, 导致转换成的 markdown 格式也不同.~~
-
-## Links
-
-- download epub books: https://zh.annas-archive.org/
-- ~~convert epub to single markdown: https://www.vertopal.com/en/convert/epub-to-markdown~~
 
 <!-- ```bash
 vertopal convert EPUB_INPUT_FILE --to markdown
 ``` -->
+
+## 添加书籍流程
+
+* 下载你想要的书籍 epub 文件： https://zh.annas-archive.org/
+* 使用 calibre 转换成 markdown(待更新). ~~convert epub to single markdown: https://www.vertopal.com/en/convert/epub-to-markdown~~
+* 手动检查生成的 md 文件是否有问题， 比如章节重复，丢失.
+* 将对应的 md 名称成 <bookname>.md, 放在 markdown 目录下面(图片在 images 目录下面)
+* 更新 src/books.js
+* 提交更新仓库， 等待 github action 自动打包书籍插件.
+
 ## NOTE
 
-> 绝对不保证100%转换， 可能会丢失部分信息， 比如外链， 图片, 书籍的markdown文件在 markdown 这个目录下
+> 绝对不保证 100%转换， 可能会丢失部分信息
 
 ## 想要添加更多书籍 ?
 
-...
+https://github.com/oeyoews/reading-books-with-tiddlywiki/issues
 
 ## Creadits
 
