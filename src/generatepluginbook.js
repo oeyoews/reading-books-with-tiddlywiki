@@ -73,9 +73,7 @@ module.exports = (bookinfo) => {
     // 处理上一章节和下一章节的链接
     // TODO: 也许可以使用递归,代替重复
     const prevChapterLink =
-      toc.length > 1
-        ? `[[« ${realtitle}|${toc[chapterNumber - 1].title}]]`
-        : "";
+      toc.length > 1 ? `[[« ${realtitle}|${toc[toc.length - 2].title}]]` : "";
     let nextChapterLink = "";
     if (currentChapterIndex < headings.length - 1) {
       const nextHeading = headings[currentChapterIndex + 1];
@@ -91,7 +89,7 @@ module.exports = (bookinfo) => {
         });
       if (nextParagraphs.length) {
         nextChapterLink = `[[${nextTitle} »|${
-          chapterNumber + 1
+          toc.length + 1
         }-${nextTitle}@${bookname}]]`;
       }
     }
