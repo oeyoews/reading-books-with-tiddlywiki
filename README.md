@@ -1,18 +1,23 @@
-[reading book with tiddlywiki demo](https://oeyoews.github.io/reading-books-with-tiddlywiki/)
+![](banner.png)
 
-> ...
+[reading book with tiddlywiki page](https://oeyoews.github.io/reading-books-with-tiddlywiki/)
+
+> 只需要上传通过calibre 转换后的markdown文件， 即可自动制作对应的书籍插件
 
 >　支持wikitext(这很 tiddlywiki)
 
 ## books
 
 - 平凡的世界
+- 明朝那些事儿
 - 劫持
 - 球状闪电
 - 肖申克的救赎
 - 提问的智慧
 
-> 绝对不保证100%转换， 可能会丢失部分信息， 比如外链， 图片, 书籍的markdown文件在 markdown 这个目录下
+> 列表不再更新， 最新书籍列表请查看 https://oeyoews.github.io/reading-books-with-tiddlywiki/#books
+
+
 
 ## TODO
 
@@ -45,6 +50,13 @@
 <!-- ```bash
 vertopal convert EPUB_INPUT_FILE --to markdown
 ``` -->
+## NOTE
+
+> 绝对不保证100%转换， 可能会丢失部分信息， 比如外链， 图片, 书籍的markdown文件在 markdown 这个目录下
+
+## 想要添加更多书籍 ?
+
+...
 
 ## Creadits
 
