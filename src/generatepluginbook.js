@@ -56,7 +56,7 @@ module.exports = (bookname) => {
 
     // 空的标题跳过, 会遇到大标题的情况， 暂时不处理
     if (!paragraphs.length) {
-      console.log(title, " is empty block");
+      console.log(title, "标题被过滤");
       return;
     }
     if (!title) return;
@@ -98,6 +98,7 @@ module.exports = (bookname) => {
           },
           // type: "text/vnd.tiddlywiki",
           tags: ["toc", bookname],
+          caption: bookname,
         },
       },
     ],
