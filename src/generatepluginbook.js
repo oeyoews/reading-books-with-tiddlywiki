@@ -92,6 +92,35 @@ module.exports = (bookinfo) => {
   headings.each((index, heading) => {
     processHeading(heading, index);
   });
+
+  for (let i = 0; i < toc.length; i++) {
+    console.log("patch");
+    console.log(toc.length);
+    const currentChapter = toc[i];
+    const nextChapter = toc[i + 1];
+
+    let nextLink = "";
+
+    if (nextChapter) {
+      nextLink = `[[下一章：${nextChapter.realtitle} »|${nextChapter.currentLink}]]`;
+    }
+
+    // 读取当前章节文件
+    const currentChapterFile = fs.readFileSync(
+      path.join(bookOutputDir, `${currentChapter.currentLink}.tid`),
+      "utf-8"
+    );
+
+    // 在当前章节文件的末尾追加"next link"
+    const updatedChapterFile = `${currentChapterFile}\t${nextLink}`;
+
+    // 将更新后的内容保存回文件
+    fs.writeFileSync(
+      path.join(bookOutputDir, `${currentChapter.currentLink}.tid`),
+      updatedChapterFile
+    );
+  }
+
   /* */
 
   // 生成目录文件
