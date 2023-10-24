@@ -97,14 +97,9 @@ module.exports = (bookinfo) => {
     const currentChapter = toc[i];
     const nextChapter = toc[i + 1];
 
-    let nextLink = "";
-
-    // TODO
-    if (nextChapter) {
-      nextLink = `[[${nextChapter.realtitle} »|${nextChapter.currentLink}]] \n@@`;
-    } else {
-      nextLink = `\n@@`;
-    }
+const nextLink = nextChapter
+  ? `[[${nextChapter.realtitle} »|${nextChapter.currentLink}]] \n@@`
+  : `\n@@`;
 
     // 读取当前章节文件
     const currentChapterFile = fs.readFileSync(
