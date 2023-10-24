@@ -17,13 +17,13 @@
   "directories": [
     {
       "path": ".",
-      "filesRegExp": "^.*\\.md$",
+      "filesRegExp": "^.*\\.tid$",
       "isTiddlerFile": false,
       "fields": {
         "title": {
           "source": "basename"
         },
-        "type": "text/markdown",
+        "type": "text/vnd.tiddlywiki",
         "tags": "球状闪电"
       }
     }

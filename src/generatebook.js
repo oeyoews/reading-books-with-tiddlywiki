@@ -59,10 +59,10 @@ module.exports = (bookname) => {
         paragraphs.push(`&emsp;&emsp;${paragraph}`); // 将 HTML 内容添加到数组中
       });
 
-    const content = `## ${realtitle}\n\n${paragraphs.join("\n\n")}`;
+    const content = `!! ${realtitle}\n\n${paragraphs.join("\n\n")}`;
 
     try {
-      fs.writeFileSync(path.join(bookOutputDir, `${filename}.md`), content);
+      fs.writeFileSync(path.join(bookOutputDir, `${filename}.tid`), content);
     } catch (error) {
       console.error(`Failed to save file: ${error.message}`);
       return; // 跳过保存操作
@@ -98,13 +98,13 @@ module.exports = (bookname) => {
     directories: [
       {
         path: ".",
-        filesRegExp: "^.*\\.md$",
+        filesRegExp: "^.*\\.tid$",
         isTiddlerFile: false,
         fields: {
           title: {
             source: "basename",
           },
-          type: "text/markdown",
+          type: "text/vnd.tiddlywiki",
           tags: `${bookname}`,
         },
       },

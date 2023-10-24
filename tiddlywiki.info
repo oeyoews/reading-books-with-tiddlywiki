@@ -4,8 +4,7 @@
   ],
   "plugins": [
     "tiddlywiki/filesystem",
-    "tiddlywiki/markdown",
-    "tiddlywiki/tiddlyweb"
+    "tiddlywiki/markdown"
   ],
   "config": {
     "retain-original-tiddler-path": true
