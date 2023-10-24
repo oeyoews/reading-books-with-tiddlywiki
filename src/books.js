@@ -1,6 +1,11 @@
 // NOTE: 书名markdown/<bookname>.md 文件
 module.exports = [
   {
+    bookname: "reading-with-tiddlywiki-使用手册",
+    author: "oeyoews",
+    description: "reading with tiddlywiki 使用手册",
+  },
+  {
     bookname: "时间简史",
     author: "霍金",
     description:

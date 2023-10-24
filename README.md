@@ -4,17 +4,6 @@
 
 > 只需要上传通过 calibre 转换后的 markdown 文件， 即可自动制作对应的书籍插件, 支持 wikitext(这很 tiddlywiki)
 
-## books
-
-- 平凡的世界
-- 明朝那些事儿
-- 劫持
-- 球状闪电
-- 肖申克的救赎
-- 提问的智慧
-
-> 列表不再更新， 最新书籍列表请查看 https://oeyoews.github.io/reading-books-with-tiddlywiki/#books
-
 ## TODO
 
 - [x] learn use calibre to make better epub with markdown-output calibre plugins
@@ -38,30 +27,6 @@
 - [ ] 统计插件大小
 - [ ] plugin version automatic update by github tag
 
+## Get Started
 
-<!-- ```bash
-vertopal convert EPUB_INPUT_FILE --to markdown
-``` -->
-
-> 此项目从想法诞生到基本完成耗时18个小时左右(写了一天)
-
-## 添加书籍流程
-
-* 下载你想要的书籍 epub 文件： https://zh.annas-archive.org/
-* 使用 calibre 转换成 markdown(待更新). ~~convert epub to single markdown: https://www.vertopal.com/en/convert/epub-to-markdown~~
-* 手动检查生成的 md 文件是否有问题， 比如章节重复，丢失.
-* 将对应的 md 名称成 <bookname>.md, 放在 markdown 目录下面(图片在 images 目录下面)
-* 更新 src/books.js
-* 提交更新仓库， 等待 github action 自动打包书籍插件.
-
-## NOTE
-
-> 绝对不保证 100%转换， 可能会丢失部分信息
-
-## 想要添加更多书籍 ?
-
-https://github.com/oeyoews/reading-books-with-tiddlywiki/issues
-
-## Creadits
-
-本仓库所用素材均来源于互联网，仅作个人排版参考学习之用，请勿用于商业用途。如果喜欢本仓库的书籍，请购买正版。任何对书籍的修改、加工、传播，请自负法律后果。
+*
