@@ -117,6 +117,8 @@ module.exports = (bookname) => {
 
   const plugininfo = {
     title: bookname,
+    author: "oeyoews",
+    book: bookname,
     type: "plugin",
     version: "0.0.1",
     list: `readme`,
