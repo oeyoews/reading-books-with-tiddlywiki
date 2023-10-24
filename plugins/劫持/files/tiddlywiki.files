@@ -1,7 +1,7 @@
 {
   "tiddlers": [
     {
-      "file": "劫持-toc.tid",
+      "file": "劫持目录.tid",
       "fields": {
         "title": {
           "source": "basename"
@@ -10,7 +10,7 @@
           "toc",
           "劫持"
         ],
-        "caption": "劫持"
+        "caption": "basename"
       }
     }
   ],
@@ -23,8 +23,8 @@
         "title": {
           "source": "basename"
         },
-        "type": "text/vnd.tiddlywiki",
-        "tags": "劫持"
+        "tags": "劫持",
+        "caption": "basename"
       }
     }
   ]

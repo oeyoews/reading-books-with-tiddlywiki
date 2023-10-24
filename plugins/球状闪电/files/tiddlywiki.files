@@ -1,7 +1,7 @@
 {
   "tiddlers": [
     {
-      "file": "球状闪电-toc.tid",
+      "file": "球状闪电目录.tid",
       "fields": {
         "title": {
           "source": "basename"
@@ -10,7 +10,7 @@
           "toc",
           "球状闪电"
         ],
-        "caption": "球状闪电"
+        "caption": "basename"
       }
     }
   ],
@@ -23,8 +23,8 @@
         "title": {
           "source": "basename"
         },
-        "type": "text/vnd.tiddlywiki",
-        "tags": "球状闪电"
+        "tags": "球状闪电",
+        "caption": "basename"
       }
     }
   ]

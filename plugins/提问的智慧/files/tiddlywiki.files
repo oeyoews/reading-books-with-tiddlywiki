@@ -1,7 +1,7 @@
 {
   "tiddlers": [
     {
-      "file": "提问的智慧-toc.tid",
+      "file": "提问的智慧目录.tid",
       "fields": {
         "title": {
           "source": "basename"
@@ -10,7 +10,7 @@
           "toc",
           "提问的智慧"
         ],
-        "caption": "提问的智慧"
+        "caption": "basename"
       }
     }
   ],
@@ -23,8 +23,8 @@
         "title": {
           "source": "basename"
         },
-        "type": "text/vnd.tiddlywiki",
-        "tags": "提问的智慧"
+        "tags": "提问的智慧",
+        "caption": "basename"
       }
     }
   ]

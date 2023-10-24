@@ -1,7 +1,7 @@
 {
   "tiddlers": [
     {
-      "file": "平凡的世界-toc.tid",
+      "file": "平凡的世界目录.tid",
       "fields": {
         "title": {
           "source": "basename"
@@ -10,7 +10,7 @@
           "toc",
           "平凡的世界"
         ],
-        "caption": "平凡的世界"
+        "caption": "basename"
       }
     }
   ],
@@ -23,8 +23,8 @@
         "title": {
           "source": "basename"
         },
-        "type": "text/vnd.tiddlywiki",
-        "tags": "平凡的世界"
+        "tags": "平凡的世界",
+        "caption": "basename"
       }
     }
   ]

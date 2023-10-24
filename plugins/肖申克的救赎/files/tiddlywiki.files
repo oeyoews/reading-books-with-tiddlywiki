@@ -1,7 +1,7 @@
 {
   "tiddlers": [
     {
-      "file": "肖申克的救赎-toc.tid",
+      "file": "肖申克的救赎目录.tid",
       "fields": {
         "title": {
           "source": "basename"
@@ -10,7 +10,7 @@
           "toc",
           "肖申克的救赎"
         ],
-        "caption": "肖申克的救赎"
+        "caption": "basename"
       }
     }
   ],
@@ -23,8 +23,8 @@
         "title": {
           "source": "basename"
         },
-        "type": "text/vnd.tiddlywiki",
-        "tags": "肖申克的救赎"
+        "tags": "肖申克的救赎",
+        "caption": "basename"
       }
     }
   ]

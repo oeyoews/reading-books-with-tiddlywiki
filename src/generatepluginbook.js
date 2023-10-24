@@ -11,7 +11,8 @@ const md = new MarkdownIt({
   typographer: true,
 });
 
-module.exports = (bookname) => {
+module.exports = (bookinfo) => {
+  const { bookname, author, description, cover } = bookinfo;
   const outputDir = "plugins";
   const bookOutputDir = path.join(outputDir, bookname, "files");
 
@@ -19,7 +20,7 @@ module.exports = (bookname) => {
 
   const markdown = fs.readFileSync(
     path.join("markdown", `${bookname}.md`),
-    "utf-8",
+    "utf-8"
   );
 
   if (!fs.existsSync(bookOutputDir)) {
@@ -38,12 +39,16 @@ module.exports = (bookname) => {
     const title = $(heading)
       .text()
       .replace(/[\/\s]/g, "-");
+    if (!title) {
+      console.log("标题为空");
+      return;
+    }
 
     const chapterNumber = toc.length + 1;
 
     const realtitle = $(heading).text(); // 获取标题文本
     // 将截取出来的内容写入一个新的 Markdown 文件
-    const filename = `${bookname}-${chapterNumber}-${title}`;
+    const filename = `${chapterNumber}-${title}@${bookname}`;
 
     const paragraphs = []; // 存储段落内容的数组
 
@@ -56,10 +61,9 @@ module.exports = (bookname) => {
 
     // 空的标题跳过, 会遇到大标题的情况， 暂时不处理
     if (!paragraphs.length) {
-      console.log(title, "标题被过滤");
+      console.log(`${title} 段落为空 @${bookname}`);
       return;
     }
-    if (!title) return;
 
     toc.push({ title: filename, realtitle });
 
@@ -85,20 +89,20 @@ module.exports = (bookname) => {
   const tocContent = toc
     .map(({ title, realtitle }) => `# [[${realtitle}|${title}]]`)
     .join("\n");
-  fs.writeFileSync(path.join(bookOutputDir, `${bookname}-toc.tid`), tocContent);
+  fs.writeFileSync(path.join(bookOutputDir, `${bookname}目录.tid`), tocContent);
 
   // 生成 TiddlyWiki 文件和目录结构
   const tiddlywikifiles = {
     tiddlers: [
       {
-        file: `${bookname}-toc.tid`,
+        file: `${bookname}目录.tid`,
         fields: {
           title: {
             source: "basename",
           },
           // type: "text/vnd.tiddlywiki",
           tags: ["toc", bookname],
-          caption: bookname,
+          caption: "basename",
         },
       },
     ],
@@ -111,8 +115,9 @@ module.exports = (bookname) => {
           title: {
             source: "basename",
           },
-          type: "text/vnd.tiddlywiki",
+          // type: "text/vnd.tiddlywiki",
           tags: `${bookname}`,
+          caption: "basename",
         },
       },
     ],
@@ -120,7 +125,12 @@ module.exports = (bookname) => {
 
   const readmecontent = `title: ${bookname}/readme
 
-> ${bookname}[[目录|${bookname}-toc]]`;
+> ''bookname'': ${bookname || "未知"}\n
+> ''bookauthor'': ${author || "未知"}\n
+> ''description'': ${description || "未知"}
+
+> [[开始阅读 ${bookname}|${bookname}目录]]
+`;
 
   const plugininfo = {
     title: bookname,
@@ -134,11 +144,12 @@ module.exports = (bookname) => {
   fs.writeFileSync(path.join(outputDir, bookname, "readme.tid"), readmecontent);
   fs.writeFileSync(
     path.join(outputDir, bookname, "plugin.info"),
-    JSON.stringify(plugininfo, null, 2),
+    JSON.stringify(plugininfo, null, 2)
   );
 
   fs.writeFileSync(
     `${bookOutputDir}/tiddlywiki.files`,
-    JSON.stringify(tiddlywikifiles, null, 2),
+    JSON.stringify(tiddlywikifiles, null, 2)
   );
+  console.log(bookname, "书籍插件制作完成");
 };
