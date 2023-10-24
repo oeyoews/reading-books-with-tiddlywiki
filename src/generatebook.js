@@ -46,7 +46,7 @@ module.exports = (bookname) => {
 
     const realtitle = $(heading).text(); // 获取标题文本
     // 将截取出来的内容写入一个新的 Markdown 文件
-    const filename = `${bookname}-${chapterNumber}-${realtitle}`;
+    const filename = `${bookname}-${chapterNumber}-${title}`;
 
     toc.push({ title: filename });
 

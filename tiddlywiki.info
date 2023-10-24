@@ -4,6 +4,7 @@
   ],
   "plugins": [
     "tiddlywiki/filesystem",
+    "tiddlywiki/tiddlyweb",
     "tiddlywiki/markdown"
   ],
   "config": {
