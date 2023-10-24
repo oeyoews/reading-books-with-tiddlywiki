@@ -41,23 +41,26 @@ module.exports = (bookname) => {
 
     const chapterNumber = toc.length + 1;
 
-    // 找到该标题的起始和结束位置，在 Markdown 中截取出该部分内容
-    const start = $(heading).next();
-
     const realtitle = $(heading).text(); // 获取标题文本
     // 将截取出来的内容写入一个新的 Markdown 文件
     const filename = `${bookname}-${chapterNumber}-${title}`;
 
-    toc.push({ title: filename, realtitle });
-
     const paragraphs = []; // 存储段落内容的数组
 
     $(heading)
-      .nextUntil("h1, h2, h3")
+      .nextUntil("h1, h2, h3, h4")
       .each((_index, element) => {
         const paragraph = $(element).text(); // 获取每个元素的 HTML 内容
         paragraphs.push(`&emsp;&emsp;${paragraph}`); // 将 HTML 内容添加到数组中
       });
+
+    // 空的标题跳过, 会遇到大标题的情况， 暂时不处理
+    if (!paragraphs.length) {
+      console.log(title, " is empty block");
+      return;
+    }
+
+    toc.push({ title: filename, realtitle });
 
     const content = `!! ${realtitle}\n\n${paragraphs.join("\n\n")}`;
 
@@ -71,7 +74,7 @@ module.exports = (bookname) => {
   }
 
   // 遍历所有标题
-  const headings = $("h1, h2, h3");
+  const headings = $("h1, h2, h3, h4");
 
   headings.each((_index, heading) => {
     processHeading(heading);
