@@ -59,6 +59,7 @@ module.exports = (bookname) => {
       console.log(title, " is empty block");
       return;
     }
+    if (!title) return;
 
     toc.push({ title: filename, realtitle });
 
