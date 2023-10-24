@@ -1,5 +1,4 @@
-// TODO: prompt
-const generateBook = require("./generatebook");
+const generateBook = require("./generatepluginbook");
 
 const booknames = [
   "球状闪电",
@@ -8,7 +7,6 @@ const booknames = [
   "劫持",
   "提问的智慧",
 ];
-// const booknames = ['提问的智慧']
 
 booknames.forEach((bookname) => {
   generateBook(bookname);
