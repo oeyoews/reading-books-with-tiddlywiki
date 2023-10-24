@@ -19,7 +19,7 @@
 
 - [x] learn use calibre to make better epub with markdown-output calibre plugins
 - [x] 改进脚本
-- [x] 使用插件的形式分发书籍(不确定版权相关问题)
+- [x] 使用插件的形式分发书籍
 - [x] 分段
 - [x] convert single markdown to multi markdownfiles [main](./src/main.js)
 - [x] pin story river list
@@ -62,4 +62,4 @@ https://github.com/oeyoews/reading-books-with-tiddlywiki/issues
 
 ## Creadits
 
-- 此仓库一切内容来源网络.
+本仓库所用素材均来源于互联网，仅作个人排版参考学习之用，请勿用于商业用途。如果喜欢本仓库的书籍，请购买正版。任何对书籍的修改、加工、传播，请自负法律后果。
