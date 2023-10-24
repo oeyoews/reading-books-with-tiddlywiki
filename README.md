@@ -31,7 +31,7 @@
 - [x] 添加相关 cover 图片到 images 文件夹
 - [x] 书籍封面图片: 如何自动化这个过程
 - [x] 书籍 metadata 信息: 自动化
-- [ ] 支持next/previous link
+- [x] 支持next/previous link
 - [ ] 支持进度追踪
 - [ ] add books plugin library, 也许使用 modern.dev 也可以
 - [ ] 重新排列 tag list, 也许是使用 list: xxx(增加了插件大小)
