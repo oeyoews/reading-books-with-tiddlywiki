@@ -139,6 +139,7 @@ module.exports = (bookinfo) => {
   const plugininfo = {
     title: bookname,
     author: "oeyoews",
+    description,
     book: bookname,
     type: "plugin",
     version: "0.0.1",
