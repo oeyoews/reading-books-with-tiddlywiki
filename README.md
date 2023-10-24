@@ -1,5 +1,7 @@
 [reading book with tiddlywiki demo](https://oeyoews.github.io/reading-books-with-tiddlywiki/)
 
+> ...
+
 >　支持wikitext
 
 ## books
@@ -8,6 +10,8 @@
 - 劫持
 - 球状闪电
 - 肖申克的救赎
+
+> 绝对不保证100%转换， 可能会丢失部分信息， 比如外链， 图片
 
 ## TODO
 

@@ -1,0 +1,30 @@
+{
+  "tiddlers": [
+    {
+      "file": "提问的智慧-toc.tid",
+      "fields": {
+        "title": {
+          "source": "basename"
+        },
+        "tags": [
+          "toc",
+          "提问的智慧"
+        ]
+      }
+    }
+  ],
+  "directories": [
+    {
+      "path": ".",
+      "filesRegExp": "^.*\\.tid$",
+      "isTiddlerFile": false,
+      "fields": {
+        "title": {
+          "source": "basename"
+        },
+        "type": "text/vnd.tiddlywiki",
+        "tags": "提问的智慧"
+      }
+    }
+  ]
+}
