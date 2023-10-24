@@ -13,11 +13,14 @@
 * [x] 改进脚本
 * [x] add books plugin library
 * [x] 使用插件的形式分发书籍(不确定版权相关问题)
+* [x] 分段
+* [x] 使用交互, 完全自动化插件生成脚本
+* [x] convert single markdown to multi markdownfiles [main](./src/main.js)
 * [ ] pin story river list
-* [ ] 分段
-* [ ] 使用交互, 完全自动化插件生成脚本
-* [ ] convert single markdown to multi markdownfiles [main](./src/main.js)
-* toc metadat to better support
+* [ ] toc metadat to better support
+* [ ] 也支持wikitext, 为了符合中文阅读习惯, 段落开头空两格. 但是tw会自动trim, 需要特殊处理一下
+
+
 
 * ~~不同来源的 epub,的制作方法不同, 导致转换成的 markdown 格式也不同.~~
 

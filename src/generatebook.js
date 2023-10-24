@@ -56,8 +56,8 @@ module.exports = (bookname, level) => {
     $(heading)
       .nextUntil(`h${level}, h${level}+1`)
       .each((index, element) => {
-        const paragraph = $(element).html(); // 获取每个元素的 HTML 内容
-        paragraphs.push(paragraph); // 将 HTML 内容添加到数组中
+        const paragraph = $(element).text(); // 获取每个元素的 HTML 内容
+        paragraphs.push(`  ${paragraph}`); // 将 HTML 内容添加到数组中
       });
 
     const content = `## ${realtitle}\n\n${paragraphs.join("\n\n")}`;
