@@ -18,8 +18,6 @@
 
 > 列表不再更新， 最新书籍列表请查看 https://oeyoews.github.io/reading-books-with-tiddlywiki/#books
 
-
-
 ## TODO
 
 - [x] learn use calibre to make better epub with markdown-output calibre plugins
@@ -33,13 +31,13 @@
 - [x] 空格文件保存失败
 - [x] 使用prompt, chalk, ora
 - [x] 测试脚本的细微bug, 比如部分文本丢失， 如何处理链接
-- [ ] add books plugin library, 也许使用modern.dev也可以
+- [x] 添加相关cover图片到images文件夹
 - [x] 书籍封面图片: 如何自动化这个过程
 - [x] 书籍metadata信息: 自动化
+- [ ] add books plugin library, 也许使用modern.dev也可以
 - [ ] 重新排列tag list, 也许是使用list: xxx(增加了插件大小)
 - [ ] 统计插件大小
 - [ ] plugin version automatic update by github tag
-- [ ] 添加相关cover图片到images文件夹
 
 - ~~不同来源的 epub,的制作方法不同, 导致转换成的 markdown 格式也不同.~~
 
