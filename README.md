@@ -26,6 +26,7 @@
 - [x] 也支持wikitext, 为了符合中文阅读习惯, 段落开头空两格. ~~但是tw会自动trim, 需要特殊处理一下~~, markdown-it 本身就不支持
 - [x] 空格文件保存失败
 - [x] 使用prompt, chalk, ora
+- [ ] 测试脚本的细微bug, 比如部分文本丢失， 如何处理链接
 - [ ] add books plugin library, 也许使用modern.dev也可以
 - [ ] 重新排列tag list, 也许是使用list: xxx(增加了插件大小)
 - [ ] 书籍封面图片: 如何自动化这个过程
