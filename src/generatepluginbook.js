@@ -71,25 +71,34 @@ module.exports = (bookinfo) => {
     toc.push({ title: filename, realtitle });
 
     // 处理上一章节和下一章节的链接
-    // 也许可以使用递归, 目前无法判断空节点
+    // TODO: 也许可以使用递归,代替重复
     const prevChapterLink =
-      toc.length > 1 ? `[[${toc[chapterNumber - 1].title}]]` : "";
+      toc.length > 1
+        ? `[[« ${realtitle}|${toc[chapterNumber - 1].title}]]`
+        : "";
     let nextChapterLink = "";
     if (currentChapterIndex < headings.length - 1) {
-      const nextTitle = $(headings[currentChapterIndex + 1])
+      const nextHeading = headings[currentChapterIndex + 1];
+      const nextTitle = $(nextHeading)
         .text()
         .replace(/[\/\s]/g, "-");
-      nextChapterLink = `[[${chapterNumber + 1}-${nextTitle}@${bookname}]]`;
+      const nextParagraphs = [];
+      $(nextHeading)
+        .nextUntil("h1, h2, h3, h4")
+        .each((_index, element) => {
+          const paragraph = $(element).text(); // 获取每个元素的 HTML 内容
+          nextParagraphs.push(paragraph);
+        });
+      if (nextParagraphs.length) {
+        nextChapterLink = `[[${nextTitle} »|${
+          chapterNumber + 1
+        }-${nextTitle}@${bookname}]]`;
+      }
     }
 
-    // »
-    //  ⦿
-    // const content = `!! ${realtitle}\n\n${paragraphs.join(
-    //   "\n\n"
-    // )}\n\n« ${prevChapterLink}`;
     const content = `!! ${realtitle}\n\n${paragraphs.join(
       "\n\n"
-    )}\n\n« ${prevChapterLink} ⦿ ${nextChapterLink} »`;
+    )}\n\n${prevChapterLink}⦿${nextChapterLink}`;
 
     try {
       fs.writeFileSync(path.join(bookOutputDir, `${filename}.tid`), content);
