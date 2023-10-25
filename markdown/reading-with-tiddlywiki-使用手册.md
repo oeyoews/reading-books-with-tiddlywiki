@@ -16,8 +16,8 @@ pnpm install
 
 ## 使用 calibre 转换成 markdown
 
-* ~~convert epub to single markdown: https://www.vertopal.com/en/convert/epub-to-markdown~~
 * calibre 的 markdown output 插件
+<!-- * ~~convert epub to single markdown: https://www.vertopal.com/en/convert/epub-to-markdown~~ -->
 
 ## 检查文件
 
@@ -39,9 +39,8 @@ pnpm install
 > 只需要上传通过 calibre 转换后的 markdown 文件， 即可自动制作对应的书籍插件, 支持 wikitext(这很 tiddlywiki)
 所有的流程完全自动化.
 
-## NOTE
-
-> 绝对不保证 100%转换， 可能会丢失部分信息
+<!-- ## NOTE
+> 绝对不保证 100%转换， 可能会丢失部分信息 -->
 
 ## books
 
@@ -53,7 +52,7 @@ pnpm install
 - 提问的智慧
 > 列表不再更新， 最新书籍列表请查看 https://oeyoews.github.io/reading-books-with-tiddlywiki/#books
 
-## 想要添加更多书籍
+## 想要添加更多书籍 ?
 
 https://github.com/oeyoews/reading-books-with-tiddlywiki/issues
 
