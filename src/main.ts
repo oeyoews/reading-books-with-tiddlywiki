@@ -37,6 +37,7 @@ async function main() {
     );
   }
   selectedBooksInfo.forEach((bookinfo) => generateBookInfo(bookinfo));
+  console.log(selectedBooksInfo.length, "本书籍制作完成");
 }
 
 main();
