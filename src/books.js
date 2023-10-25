@@ -2,6 +2,11 @@
 // TODO: add bookname link
 module.exports = [
   {
+    bookname: "断舍离",
+    author: "",
+    description: "",
+  },
+  {
     bookname: "Wonder",
     author: "",
     description: "",
