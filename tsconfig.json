@@ -1,0 +1,26 @@
+{
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"declaration": false,
+		"jsx": "preserve",
+		"baseUrl": "src",
+		"paths": {
+			"@/*": [
+				"./*"
+			]
+		},
+		"lib": [
+			"DOM",
+			"ESNext"
+		]
+	},
+	"ts-node": {
+		// Do not forget to `npm i -D tsconfig-paths`
+		"require": [
+			"tsconfig-paths/register"
+		]
+	},
+	"include": [
+		"src/**/*.ts"
+	],
+}

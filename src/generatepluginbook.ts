@@ -4,7 +4,7 @@ import path from "path";
 import MarkdownIt from "markdown-it";
 import { rimraf } from "rimraf";
 import chalk from "chalk";
-import { getFolderSize } from "./getFolderSize";
+import { getFolderSize } from "@/getFolderSize";
 
 const md = new MarkdownIt({
   linkify: true,

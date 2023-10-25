@@ -1,10 +1,14 @@
-import { getFolderSize } from "./getFolderSize";
-import { generateBookInfo } from "./generatepluginbook";
+import { getFolderSize } from "@/getFolderSize";
+import { generateBookInfo } from "@/generatepluginbook";
 import prompts from "prompts";
-import { booklist } from "./books";
+import { booklist } from "@/books";
 import { isCI } from "ci-info";
 import chalk from "chalk";
+import ora from "ora";
 
+const spinner = ora("...");
+
+spinner.start();
 const onPromptState = (state: any) => {
   if (state.aborted) {
     // If we don't re-enable the terminal cursor before exiting
