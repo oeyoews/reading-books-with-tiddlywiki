@@ -14,7 +14,7 @@
 - [x] convert single markdown to multi markdownfiles [main](./src/main.js)
 - [x] pin story river list
 - [x] toc metadat to better support
-- [x] 也支持 wikitext, 为了符合中文阅读习惯, 段落开头空两格. ~~但是 tw 会自动 trim, 需要特殊处理一下~~, markdown-it 本身就不支持
+- [x] 也支持 wikitext, ~~为了符合中文阅读习惯, 段落开头空两格~~. ~~但是 tw 会自动 trim, 需要特殊处理一下~~, markdown 本身就不支持
 - [x] 空格文件保存失败
 - [x] 使用 prompt, chalk, ora
 - [x] 测试脚本的细微 bug, 比如部分文本丢失， 如何处理链接
@@ -25,9 +25,9 @@
 - [x] 支持进度追踪
 - [x] 重新排列 tag list, 也许是使用 list: xxx(增加了插件大小)
 - [x] 更完善的标题检测, 目前不能包含符号
+- [x] plugin version automatic update by github tag
+- [x] chalk v5 ts 不支持 https://github.com/microsoft/TypeScript/issues/46930 https://github.com/chalk/chalk/releases/tag/v5.0.0
 - [ ] add books plugin library, 也许使用 modern.dev 也可以
 - [ ] 统计插件大小, 动态生成
-- [x] plugin version automatic update by github tag
 - [ ] html to md ???
 - [ ] lint-md 对于空格的处理？？？
-- [x] chalk v5 ts 不支持 https://github.com/microsoft/TypeScript/issues/46930 https://github.com/chalk/chalk/releases/tag/v5.0.0
