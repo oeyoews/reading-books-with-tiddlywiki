@@ -1,10 +1,15 @@
 // NOTE: 书名markdown/<bookname>.md 文件
+// TODO: add bookname link
 module.exports = [
+  {
+    bookname: "tiddlywiki-starter-kit-使用手册",
+    author: "oeyoews",
+    description: "tiddlywiki starter kit",
+  },
   {
     bookname: "reading-with-tiddlywiki-使用手册",
     author: "oeyoews",
     description: "reading with tiddlywiki 使用手册",
-    indent: false,
   },
   {
     bookname: "时间简史",
