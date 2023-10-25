@@ -8,7 +8,7 @@
     "build:books": "ts-node ./src/main.ts",
     "format:md": "lint-md markdown/** --fix",
     "format": "prettier  --write markdown/**",
-    "build": "node ./src/main.js && tiddlywiki --build"
+    "build": "ts-node ./src/main.ts && tiddlywiki --build"
   },
   "keywords": [
     "books",
