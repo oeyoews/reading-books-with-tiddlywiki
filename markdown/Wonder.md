@@ -1,3 +1,5 @@
+## Header
+
 _Wonder 1: Wonder_
 
 Author: R. J. Palacio Random House Children's Books \( 2月 2012\)
@@ -20,324 +22,7 @@ Jacket art copyright © 2012 by Tad Carpenter
 All rights reserved. Published in the United States by Alfred A. Knopf,
 an imprint of Random House Children’s Books, a division of Random House, Inc., New York.
 
-Knopf, Borzoi Books, and the colophon are registered trademarks of Random House, Inc.
-
-Permissions can be found on this page.
-
-Visit us on the Web\! [randomhouse.com/kids](http://randomhouse.com/kids)
-
-Educators and librarians, for a variety of teaching tools, visit us at [randomhouse.com/teachers](http://randomhouse.com/teachers)
-
-_Library of Congress Cataloging-in-Publication Data_
-Palacio, R. J.
-Wonder / by R.J. Palacio.
-p. cm.
-Summary: Ten-year-old Auggie Pullman, who was born with extreme facial abnormalities and was not expected to survive, goes from being home-schooled to entering fifth grade at a private middle school in Manhattan, which entails enduring the taunting and fear of his classmates as he struggles to be seen as just another student.
-eISBN: 978-0-375-89988-1
-\[1. Abnormalities, Human—Fiction. 2. Self-importance—Fiction. 3. Middle schools—Fiction. 4. Schools—Fiction.\] I. Title.
-PZ7.P17526Wo 2012
-\[Fic\]—dc23
-2011027133
-
-February 2012
-
-Random House Children’s Books supports the First Amendment and celebrates the right to read.
-
-v3.1
-
-> **For Russell, Caleb, and Joseph**
-
-**Contents**
-
-_Cover_
-
-_Title Page_
-
-_Copyright_
-
-_Dedication_
-
-_Epigraph_
-
-Part One: August
-
-Ordinary
-
-Why I Didn’t Go to School
-
-How I Came to Life
-
-Christopher’s House
-
-Driving
-
-Paging Mr. Tushman
-
-Nice Mrs. Garcia
-
-Jack Will, Julian, and Charlotte
-
-The Grand Tour
-
-The Performance Space
-
-The Deal
-
-Home
-
-First-Day Jitters
-
-Locks
-
-Around the Room
-
-Lamb to the Slaughter
-
-Choose Kind
-
-Lunch
-
-The Summer Table
-
-One to Ten
-
-Padawan
-
-Wake Me Up when September Ends
-
-Jack Will
-
-Mr. Browne’s October Precept
-
-Apples
-
-Halloween
-
-School Pictures
-
-The Cheese Touch
-
-Costumes
-
-The Bleeding Scream
-
-Names
-
-Part Two: Via
-
-A Tour of the Galaxy
-
-Before August
-
-Seeing August
-
-August Through the Peephole
-
-High School
-
-Major Tom
-
-After School
-
-The Padawan Bites the Dust
-
-An Apparition at the Door
-
-Breakfast
-
-Genetics 101
-
-The Punnett Square
-
-Out with the Old
-
-October 31
-
-Trick or Treat
-
-Time to Think
-
-Part Three: Summer
-
-Weird Kids
-
-The Plague
-
-The Halloween Party
-
-November
-
-Warning: This Kid Is Rated R
-
-The Egyptian Tomb
-
-Part Four: Jack
-
-The Call
-
-Carvel
-
-Why I Changed My Mind
-
-Four Things
-
-Ex-Friends
-
-Snow
-
-Fortune Favors the Bold
-
-Private School
-
-In Science
-
-Partners
-
-Detention
-
-Season’s Greetings
-
-Letters, Emails, Facebook, Texts
-
-Back from Winter Break
-
-The War
-
-Switching Tables
-
-Why I Didn’t Sit with August the First Day of School
-
-Sides
-
-August’s House
-
-The Boyfriend
-
-Part Five: Justin
-
-Olivia’s Brother
-
-Valentine’s Day
-
-Our Town
-
-Ladybug
-
-The Bus Stop
-
-Rehearsal
-
-Bird
-
-The Universe
-
-Part Six: August
-
-North Pole
-
-The Auggie Doll
-
-Lobot
-
-Hearing Brightly
-
-Via’s Secret
-
-My Cave
-
-Goodbye
-
-Daisy’s Toys
-
-Heaven
-
-Understudy
-
-The Ending
-
-Part Seven: Miranda
-
-Camp Lies
-
-School
-
-What I Miss Most
-
-Extraordinary, but No One There to See
-
-The Performance
-
-After the Show
-
-Part Eight: August
-
-The Fifth-Grade Nature Retreat
-
-Known For
-
-Packing
-
-Daybreak
-
-Day One
-
-The Fairgrounds
-
-Be Kind to Nature
-
-The Woods Are Alive
-
-Alien
-
-Voices in the Dark
-
-The Emperor’s Guard
-
-Sleep
-
-Aftermath
-
-Home
-
-Bear
-
-The Shift
-
-Ducks
-
-The Last Precept
-
-The Drop-Off
-
-Take Your Seats, Everyone
-
-A Simple Thing
-
-Awards
-
-Floating
-
-Pictures
-
-The Walk Home
-
-_Appendix_
-
-_Acknowledgments_
-
-_Permissions_
-
-> > > _Doctors have come from distant cities_> > > _just to see me_> > > _stand over my bed_> > > _disbelieving what they’re seeing_
-
-> > > _They say I must be one of the wonders_> > > _of god’s own creation_> > > _and as far as they can see they can offer_> > > _no explanation_> > > > > > —_N**ATALIE** M**ERCHANT**, “Wonder”_
-
-Fate smiled and destiny
-
-laughed as she came to my cradle ……
-
-—Natalie Merchant, “Wonder”
-
-**Ordinary**
+## Ordinary
 
 I know I’m not an ordinary ten-year-old kid. I mean, sure, I do ordinary things. I eat ice cream. I ride my bike. I play ball. I have an XBox. Stuff like that makes me ordinary. I guess. And I feel ordinary. Inside. But I know ordinary kids don’t make other ordinary kids run away screaming in playgrounds. I know ordinary kids don’t get stared at wherever they go.
 
@@ -349,7 +34,7 @@ Via doesn’t see me as ordinary. She says she does, but if I were ordinary, she
 
 My name is August, by the way. I won’t describe what I look like. Whatever you’re thinking, it’s probably worse.
 
-**Why I Didn’t Go to School**
+## Why I Didn’t Go to School
 
 Next week I start fifth grade. Since I’ve never been to a real school before, I am pretty much totally and completely petrified. People think I haven’t gone to school because of the way I look, but it’s not that. It’s because of all the surgeries I’ve had. Twenty-seven since I was born. The bigger ones happened before I was even four years old, so I don’t remember those. But I’ve had two or three surgeries every year since then \(some big, some small\), and because I’m little for my age, and I have some other medical mysteries that doctors never really figured out, I used to get sick a lot. That’s why my parents decided it was better if I didn’t go to school. I’m much stronger now, though. The last surgery I had was eight months ago, and I probably won’t have to have any more for another couple of years.
 
@@ -361,7 +46,7 @@ I have a few really good friends now. Christopher is my best friend, followed by
 
 I have other friends, too, but not as good as Christopher and Zack and Alex were. For instance, Zack and Alex always invited me to their birthday parties when we were little, but Joel and Eamonn and Gabe never did. Emma invited me once, but I haven’t seen her in a long time. And, of course, I always go to Christopher’s birthday. Maybe I’m making too big a deal about birthday parties.
 
-**How I Came to Life**
+## How I Came to Life
 
 I like when Mom tells this story because it makes me laugh so much. It’s not funny in the way a joke is funny, but when Mom tells it, Via and I just start cracking up.
 
@@ -377,7 +62,7 @@ Mom says by then they had told her all about me. She had been preparing herself 
 
 Mom is beautiful, by the way. And Dad is handsome. Via is pretty. In case you were wondering.
 
-**Christopher’s House**
+## Christopher’s House
 
 I was really bummed when Christopher moved away three years ago. We were both around seven then. We used to spend hours playing with our _Star Wars_ action figures and dueling with our lightsabers. I miss that.
 
@@ -427,7 +112,7 @@ I saw Mom look at Lisa, who reached over and squeezed her hand.
 
 “Let’s just talk about it later,” said Mom. I could tell she and Dad were going to get in a fight about it. I wanted Dad to win the fight. Though a part of me knew Mom was right. And the truth is, she really was terrible at fractions.
 
-**Driving**
+## Driving
 
 It was a long drive home. I fell asleep in the backseat like I always do, my head on Via’s lap like she was my pillow, a towel wrapped around the seat belt so I wouldn’t drool all over her. Via fell asleep, too, and Mom and Dad talked quietly about grown-up things I didn’t care about.
 
@@ -553,7 +238,7 @@ Mom laughed and shook her head at the same time.
 
 “He’s the principal of my new school,” I answered.
 
-**Paging Mr. Tushman**
+## Paging Mr. Tushman
 
 I would have been more nervous about meeting Mr. Tushman if I’d known I was also going to be meeting some kids from the new school. But I didn’t know, so if anything, I was kind of giggly. I couldn’t stop thinking about all the jokes Daddy had made about Mr. Tushman’s name. So when me and Mom arrived at Beecher Prep a few weeks before the start of school, and I saw Mr. Tushman standing there, waiting for us at the entrance, I started giggling right away. He didn’t look at all like what I pictured, though. I guess I thought he would have a huge butt, but he didn’t. In fact, he was a pretty normal guy. Tall and thin. Old but not really old. He seemed nice. He shook my mom’s hand first.
 
@@ -601,7 +286,7 @@ Mommy gave my hand a little squeeze, though I don’t know if it was an “I lov
 
 The only school I’d ever been inside before was Via’s, when I went with Mom and Dad to watch Via sing in spring concerts and stuff like that. This school was very different. It was smaller. It smelled like a hospital.
 
-**Nice Mrs. Garcia**
+## Nice Mrs. Garcia
 
 We followed Mr. Tushman down a few hallways. There weren’t a lot of people around. And the few people who were there didn’t seem to notice me at all, though that may have been because they didn’t see me. I sort of hid behind Mom as I walked. I know that sounds kind of babyish of me, but I wasn’t feeling very brave right then.
 
@@ -641,7 +326,7 @@ My mother shook her hand and said: “Isabel Pullman, nice to meet you.”
 
 “Thank you\!” said Mrs. Garcia, nodding like she was about to say something else about her grandson. But then all of a sudden her smile got a little smaller. “We’re all going to take very good care of August,” she said to Mom, and I saw her give Mom’s hand a little squeeze. I looked at Mom’s face, and that’s when I realized she was just as nervous as I was. I guess I liked Mrs. Garcia—when she wasn’t wearing her shiny smile.
 
-**Jack Will, Julian, and Charlotte**
+## Jack Will, Julian, and Charlotte
 
 We followed Mr. Tushman into a small room across from Mrs. Garcia’s desk. He was talking as he closed the door to his office and sat down behind his big desk, though I wasn’t really paying much attention to what he was saying. I was looking around at all the things on his desk. Cool stuff, like a globe that floated in the air and a Rubik’s-type cube made with little mirrors. I liked his office a lot. I liked that there were all these neat little drawings and paintings by students on the walls, framed like they were important.
 
@@ -753,7 +438,7 @@ The other kids had started out the door, so I followed them.
 
 “See you soon,” said Mom, her voice sounding a little higher than normal. I didn’t answer her.
 
-**The Grand Tour**
+## The Grand Tour
 
 Jack Will, Julian, Charlotte, and I went down a big hallway to some wide stairs. No one said a word as we walked up to the third floor.
 
@@ -827,7 +512,7 @@ Jack Will rolled his eyes a little as he turned around.
 
 “Let’s go to the performance space next,” said Charlotte, leading the way out of the science room. “It’s very cool. You’ll like it, August.”
 
-**The Performance Space**
+## The Performance Space
 
 Charlotte basically didn’t stop talking as we headed down to the second floor. She was describing the play they had put on last year, which was _Oliver\!_ She played Oliver even though she’s a girl. As she said this, she pushed open the double doors to a huge auditorium. At the other end of the room was a stage.
 
@@ -927,7 +612,7 @@ I walked toward Jack and followed him out of the auditorium. He held the double 
 
 But I could tell from the way he looked at me that he wasn’t really sorry at all.
 
-**The Deal**
+## The Deal
 
 Mom and Mr. Tushman were talking when we got back to the office. Mrs. Garcia was the first to see us come back, and she started smiling her shiny smile as we walked in.
 
@@ -987,7 +672,7 @@ We said goodbye kind of quickly after that. I think Mr. Tushman was a little sur
 
 “Bye,” I said to Jack, Charlotte, and Julian, but I didn’t look at them—or look up at all—until I left the building.
 
-**Home**
+## Home
 
 As soon as we had walked at least half a block from the school, Mom said: “So …… how’d it go? Did you like it?”
 
@@ -1049,7 +734,7 @@ Mom nodded again. She pressed her fingers on her forehead like she was pushing a
 
 “Really, Mom. I want to.” And I wasn’t lying.
 
-**First-Day Jitters**
+## First-Day Jitters
 
 Okay, so I admit that the first day of school I was so nervous that the butterflies in my stomach were more like pigeons flying around my insides. Mom and Dad were probably a little nervous, too, but they acted all excited for me, taking pictures of me and Via before we left the house since it was Via’s first day of school, too.
 
@@ -1079,7 +764,7 @@ We reached the front entrance.
 
 Then Mom hugged me, but I could tell she was about to cry, which would have totally embarrassed me, so I just gave her a fast hard hug, turned, and disappeared into the school.
 
-**Locks**
+## Locks
 
 I went straight to room 301 on the third floor. Now I was glad I’d gone on that little tour, because I knew exactly where to go and didn’t have to look up once. I noticed that some kids were definitely staring at me now. I did my thing of pretending not to notice.
 
@@ -1145,7 +830,7 @@ She turned around and started writing on the chalkboard.
 
 Henry still couldn’t get his lock to open, and he was getting more and more frustrated every time someone else popped one open. He got really annoyed when I was able to open mine on the first try. The funny thing is, if he hadn’t put the backpack between us, I most definitely would have offered to help him.
 
-**Around the Room**
+## Around the Room
 
 Ms. Petosa told us a little about who she was. It was boring stuff about where she originally came from, and how she always wanted to teach, and she left her job on Wall Street about six years ago to pursue her “dream” and teach kids. She ended by asking if anyone had any questions, and Julian raised his hand.
 
@@ -1179,7 +864,7 @@ Julian scrunched up his face and started tapping his forehead like he was thinki
 
 “That’s great, Charlotte, thank you,” said Ms. Petosa. “Okay, then, who’s next?”
 
-**Lamb to the Slaughter**
+## Lamb to the Slaughter
 
 “Like a lamb to the slaughter”: _Something that you say about someone who goes somewhere calmly, not knowing that something unpleasant is going to happen to them_.
 
@@ -1223,7 +908,7 @@ Now it was Jack’s turn to talk, but I admit I didn’t hear a word he said. Ma
 
 I peeked at Julian and he was looking at me. Yeah, he knew what he was saying.
 
-**Choose Kind**
+## Choose Kind
 
 There was a lot of shuffling around when the bell rang and everybody got up to leave. I checked my schedule and it said my next class was English, room 321. I didn’t stop to see if anyone else from my homeroom was going my way: I just zoomed out of the class and down the hall and sat down as far from the front as possible. The teacher, a really tall man with a yellow beard, was writing on the chalkboard.
 
@@ -1304,7 +989,7 @@ He paused and stroked his beard.
 
 As I wrote down Mr. Browne’s September precept, I suddenly realized that I was going to like school. No matter what.
 
-**Lunch**
+## Lunch
 
 Via had warned me about lunch in middle school, so I guess I should have known it would be hard. I just hadn’t expected it to be this hard. Basically, all the kids from all the fifth-grade classes poured into the cafeteria at the same time, talking loudly and bumping into one another while they ran to different tables. One of the lunchroom teachers said something about no seat-saving allowed, but I didn’t know what she meant and maybe no one else did, either, because just about everybody was saving seats for their friends. I tried to sit down at one table, but the kid in the next chair said, “Oh, sorry, but somebody else is sitting here.”
 
@@ -1318,7 +1003,7 @@ There was one table of girls that I knew were whispering about me because they w
 
 I hate the way I eat. I know how weird it looks. I had a surgery to fix my cleft palate when I was a baby, and then a second cleft surgery when I was four, but I still have a hole in the roof of my mouth. And even though I had jaw-alignment surgery a few years ago, I have to chew food in the front of my mouth. I didn’t even realize how this looked until I was at a birthday party once, and one of the kids told the mom of the birthday boy he didn’t want to sit next to me because I was too messy with all the food crumbs shooting out of my mouth. I know the kid wasn’t trying to be mean, but he got in big trouble later, and his mom called my mom that night to apologize. When I got home from the party, I went to the bathroom mirror and started eating a saltine cracker to see what I looked like when I was chewing. The kid was right. I eat like a tortoise, if you’ve ever seen a tortoise eating. Like some prehistoric swamp thing.
 
-**The Summer Table**
+## The Summer Table
 
 “Hey, is this seat taken?”
 
@@ -1390,7 +1075,7 @@ By the end of lunch, we had come up with a whole list of names of kids and teach
 
 Summer looked like her name. She had a tan, and her eyes were green like a leaf.
 
-**One to Ten**
+## One to Ten
 
 Mom always had this habit of asking me how something felt on a scale of one to ten. It started after I had my jaw surgery, when I couldn’t talk because my mouth was wired shut. They had taken a piece of bone from my hip bone to insert into my chin to make it look more normal, so I was hurting in a lot of different places. Mom would point to one of my bandages, and I would hold up my fingers to show her how much it was hurting. One meant a little bit. Ten meant so, so, so much. Then she would tell the doctor when he made his rounds what needed adjusting or things like that. Mom got very good at reading my mind sometimes.
 
@@ -1468,7 +1153,7 @@ I had started kicking a rock between my feet like it was a soccer ball, chasing 
 
 I didn’t wait to see Mom’s reaction. I just started running down the sidewalk after the rock, which I had kicked as hard as I could in front of me.
 
-**Padawan**
+## Padawan
 
 That night I cut off the little braid on the back of my head. Dad noticed first.
 
@@ -1572,8 +1257,8 @@ She kissed me all over my face. She kissed my eyes that came down too far. She k
 
 She said soft words that I know were meant to help me, but words can’t change my face.
 
-**Wake Me Up**
-**when September Ends**
+## Wake Me Up
+## when September Ends
 
 The rest of September was hard. I wasn’t used to getting up so early in the morning. I wasn’t used to this whole notion of homework. And I got my first “quiz” at the end of the month. I never got “quizzes” when Mom homeschooled me. I also didn’t like how I had no free time anymore. Before, I was able to play whenever I wanted to, but now it felt like I always had stuff to do for school.
 
@@ -1589,7 +1274,7 @@ It took about two weeks for the rest of the kids in my grade to get used to my f
 
 It took about a month for the rest of the kids in the entire school to get used to it. These were the kids in all the other grades. They were big kids, some of them. Some of them had crazy haircuts. Some of them had earrings in their noses. Some of them had pimples. None of them looked like me.
 
-**Jack Will**
+## Jack Will
 
 I hung out with Jack in homeroom, English, history, computer, music, and science, which were all the classes we had together. The teachers assigned seats in every class, and I ended up sitting next to Jack in every single class, so I figured either the teachers were told to put me and Jack together, or it was a totally incredible coincidence.
 
@@ -1627,7 +1312,7 @@ Jack clapped his hand over his forehead and started laughing hysterically.
 
 This time the two of us were laughing so much we couldn’t stop, even after Mr. Roche came over and made us both switch chairs with the kids next to us.
 
-**Mr. Browne’s October Precept**
+## Mr. Browne’s October Precept
 
 Mr. Browne’s precept for October was:
 
@@ -1640,7 +1325,7 @@ This is what I wrote:
 
 > _This precept means that we should be remembered for the things we do. The things we do are the most important things of all. They are more important than what we say or what we look like. The things we do outlast our mortality. The things we do are like monuments that people build to honor heroes after they’ve died. They’re like the pyramids that the Egyptians built to honor the pharaohs. Only instead of being made out of stone, they’re made out of the memories people have of you. That’s why your deeds are like your monuments. Built with memories instead of with stone_.
 
-**Apples**
+## Apples
 
 My birthday is October 10. I like my birthday: 10/10. It would’ve been great if I’d been born at exactly 10:10 in the morning or at night, but I wasn’t. I was born just after midnight. But I still think my birthday is cool.
 
@@ -1686,7 +1371,7 @@ I laughed because I thought she was making a joke, but then I realized she wasn�
 
 My birthday party turned out to be much smaller than I thought it would be, but it was still great. Jack, Summer, Reid, Tristan, and both Maxes came from school, and Christopher came, too—all the way from Bridgeport with his parents. And Uncle Ben came. And Aunt Kate and Uncle Po drove in from Boston, though Tata and Poppa were in Florida for the winter. It was fun because all the grown-ups ended up bowling in the lane next to ours, so it really felt like there were a lot of people there to celebrate my birthday.
 
-**Halloween**
+## Halloween
 
 At lunch the next day, Summer asked me what I was going to be for Halloween. Of course, I’d been thinking about it since last Halloween, so I knew right away.
 
@@ -1752,13 +1437,13 @@ I smiled and looked down at my sandwich.
 
 “Yeah?” I answered, nodding. I gave her a thumbs-up sign. “Cool beans.”
 
-**School Pictures**
+## School Pictures
 
 I don’t think anyone will be shocked to learn I don’t want to have my school picture taken on October 22. No way. No thank you. I stopped letting anyone take pictures of me a while ago. I guess you could call it a phobia. No, actually, it’s not a phobia. It’s an “aversion,” which is a word I just learned in Mr. Browne’s class. I have an aversion to having my picture taken. There, I used it in a sentence.
 
 I thought Mom would try to get me to drop my aversion to having my picture taken for school, but she didn’t. Unfortunately, while I managed to avoid having the portrait taken, I couldn’t get out of being part of the class picture. Ugh. The photographer looked like he’d just sucked on a lemon when he saw me. I’m sure he thought I ruined the picture. I was one of the ones in the front, sitting down. I didn’t smile, not that anyone could tell if I had.
 
-**The Cheese Touch**
+## The Cheese Touch
 
 I noticed not too long ago that even though people were getting used to me, no one would actually touch me. I didn’t realize this at first because it’s not like kids go around touching each other that much in middle school anyway. But last Thursday in dance class, which is, like, my least favorite class, Mrs. Atanabi, the teacher, tried to make Ximena Chin be my dance partner. Now, I’ve never actually seen someone have a “panic attack” before, but I have heard about it, and I’m pretty sure Ximena had a panic attack at that second. She got really nervous and turned pale and literally broke into a sweat within a minute, and then she came up with some lame excuse about really having to go to the bathroom. Anyway, Mrs. Atanabi let her off the hook, because she ended up not making anyone dance together.
 
@@ -1770,7 +1455,7 @@ Then yesterday in my science elective, we were doing this cool mystery-powder in
 
 I think it’s like the Cheese Touch in _Diary of a Wimpy Kid_. The kids in that story were afraid they’d catch the cooties if they touched the old moldy cheese on the basketball court. At Beecher Prep, I’m the old moldy cheese.
 
-**Costumes**
+## Costumes
 
 For me, Halloween is the best holiday in the world. It even beats Christmas. I get to dress up in a costume. I get to wear a mask. I get to go around like every other kid with a mask and nobody thinks I look weird. Nobody takes a second look. Nobody notices me. Nobody knows me.
 
@@ -1802,7 +1487,7 @@ I rushed to my room and started to put on the Boba Fett costume, but all of a su
 
 “Yeah, it’s cool,” I answered.
 
-**The Bleeding Scream**
+## The Bleeding Scream
 
 Walking through the halls that morning on my way to the lockers was, I have to say, absolutely awesome. Everything was different now. I was different. Where I usually walked with my head down, trying to avoid being seen, today I walked with my head up, looking around. I wanted to be seen. One kid wearing the same exact costume as mine, long white skull face oozing fake red blood, high-fived me as we passed each other on the stairs. I have no idea who he was, and he had no idea who I was, and I wondered for a second if he would have ever done that if he’d known it was me under the mask.
 
@@ -1836,7 +1521,7 @@ One of the mummies was saying: “It really does look like him.”
 
 I don’t know what Jack answered because I walked out of the class without anyone knowing I had been there. My face felt like it was on fire while I walked back down the stairs. I was sweating under my costume. And I started crying. I couldn’t keep it from happening. The tears were so thick in my eyes I could barely see, but I couldn’t wipe them through the mask as I walked. I was looking for a little tiny spot to disappear into. I wanted a hole I could fall inside of: a little black hole that would eat me up.
 
-**Names**
+## Names
 
 Rat boy. Freak. Monster. Freddy Krueger. E.T. Gross-out. Lizard face. Mutant. I know the names they call me. I’ve been in enough playgrounds to know kids can be mean. I know, I know, I know.
 
@@ -1882,7 +1567,7 @@ And there’s nothing I can do
 
 —David Bowie, “Space Oddity”
 
-**A Tour of the Galaxy**
+## A Tour of the Galaxy
 
 August is the Sun. Me and Mom and Dad are planets orbiting the Sun. The rest of our family and friends are asteroids and comets floating around the planets orbiting the Sun. The only celestial body that doesn’t orbit August the Sun is Daisy the dog, and that’s only because to her little doggy eyes, August’s face doesn’t look very different from any other human’s face. To Daisy, all our faces look alike, as flat and pale as the moon.
 
@@ -1894,13 +1579,13 @@ So I’ve gotten used to not complaining, and I’ve gotten used to not botherin
 
 And this is the way it’s always been for me, for the little universe of us. But this year there seems to be a shift in the cosmos. The galaxy is changing. Planets are falling out of alignment.
 
-**Before August**
+## Before August
 
 I honestly don’t remember my life before August came into it. I look at pictures of me as a baby, and I see Mom and Dad smiling so happily, holding me. I can’t believe how much younger they looked back then: Dad was this hipster dude and Mom was this cute Brazilian fashionista. There’s one shot of me at my third birthday: Dad’s right behind me while Mom’s holding the cake with three lit candles, and in back of us are Tata and Poppa, Grans, Uncle Ben, Aunt Kate, and Uncle Po. Everyone’s looking at me and I’m looking at the cake. You can see in that picture how I really was the first child, first grandchild, first niece. I don’t remember what it felt like, of course, but I can see it plain as can be in the pictures.
 
 I don’t remember the day they brought August home from the hospital. I don’t remember what I said or did or felt when I saw him for the first time, though everyone has a story about it. Apparently, I just looked at him for a long time without saying anything at all, and then finally I said: “It doesn’t look like Lilly\!” That was the name of a doll Grans had given me when Mom was pregnant so I could “practice” being a big sister. It was one of those dolls that are incredibly lifelike, and I had carried it everywhere for months, changing its diaper, feeding it. I’m told I even made a baby sling for it. The story goes that after my initial reaction to August, it only took a few minutes \(according to Grans\) or a few days \(according to Mom\) before I was all over him: kissing him, cuddling him, baby talking to him. After that I never so much as touched or mentioned Lilly ever again.
 
-**Seeing August**
+## Seeing August
 
 I never used to see August the way other people saw him. I knew he didn’t look exactly normal, but I really didn’t understand why strangers seemed so shocked when they saw him. Horrified. Sickened. Scared. There are so many words I can use to describe the looks on people’s faces. And for a long time I didn’t get it. I’d just get mad. Mad when they stared. Mad when they looked away. “What the heck are you looking at?” I’d say to people—even grown-ups.
 
@@ -1930,8 +1615,8 @@ She smiled and stroked my hair, like she was thinking about what to say.
 
 I understood her. And I knew why she said it was a secret. Grandmothers aren’t supposed to have favorites. Everyone knows that. But after she died, I held on to that secret and let it cover me like a blanket.
 
-**August**
-**Through the Peephole**
+## August
+## Through the Peephole
 
 His eyes are about an inch below where they should be on his face, almost to halfway down his cheeks. They slant downward at an extreme angle, almost like diagonal slits that someone cut into his face, and the left one is noticeably lower than the right one. They bulge outward because his eye cavities are too shallow to accommodate them. The top eyelids are always halfway closed, like he’s on the verge of sleeping. The lower eyelids sag so much they almost look like a piece of invisible string is pulling them downward: you can see the red part on the inside, like they’re almost inside out. He doesn’t have eyebrows or eyelashes. His nose is disproportionately big for his face, and kind of fleshy. His head is pinched in on the sides where the ears should be, like someone used giant pliers and crushed the middle part of his face. He doesn’t have cheekbones. There are deep creases running down both sides of his nose to his mouth, which gives him a waxy appearance. Sometimes people assume he’s been burned in a fire: his features look like they’ve been melted, like the drippings on the side of a candle. Several surgeries to correct his palate have left a few scars around his mouth, the most noticeable one being a jagged gash running from the middle of his upper lip to his nose. His upper teeth are small and splay out. He has a severe overbite and an extremely undersized jawbone. He has a very small chin. When he was very little, before a piece of his hip bone was surgically implanted into his lower jaw, he really had no chin at all. His tongue would just hang out of his mouth with nothing underneath to block it. Thankfully, it’s better now. He can eat, at least: when he was younger, he had a feeding tube. And he can talk. And he’s learned to keep his tongue inside his mouth, though that took him several years to master. He’s also learned to control the drool that used to run down his neck. These are considered miracles. When he was a baby, the doctors didn’t think he’d live.
 
@@ -1943,7 +1628,7 @@ Does August see how other people see him, or has he gotten so good at pretending
 
 I wish I could ask him this stuff. I wish he would tell me how he feels. He used to be easier to read before the surgeries. You knew that when his eyes squinted, he was happy. When his mouth went straight, he was being mischievous. When his cheeks trembled, he was about to cry. He looks better now, no doubt about that, but the signs we used to gauge his moods are all gone. There are new ones, of course. Mom and Dad can read every single one. But I’m having trouble keeping up. And there’s a part of me that doesn’t want to keep trying: why can’t he just say what he’s feeling like everyone else? He doesn’t have a trache tube in his mouth anymore that keeps him from talking. His jaw’s not wired shut. He’s ten years old. He can use his words. But we circle around him like he’s still the baby he used to be. We change plans, go to plan B, interrupt conversations, go back on promises depending on his moods, his whims, his needs. That was fine when he was little. But he needs to grow up now. We need to let him, help him, make him grow up. Here’s what I think: we’ve all spent so much time trying to make August think he’s normal that he actually thinks he is normal. And the problem is, he’s not.
 
-**High School**
+## High School
 
 What I always loved most about middle school was that it was separate and different from home. I could go there and be Olivia Pullman—not Via, which is my name at home. Via was what they called me in elementary school, too. Back then, everyone knew all about us, of course. Mom used to pick me up after school, and August was always in the stroller. There weren’t a lot of people who were equipped to babysit for Auggie, so Mom and Dad brought him to all my class plays and concerts and recitals, all the school functions, the bake sales and the book fairs. My friends knew him. My friends’ parents knew him. My teachers knew him. The janitor knew him. \(“Hey, how ya doin’, Auggie?” he’d always say, and give August a high five.\) August was something of a fixture at PS 22.
 
@@ -1959,7 +1644,7 @@ Throughout middle school, Miranda, Ella, and I were pretty much our own little g
 
 This is why I haven’t understood what’s been going on with us lately, now that we’re actually in high school. It’s nothing like how I thought it would be.
 
-**Major Tom**
+## Major Tom
 
 Out of the three of us, Miranda had almost always been the sweetest to August, hugging him and playing with him long after Ella and I had moved on to playing something else. Even as we got older, Miranda always made sure to try to include August in our conversations, ask him how he was doing, talk to him about _Avatar_ or _Star Wars_ or _Bone_ or something she knew he liked. It was Miranda who had given Auggie the astronaut helmet he wore practically every day of the year when he was five or six. She would call him Major Tom and they would sing “Space Oddity” by David Bowie together. It was their little thing. They knew all the words and would blast it on the iPod and sing the song out loud.
 
@@ -1971,7 +1656,7 @@ So I ended up not seeing either Miranda or Ella until the first day of school. A
 
 At lunch the three of us sat together like we always used to, but the dynamics had shifted. It was obvious to me that Ella and Miranda had gotten together a few times during the summer without me, though they never actually said that. I pretended not to be at all upset while we talked, though I could feel my face getting hot, my smile being fake. Although Ella wasn’t as over-the-top as Miranda, I noticed a change in her usual style, too. It’s like they had talked to each other beforehand about redoing their image at the new school, but hadn’t bothered to clue me in. I admit: I had always thought I was above this kind of typical teenage pettiness, but I felt a lump in my throat throughout lunch. My voice quivered as I said “See you later” when the bell rang.
 
-**After School**
+## After School
 
 “I hear we’re driving you home today.”
 
@@ -2033,7 +1718,7 @@ Mom hesitated, her eyebrows still high up on her forehead from when I’d snappe
 
 He put the PlayStation down and looked up at me as if I had just asked the dumbest question in the world. “Why would people be mean?” he said. It was the first time in his life that I heard him be sarcastic like that. I didn’t think he had it in him.
 
-**The Padawan Bites the Dust**
+## The Padawan Bites the Dust
 
 I’m not sure at what point that night Auggie had cut off his Padawan braid, or why that made me really mad. I had always found his obsession with everything _Star Wars_ kind of geeky, and that braid in the back of his hair, with its little beads, was just awful. But he had always been so proud of it, of how long it took him to grow it, of how he had chosen the beads himself in a crafts store in Soho. He and Christopher, his best friend, used to play with lightsabers and _Star Wars_ stuff whenever they got together, and they had both started growing their braids at the same time. When August cut his braid off that night, without an explanation, without telling me beforehand \(which was surprising\)—or even calling Christopher—I was just so upset I can’t even explain why.
 
@@ -2069,7 +1754,7 @@ Two seconds later he came back with Daisy dangling in his arms, and he laid her 
 
 “Good night, sweetheart,” he said, kissing my forehead. He kissed Daisy on her forehead, too. “Good night, girlie. Sweet dreams.”
 
-**An Apparition at the Door**
+## An Apparition at the Door
 
 Once, I got up in the middle of the night because I was thirsty, and I saw Mom standing outside Auggie’s room. Her hand was on the doorknob, her forehead leaning on the door, which was ajar. She wasn’t going in his room or stepping out: just standing right outside the door, as if she was listening to the sound of his breathing as he slept. The hallway lights were out. The only thing illuminating her was the blue night-light in August’s bedroom. She looked ghostlike standing there. Or maybe I should say angelic. I tried to walk back into my room without disturbing her, but she heard me and walked over to me.
 
@@ -2079,7 +1764,7 @@ Once, I got up in the middle of the night because I was thirsty, and I saw Mom s
 
 I wonder how many nights she’s stood outside his door. And I wonder if she’s ever stood outside my door like that.
 
-**Breakfast**
+## Breakfast
 
 “Can you pick me up from school today?” I said the next morning, smearing some cream cheese on my bagel.
 
@@ -2153,7 +1838,7 @@ Dad and I jogged down the stoop stairs and headed down the block.
 
 “_War and Peace_, Isabel\!” he called out, smiling as he pointed at me. _“War and Peace\!”_
 
-**Genetics 101**
+## Genetics 101
 
 Both sides of Dad’s family were Jews from Russia and Poland. Poppa’s grandparents fled the pogroms and ended up in NYC at the turn of the century. Tata’s parents fled the Nazis and ended up in Argentina in the forties. Poppa and Tata met at a dance on the Lower East Side while she was in town visiting a cousin. They got married, moved to Bayside, and had Dad and Uncle Ben.
 
@@ -2165,7 +1850,7 @@ Not one person in the exotic mix of my family gene pool has ever shown any obvio
 
 And I carry it, too.
 
-**The Punnett Square**
+## The Punnett Square
 
 If I have children, there’s a one-in-two chance that I will pass on the defective gene to them. That doesn’t mean they’ll look like August, but they’ll carry the gene that got double-dosed in August and helped make him the way he is. If I marry someone who has the same defective gene, there’s a one-in-two chance that our kids will carry the gene and look totally normal, a one-in-four chance that our kids will not carry the gene at all, and a one-in-four chance that our kids will look like August.
 
@@ -2175,7 +1860,7 @@ This only explains the part of August that’s explainable. There’s that other
 
 Countless doctors have drawn little tic-tac-toe grids for my parents over the years to try to explain the genetic lottery to them. Geneticists use these Punnett squares to determine inheritance, recessive and dominant genes, probabilities and chance. But for all they know, there’s more they don’t know. They can try to forecast the odds, but they can’t guarantee them. They use terms like “germline mosaicism,” “chromosome rearrangement,” or “delayed mutation” to explain why their science is not an exact science. I actually like how doctors talk. I like the sound of science. I like how words you don’t understand explain things you can’t understand. There are countless people under words like “germline mosaicism,” “chromosome rearrangement,” or “delayed mutation.” Countless babies who’ll never be born, like mine.
 
-**Out with the Old**
+## Out with the Old
 
 Miranda and Ella blasted off. They attached themselves to a new crowd destined for high school glory. After a week of painful lunches where all they would do was talk about people that didn’t interest me, I decided to make a clean break for it. They asked no questions. I told no lies. We just went our separate ways.
 
@@ -2189,7 +1874,7 @@ I gained entry through Eleanor to the smart-kids’ table at lunch. It was a lar
 
 When I’d see Miranda and Ella, who were now hanging out with the super-popular set, we’d say “Hey, what’s up,” and move on. Occasionally Miranda would ask me how August was doing, and then say “Tell him I say hello.” This I never did, not to spite Miranda, but because August was in his own world these days. There were times, at home, that we never crossed paths.
 
-**October 31**
+## October 31
 
 Grans had died the night before Halloween. Since then, even though it’s been four years, this has always been a sad time of year for me. For Mom, too, though she doesn’t always say it. Instead, she immerses herself in getting August’s costume ready, since we all know Halloween is his favorite time of year.
 
@@ -2203,7 +1888,7 @@ Mom picked August up, and the moment he came home, he went straight to the bathr
 
 Neither one of us asked him why he had worn his Bleeding Scream costume to school instead of the Boba Fett costume Mom had made for him. If it annoyed Mom to see the costume she had worked on for two weeks tossed on the floor, unused, she didn’t show it.
 
-**Trick or Treat**
+## Trick or Treat
 
 August said he wasn’t feeling well enough to go trick-or-treating later in the afternoon, which was sad for him because I know how much he loved to trick-or-treat—especially after it got dark outside. Even though I was well beyond the trick-or-treating stage myself, I usually threw on some mask or other to accompany him up and down the blocks, watching him knocking on people’s doors, giddy with excitement. I knew it was the one night a year when he could truly be like every other kid. No one knew he was different under the mask. To August, that must have felt absolutely amazing.
 
@@ -2273,7 +1958,7 @@ I let him have a few more minutes of his fury. Daisy started licking the tears o
 
 He didn’t argue. He got out of bed and slowly started pulling on his Boba Fett costume. I helped him adjust the straps and tighten the belt, and by the time he put his helmet on, I could tell he was feeling better.
 
-**Time to Think**
+## Time to Think
 
 August played up the stomach ache the next day so he wouldn’t have to go to school. I admit I felt a little bad for Mom, who was genuinely concerned that he had a stomach bug, but I had promised August I wouldn’t tell her about the incident at school.
 
@@ -2379,7 +2064,7 @@ Yes, words can’t bring you down
 
 —Christina Aguilera, “Beautiful”
 
-**Weird Kids**
+## Weird Kids
 
 Some kids have actually come out and asked me why I hang out with “the freak” so much. These are kids that don’t even know him well. If they knew him, they wouldn’t call him that.
 
@@ -2401,7 +2086,7 @@ So I just went over and sat with him. Not a biggie. I wish people would stop try
 
 He’s just a kid. The weirdest-looking kid I’ve ever seen, yes. But just a kid.
 
-**The Plague**
+## The Plague
 
 I do admit August’s face takes some getting used to. I’ve been sitting with him for two weeks now, and let’s just say he’s not the neatest eater in the world. But other than that, he’s pretty nice. I should also say that I don’t really feel sorry for him anymore. That might have been what made me sit down with him the first time, but it’s not why I keep sitting down with him. I keep sitting down with him because he is fun.
 
@@ -2411,7 +2096,7 @@ It was actually because I was playing Four Square with August that I found out a
 
 How I found out about this is that Maya Markowitz told me that the reason she won’t play Four Square with us at recess is that she doesn’t want to catch the Plague. I was like, “What’s the Plague?” And she told me. I told Maya I thought that was really dumb and she agreed, but she still wouldn’t touch a ball that August just touched, not if she could help it.
 
-**The Halloween Party**
+## The Halloween Party
 
 I was really excited because I got an invitation to Savanna’s Halloween party.
 
@@ -2473,7 +2158,7 @@ It was only nine-thirty. The Halloween Parade was in full swing down Amesfort Av
 
 But not one unicorn.
 
-**November**
+## November
 
 The next day at school I told Savanna I had eaten some really bad Halloween candy and gotten sick, which is why I went home early from her party, and she believed me. There was actually a stomach bug going around, so it was a good lie.
 
@@ -2567,7 +2252,7 @@ I would have stayed mad at him longer, but then he told me about something bad t
 
 “Promise,” he said, and we pinky swore.
 
-**Warning: This Kid Is Rated R**
+## Warning: This Kid Is Rated R
 
 I had warned Mom about August’s face. I had described what he looked like. I did this because I know she’s not always so good at faking her feelings, and August was coming over for the first time today. I even sent her a text at work to remind her about it. But I could tell from the expression on her face when she came home after work that I hadn’t prepared her enough. She was shocked when she came through the door and saw his face for the first time.
 
@@ -2673,7 +2358,7 @@ I smiled and shook my head.
 
 “Yes, I am,” he said proudly. “I am cool beans.”
 
-**The Egyptian Tomb**
+## The Egyptian Tomb
 
 Over the next month, August and I hung out a lot after school, either at his house or my house. August’s parents even invited Mom and me over for dinner a couple of times. I overheard them talking about fixing Mom up on a blind date with August’s uncle Ben.
 
@@ -2723,7 +2408,7 @@ What is essential is invisible to the eye.
 
 —Antoine de Saint-Exupéry, _The Little Prince_
 
-**The Call**
+## The Call
 
 So in August my parents got this call from Mr. Tushman, the middle-school director. And my Mom said: “Maybe he calls all the new students to welcome them,” and my dad said: “That’s a lot of kids he’d be calling.” So my mom called him back, and I could hear her talking to Mr. Tushman on the phone. This is exactly what she said:
 
@@ -2777,7 +2462,7 @@ Mom looked a bit surprised.
 
 “Yeah, I do,” I said, because I knew the second she started talking about him that it was that kid named August.
 
-**Carvel**
+## Carvel
 
 I remember seeing him for the first time in front of the Carvel on Amesfort Avenue when I was about five or six. Me and Veronica, my babysitter, were sitting on the bench outside the store with Jamie, my baby brother, who was sitting in his stroller facing us. I guess I was busy eating my ice cream cone, because I didn’t even notice the people who sat down next to us.
 
@@ -2829,7 +2514,7 @@ That was the first time I ever saw August in the neighborhood, at least that I r
 
 And whenever I’ve seen him, I try to remember what Veronica said. But it’s hard. It’s hard not to sneak a second look. It’s hard to act normal when you see him.
 
-**Why I Changed My Mind**
+## Why I Changed My Mind
 
 “Who else did Mr. Tushman call?” I asked Mom later that night. “Did he tell you?”
 
@@ -2907,7 +2592,7 @@ Mom smiled. “I knew you’d rise to the occasion, kiddo. Good for you. I’m p
 
 So here’s why I changed my mind. It wasn’t so I wouldn’t have to hear Mom give me a whole lecture. And it wasn’t to protect this August kid from Julian, who I knew would be a jerk about the whole thing. It was because when I heard Jamie talking about how he had run away from August going ‘Ahhh,’ I suddenly felt really bad. The thing is, there are always going to be kids like Julian who are jerks. But if a little kid like Jamie, who’s usually a nice enough kid, can be that mean, then a kid like August doesn’t stand a chance in middle school.
 
-**Four Things**
+## Four Things
 
 First of all, you do get used to his face. The first couple of times I was like, whoa, I’m never going to get used to this. And then, after about a week, I was like, huh, it’s not so bad.
 
@@ -2927,7 +2612,7 @@ That was cool.
 
 Fourthly, now that I know him, I would say I actually do want to be friends with August. At first, I admit it, I was only friendly to him because Mr. Tushman asked me to be especially nice and all that. But now I would choose to hang out with him. He laughs at all my jokes. And I kind of feel like I can tell August anything. Like he’s a good friend. Like, if all the guys in the fifth grade were lined up against a wall and I got to choose anyone I wanted to hang out with, I would choose August.
 
-**Ex-Friends**
+## Ex-Friends
 
 Bleeding Scream? What the heck? Summer Dawson has always been a bit out there, but this was too much. All I did was ask her why August was acting like he was mad at me or something. I figured she would know. And all she said was “Bleeding Scream”? I don’t even know what that means.
 
@@ -2945,7 +2630,7 @@ Why this is bad is because, well, \(a\) I don’t actually enjoy hanging out wit
 
 So this is kind of messed up. And it’s all August’s fault.
 
-**Snow**
+## Snow
 
 The first snow of winter hit right before Thanksgiving break. School was closed, so we got an extra day of vacation. I was glad about that because I was so bummed about this whole August thing and I just wanted some time to chill without having to see him every day. Also, waking up to a snow day is just about my favorite thing in the world. I love that feeling when you first open your eyes in the morning and you don’t even know why everything seems different than usual. Then it hits you: Everything is quiet. No cars honking. No buses going down the street. Then you run over to the window, and outside everything is covered in white: the sidewalks, the trees, the cars on the street, your windowpanes. And when that happens on a school day and you find out your school is closed, well, I don’t care how old I get: I’m always going to think that that’s the best feeling in the world. And I’m never going to be one of those grown-ups that use an umbrella when it’s snowing—ever.
 
@@ -2961,7 +2646,7 @@ I nodded “hey” to August the first time I saw him. We were in front of the l
 
 I wanted to tell him about _Lightning_, but I didn’t.
 
-**Fortune Favors the Bold**
+## Fortune Favors the Bold
 
 Mr. Browne’s December precept was: Fortune favors the bold. We were all supposed to write a paragraph about some time in our lives when we did something very brave and how, because of it, something good happened to us.
 
@@ -2969,7 +2654,7 @@ I thought about this a lot, to be truthful. I have to say that I think the brave
 
 I wonder what August wrote about. He probably had a lot of things to choose from.
 
-**Private School**
+## Private School
 
 My parents are not rich. I say this because people sometimes think that everyone who goes to private school is rich, but that isn’t true with us. Dad’s a teacher and Mom’s a social worker, which means they don’t have those kinds of jobs where people make gazillions of dollars. We used to have a car, but we sold it when Jamie started kindergarten at Beecher Prep. We don’t live in a big townhouse or in one of those doorman buildings along the park. We live on the top floor of a five-story walk-up we rent from an old lady named Doña Petra all the way on the “other” side of Broadway. That’s “code” for the section of North River Heights where people don’t want to park their cars. Me and Jamie share a room. I overhear my parents talk about things like “Can we do without an air conditioner one more year?” or “Maybe I can work two jobs this summer.”
 
@@ -3021,7 +2706,7 @@ I had started to walk away.
 
 I just wanted to get away from them fast. I didn’t want anyone to know that I was the “hobo” who had taken the sled.
 
-**In Science**
+## In Science
 
 I’m not the greatest student in the world. I know some kids actually like school, but I honestly can’t say I do. I like some parts of school, like PE and computer class. And lunch and recess. But all in all, I’d be fine without school. And the thing I hate the most about school is all the homework we get. It’s not enough that we have to sit through class after class and try to stay awake while they fill our heads with all this stuff we will probably never need to know, like how to figure out the surface area of a cube or what the difference is between kinetic and potential energy. I’m like, who cares? I’ve never, ever heard my parents say the word “kinetic” in my entire life\!
 
@@ -3043,7 +2728,7 @@ I’d been talking to Julian about August. Oh man. Now I understood\! I was so m
 
 I felt like I was going to puke.
 
-**Partners**
+## Partners
 
 I didn’t hear a word of what Ms. Rubin was saying after that. Blah blah blah. Science-fair project. Blah blah blah. Partners. Blah blah. It was like the way grown-ups talk in Charlie Brown movies. Like someone talking underwater. _Mwah-mwah-mwahhh, mwah mwahh_.
 
@@ -3089,7 +2774,7 @@ Julian ran after me.
 
 And that’s when I punched him. Right in the mouth.
 
-**Detention**
+## Detention
 
 Some things you just can’t explain. You don’t even try. You don’t know where to start. All your sentences would jumble up like a giant knot if you opened your mouth. Any words you used would come out wrong.
 
@@ -3157,7 +2842,7 @@ I stopped and turned around, but I couldn’t look at him. “Thank you, Mr. Tus
 
 Then I walked out the door.
 
-**Season’s Greetings**
+## Season’s Greetings
 
 Weirdly enough, when we got back home and Mom brought in the mail, there were holiday cards from both Julian’s family and August’s family. Julian’s holiday card was a picture of Julian wearing a tie, looking like he was about to go to the opera or something. August’s holiday card was of a cute old dog wearing reindeer antlers, a red nose, and red booties. There was a cartoon bubble above the dog’s head that read: “Ho-Ho-Ho\!” On the inside of the card it read:
 
@@ -3187,7 +2872,7 @@ She took the card from my hands and looked at the picture carefully. Then she ra
 
 And then I told her why I punched Julian. And I told her that August was my ex-friend now. And I told her about Halloween.
 
-**Letters, Emails, Facebook, Texts**
+## Letters, Emails, Facebook, Texts
 
 > December 18> Dear Mr. Tushman,> I am very, very sorry for punching Julian. It was very, very wrong for me to do that. I am writing a letter to him to tell him that, too. If it’s okay, I would really rather not tell you why I did what I did because it doesn’t really make it right anyway. Also, I would rather not make Julian get in trouble for having said something he should not have said.> > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > Very sincerely,
 > Jack Will> December 18> Dear Julian,> I am very, very, very sorry for hitting you. It was wrong of me. I hope you are okay. I hope your grown-up tooth grows in fast. Mine always do.> > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > Sincerely,
@@ -3203,7 +2888,7 @@ And then I told her why I punched Julian. And I told her that August was my ex-f
 > The Facebook Team> To: auggiedoggiepullman@email.com> Subject: Sorry \! \! \! \! \! \!> Message:> Hey august. Its me Jack Will. I noticed im not on ur friends list anymore. Hope u friend me agen cuz im really sorry. I jus wanted 2 say that. Sorry. I know why ur mad at me now Im sorry I didn’t mean the stuff I said. I was so stupid. I hope u can 4give me> > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > Hope we can b friends agen.
 > Jack> 1 New Text Message> From: AUGUST> Dec 31 4:47PM> got ur message u know why im mad at u now?? did Summer tell u?> 1 New Text Message> From: JACKWILL> Dec 31 4:49PM> She told me bleeding scream as hint but didn’t get it at first then I remember seeing bleeding scream in homeroom on Hallween. didn’t know it was you thought u were coming as Boba Fett.> 1 New Text Message> From: AUGUST> Dec 31 4:51PM> I changed my mind at the last minute. Did u really punch Julian?> 1 New Text Message> From: JACKWILL> Dec 31 4:54PM> Yeah i punchd him knocked out a tooth in the back. A baby tooth.> 1 New Text Message> From: AUGUST> Dec 31 4:55PM> whyd u punch him????????> 1 New Text Message> From: JACKWILL> Dec 31 4:56PM> I dunno> 1 New Text Message> From: AUGUST> Dec 31 4:58PM> liar. I bet he said something about me right?> 1 New Text Message> From: JACKWILL> Dec 31 5:02PM> he’s a jerk. but I was a jerk too. really really really sorry for wat I said dude, Ok? can we b frenz agen?> 1 New Text Message> From: AUGUST> Dec 31 5:03PM> ok> 1 New Text Message> From: JACKWILL> Dec 31 5:04PM> awsum\!\!\!\!> 1 New Text Message> From: AUGUST> Dec 31 5:06PM> but tell me the truth, ok?> wud u really wan to kill urself if u wer me???> 1 New Text Message> From: JACKWILL> Dec 31 5:08PM> no\!\!\!\!\!> I swear on my life> but dude-> I would want 2 kill myself if I were Julian ;\)> 1 New Text Message> From: AUGUST> Dec 31 5:10PM> lol> yes dude we’r frenz agen.
 
-**Back from Winter Break**
+## Back from Winter Break
 
 Despite what Tushman said, there was no “clean slate” when I went back to school in January. In fact, things were totally weird from the second I got to my locker in the morning. I’m next to Amos, who’s always been a pretty straight-up kid, and I was like, “Yo, what up?” and he basically just nodded a half hello and closed his locker door and left. I was like, okay, that was bizarre. And then I said: “Hey, what up?” to Henry, who didn’t even bother half-smiling but just looked away.
 
@@ -3217,7 +2902,7 @@ I hoped lunch would be better, but it wasn’t. I sat down at my usual table wit
 
 It felt really awful being at the table by myself. I felt like everyone was watching me. It also made me feel like I had no friends. I decided to skip lunch and go read in the library.
 
-**The War**
+## The War
 
 It was Charlotte who had the inside scoop on why everyone was dissing me. I found a note inside my locker at the end of the day.
 
@@ -3302,7 +2987,7 @@ She nodded.
 
 “I’ll let you know if I hear anything else,” she said. Before she went out, she looked left and right outside the door to make sure no one saw her leaving. I guess even though she was neutral, she didn’t want to be seen with me.
 
-**Switching Tables**
+## Switching Tables
 
 The next day at lunch, stupid me, I sat down at a table with Tristan, Nino, and Pablo. I thought maybe they were safe because they weren’t really considered popular, but they weren’t out there playing D&D at recess, either. They were sort of in-betweeners. And, at first, I thought I scored because they were basically too nice to not acknowledge my presence when I walked over to the table. They all said “Hey,” though I could tell they looked at each other. But then the same thing happened that happened yesterday: our lunch table was called, they got their food, and then headed toward a new table on the other side of the cafeteria.
 
@@ -3316,8 +3001,8 @@ Oh great, like that was going to help. Before they could be forced to sit back d
 
 It was Summer. She and August were sitting at their table, and they were both waving me over.
 
-**Why I Didn’t Sit with August**
-**the First Day of School**
+## Why I Didn’t Sit with August
+## the First Day of School
 
 Okay, I’m a total hypocrite. I know. That very first day of school I remember seeing August in the cafeteria. Everybody was looking at him. Talking about him. Back then, no one was used to his face or even knew that he was coming to Beecher, so it was a total shocker for a lot of people to see him there on the first day of school. Most kids were even afraid to get near him.
 
@@ -3333,11 +3018,10 @@ Auggie started smiling.
 
 “Ya think?” he said sarcastically. “Welcome to my world\!”
 
-**Sides**
+## Sides
 
 “So here are the official sides,” said Summer at lunch the next day. She pulled out a folded piece of loose-leaf paper and opened it. It had three columns of names.
 
-**_Jack’s side_** **_Julian’s side_** **_Neutrals_** _Jack_ _Miles_ _Malik_ _August_ _Henry_ _Remo_ _Reid_ _Amos_ _Jose_ _Max G_ _Simon_ _Leif_ _Max W_ _Tristan_ _Ram_   _Pablo_ _Ivan_   _Nino_ _Russell_   _Isaiah_     _Luca_     _Jake_     _Toland_     _Roman_     _Ben_     _Emmanuel_     _Zeke_     _Tomaso_  
 “Where did you get this?” said Auggie, looking over my shoulder as I read the list.
 
 “Charlotte made it,” Summer answered quickly. “She gave it to me last period. She said she thought you should know who was on your side, Jack.”
@@ -3390,7 +3074,7 @@ She shook her head and smiled. “Why? What do you know?”
 
 He said this in such a funny way that the milk I was drinking came out my nose when I laughed, which made us all totally crack up.
 
-**August’s House**
+## August’s House
 
 It was already the middle of January, and we still hadn’t even chosen what science-fair project we were going to work on. I guess I kept putting it off because I just didn’t want to do it. Finally, August was like, “Dude, we have to do this.” So we went to his house after school.
 
@@ -3498,7 +3182,7 @@ Via kicked the bottom of his chair. “Just be nice,” she said, and left the r
 
 “Both.”
 
-**The Boyfriend**
+## The Boyfriend
 
 Two minutes later the sister came back with this guy named Justin. Seemed like a cool enough dude. Longish hair. Little round glasses. He was carrying a big long shiny silver case that ended in a sharp point on one end.
 
@@ -3552,7 +3236,7 @@ because it is so full of dreams.
 
 _The Elephant Man_
 
-**Olivia’s Brother**
+## Olivia’s Brother
 
 the first time i meet Olivia’s little brother, i have to admit i’m totally taken by surprise.
 
@@ -3606,7 +3290,7 @@ i’m not freaked out or scared. i smile.
 
 she nods and looks down at the polar bear on her lap. i can’t tell whether she believes me or not, but then she gives the polar bear a kiss on the nose and tosses it to me with a little smile. i think that means she believes me. or at least that she wants to.
 
-**Valentine’s Day**
+## Valentine’s Day
 
 i give olivia a heart necklace for valentine’s day, and she gives me a messenger bag she’s made out of old floppy disks. very cool how she makes things like that. earrings out of pieces of circuit boards. dresses out of t-shirts. bags out of old jeans. she’s so creative. i tell her she should be an artist someday, but she wants to be a scientist. a geneticist, of all things. she wants to find cures for people like her brother, i guess.
 
@@ -3650,7 +3334,7 @@ i can’t remember the last time anyone in my family said that to me.
 
 by the time i go home, my tics have all stopped.
 
-**OUR TOWN**
+## OUR TOWN
 
 we’re doing the play _our town_ for the spring show this year. olivia dares me to try out for the lead role, the stage manager, and somehow i get it. total fluke. never got any lead roles in anything before. i tell olivia she brings me good luck. unfortunately, she doesn’t get the female lead, emily gibbs. the pink-haired girl named miranda gets it. olivia gets a bit part and is also the emily understudy. i’m actually more disappointed than olivia is. she almost seems relieved. i don’t love people staring at me, she says, which is sort of strange coming from such a pretty girl. a part of me thinks maybe she blew her audition on purpose.
 
@@ -3658,7 +3342,7 @@ the spring show is at the end of april. it’s mid-march now, so that’s less t
 
 not looking forward to the craziness of the next month and a half.
 
-**Ladybug**
+## Ladybug
 
 olivia and i are sitting on her front stoop. she’s helping me with my lines. it’s a warm march evening, almost like summer. the sky is still bright cyan but the sun is low and the sidewalks are streaked with long shadows.
 
@@ -3690,7 +3374,7 @@ no, she answers shyly, looking up at the sky, which, at this very moment, is the
 
 i made a wish, too, she says mysteriously, but she has so many things she could wish for I have no idea what she’s thinking.
 
-**The Bus Stop**
+## The Bus Stop
 
 olivia’s mom, auggie, jack, and daisy come down the stoop just as i’m saying goodbye to olivia. slightly awkward since we are in the middle of a nice long kiss.
 
@@ -3786,7 +3470,7 @@ they nod in unison, ice cream dripping onto their hands.
 
 good. i nod mysteriously, then sprint down the subway two steps at a time.
 
-**Rehearsal**
+## Rehearsal
 
 the play is taking up most of my time as we get closer to opening night. lots of lines to remember. long monologues where it’s just me talking. olivia had this great idea, though, and it’s helping. i have my fiddle with me onstage and play it a bit while i’m talking. It’s not written that way, but mr. davenport thinks it adds an extra-folksy element to have the stage manager plucking on a fiddle. and for me it’s so great because whenever i need a second to remember my next line, i just start playing a little “soldier’s joy” on my fiddle and it buys me some time.
 
@@ -3824,7 +3508,7 @@ i look at her blankly. okay with what?
 
 she raises her eyebrows like she doesn’t believe me. you know what i’m talking about, she says, and takes a long drink from her water bottle. let’s face it, she continues, the universe was not kind to auggie pullman.
 
-**Bird**
+## Bird
 
 why didn’t you tell me that you and miranda navas used to be friends? i say to olivia the next day. i’m really annoyed at her for not telling me this.
 
@@ -3884,7 +3568,7 @@ olivia reminds me of a bird sometimes, how her feathers get all ruffled when she
 
 so i give her my wing to hide under.
 
-**The Universe**
+## The Universe
 
 i can’t sleep tonight. my head is full of thoughts that won’t turn off. lines from my monologues. elements of the periodic table that i’m supposed to be memorizing. theorems i’m supposed to be understanding. olivia. auggie.
 
@@ -3906,7 +3590,7 @@ how like a god\! the beauty of the world\…… …
 
 —Shakespeare, _Hamlet_
 
-**North Pole**
+## North Pole
 
 The Spud Lamp was a big hit at the science fair. Jack and I got an A for it. It was the first A Jack got in any class all year long, so he was psyched.
 
@@ -3926,7 +3610,7 @@ I told Mom and Dad about it later when we were walking home, and they thought it
 
 I guess it’s true that like seeks like, said Mom.
 
-**The Auggie Doll**
+## The Auggie Doll
 
 For a while, the “war” was all we talked about. February was when it was really at its worst. That’s when practically nobody was talking to us, and Julian had started leaving notes in our lockers. The notes to Jack were stupid, like: _You stink, big cheese\!_ and _Nobody likes you anymore\!_
 
@@ -3936,7 +3620,7 @@ Summer thought we should report the notes to Ms. Rubin, who was the middle-schoo
 
 One was: _You’re so pretty, Julian\! I love you. Will you marry me? Love, Beulah_
 
-Another was: _Love your hair\! **XOX** Beulah_
+Another was: _Love your hair\! ## XOX Beulah_
 
 Another was: _You’re a babe. Tickle my feet. XO Beulah_
 
@@ -3960,7 +3644,7 @@ Six months ago stuff like that would never have happened, but now it happens mor
 
 Also, people have been really nice about the hearing aids I started wearing.
 
-**Lobot**
+## Lobot
 
 Ever since I was little, the doctors told my parents that someday I’d need hearing aids. I don’t know why this always freaked me out a bit: maybe because anything to do with my ears bothers me a lot.
 
@@ -4014,7 +3698,7 @@ I looked in the mirror. My eyes started tearing up. All I saw were these tubes j
 
 And then he turned them on.
 
-**Hearing Brightly**
+## Hearing Brightly
 
 How can I describe what I heard when the doctor turned on my hearing aids? Or what I didn’t hear? It’s too hard to think of words. The ocean just wasn’t living inside my head anymore. It was gone. I could hear sounds like shiny lights in my brain. It was like when you’re in a room where one of the lightbulbs on the ceiling isn’t working, but you don’t realize how dark it is until someone changes the lightbulb and then you’re like, whoa, it’s so bright in here\! I don’t know if there’s a word that means the same as “bright” in terms of hearing, but I wish I knew one, because my ears were hearing brightly now.
 
@@ -4048,7 +3732,7 @@ The first day I showed up at school with the hearing aids, I thought kids would 
 
 Now that I look back, I don’t know why I was so stressed about it all this time. Funny how sometimes you worry a lot about something and it turns out to be nothing.
 
-**Via’s Secret**
+## Via’s Secret
 
 A couple of days after spring break ended, Mom found out that Via hadn’t told her about a school play that was happening at her high school the next week. And Mom was mad. Mom doesn’t really get mad that much \(though Dad would disagree with that\), but she was really mad at Via for that. She and Via got into a huge fight. I could hear them yelling at each other in Via’s room. My bionic Lobot ears could hear Mom saying: “But what is with you lately, Via? You’re moody and taciturn and secretiv…….…”
 
@@ -4064,7 +3748,7 @@ A couple of days after spring break ended, Mom found out that Via hadn’t told 
 
 Then I don’t know what Mom answered because it all got very quiet, and even my bionic Lobot ears couldn’t pick up a signal.
 
-**My Cave**
+## My Cave
 
 By dinner they seemed to have made up. Dad was working late. Daisy was sleeping. She’d thrown up a lot earlier in the day, and Mom made an appointment to take her to the vet the next morning.
 
@@ -4128,7 +3812,7 @@ I made a little hole through the pile of pillows and stuffed animals and peeked 
 
 Finally, the door opened. It was Via. She didn’t even bother coming over to my bed, and she didn’t come in softly like I thought she would. She came in quickly.
 
-**Goodbye**
+## Goodbye
 
 “Auggie,” said Via. “Come quick. Mom needs to talk to you.”
 
@@ -4200,7 +3884,7 @@ Mom carried Daisy down the stoop. The taxi driver had opened the back door and w
 
 Mom blew a kiss to us and closed the door. We watched the car leave and then Via closed the door. She looked at me a second, and then she hugged me very, very tight while we both cried a million tears.
 
-**Daisy’s Toys**
+## Daisy’s Toys
 
 Justin came over about half an hour later. He gave me a big hug and said: “Sorry, Auggie.” We all sat down in the living room, not saying anything. For some reason, Via and I had taken all of Daisy’s toys from around the house and had put them in a little pile on the coffee table. Now we just stared at the pile.
 
@@ -4256,7 +3940,7 @@ I’ve never seen Dad cry before, but I saw him cry tonight. I had gone into Mom
 
 So I went to my bed and put on my pajamas without anyone telling me to and put the night-light on and turned the light off and crawled into the little mountain of stuffed animals I had left on my bed earlier. It felt like that all had happened a million years ago. I took my hearing aids off and put them on the night table and pulled the covers up to my ears and imagined Daisy snuggling with me, her big wet tongue licking my face all over like it was her favorite face in the world. And that’s how I fell asleep.
 
-**Heaven**
+## Heaven
 
 I woke up later on and it was still dark. I got out of bed and walked into Mom and Dad’s bedroom.
 
@@ -4314,7 +3998,7 @@ She kissed me again.
 
 But I couldn’t go to sleep, even after I knew she had fallen asleep. I could hear Daddy sleeping, too, and I imagined I could hear Via sleeping down the hallway in her room. And I wondered if Daisy was sleeping in heaven right then. And if she was sleeping, was she dreaming about me? And I wondered how it would feel to be in heaven someday and not have my face matter anymore. Just like it never, ever mattered to Daisy.
 
-**Understudy**
+## Understudy
 
 Via brought home three tickets to her school play a few days after Daisy died. We never mentioned the fight we had over dinner again. On the night of the play, right before she and Justin were leaving to get to their school early, she gave me a big hug and told me she loved me and she was proud to be my sister.
 
@@ -4396,7 +4080,7 @@ A little later in the play, a character named Mrs. Webb calls out for her daught
 
 “I know,” whispered Dad, smiling. “Shhh\!”
 
-**The Ending**
+## The Ending
 
 The play was so amazing. I don’t want to give away the ending, but it’s the kind of ending that makes people in the audience teary. Mom totally lost it when Via-as-Emily said:
 
@@ -4488,7 +4172,7 @@ To find out what life could bring
 
 —Andain, “Beautiful Things”
 
-**Camp Lies**
+## Camp Lies
 
 My parents got divorced the summer before ninth grade. My father was with someone else right away. In fact, though my mother never said so, I think this was the reason they got divorced.
 
@@ -4504,7 +4188,7 @@ And the strangest thing is that these lies I told, these fictions, did wonders f
 
 When I got home from camp, I called Ella right away to make plans with her. I don’t know why I didn’t call Via. I guess I just didn’t feel like talking about stuff with her. She would have asked me about my parents, about camp. Ella never really asked me about things. She was an easier friend to have in that way. She wasn’t serious like Via. She was fun. She thought it was cool when I dyed my hair pink. She wanted to hear all about those trips through the woods late at night.
 
-**School**
+## School
 
 I hardly saw Via at school this year, and when I did it was awkward. It felt like she was judging me. I knew she didn’t like my new look. I knew she didn’t like my group of friends. I didn’t much like hers. We never actually argued: we just drifted away. Ella and I badmouthed her to each other: She’s such a prude, she’s so this, she’s so that. We knew we were being mean, but it was easier to ice her out if we pretended she had done something to us. The truth is she hadn’t changed at all: we had. We’d become these other people, and she was still the person she’d always been. That annoyed me so much and I didn’t know why.
 
@@ -4520,7 +4204,7 @@ I wasn’t planning on taking theater at first. Then I saw Via’s name on the s
 
 I think I went for the role of Emily Gibbs because I knew Via was going to go for it, too. It never occurred to me that I’d beat her for the role.
 
-**What I Miss Most**
+## What I Miss Most
 
 One of the things I miss the most about Via’s friendship is her family. I loved her mom and dad. They were always so welcoming and nice to me. I knew they loved their kids more than anything. I always felt safe around them: safer than anywhere else in the world. How pathetic that I felt safer in someone else’s house than in my own, right? And, of course, I loved Auggie. I was never afraid of him: even when I was little. I had friends that couldn’t believe I’d ever go over to Via’s house. “His face creeps me out,” they’d say. “You’re stupid,” I’d tell them. Auggie’s face isn’t so bad once you get used to it.
 
@@ -4544,7 +4228,7 @@ I called Via’s house once just to say hello to Auggie. Maybe part of me was ho
 
 “Bye\!”
 
-**Extraordinary, but No One There to See**
+## Extraordinary, but No One There to See
 
 Neither my mother nor my father could come see the play on opening night: my mother because she had this thing at work, and my dad because his new wife was going to have her baby any second now, and he had to be on call.
 
@@ -4616,7 +4300,7 @@ She looked at me in the mirror. “Why are you doing this, Miranda?”
 
 Via followed him out the door, so I never got the chance to answer her question. I don’t know what I would have said, anyway. I wasn’t sure what the answer was.
 
-**The Performance**
+## The Performance
 
 I watched the rest of the play from the wings just offstage, next to Davenport. Justin was amazing, and Via, in that heartbreaking last scene, was awesome. There was one line she flubbed a bit, but Justin covered for her, and no one in the audience even noticed. I heard Davenport muttering under his breath: “Good, good, good.” He was more nervous than all of the students put together: the actors, the set decorators, the lighting team, the guy handling the curtains. Davenport was a wreck, frankly.
 
@@ -4624,7 +4308,7 @@ The only time I felt any regret, if you could even call it that, was at the end 
 
 “Hey\!” I said. “Major Tom\!”
 
-**After the Show**
+## After the Show
 
 I can’t say why I was so happy to see August again after so long, or how good it felt when he hugged me.
 
@@ -4670,7 +4354,7 @@ Fly …… Beautiful child
 
 —Eurythmics, “Beautiful Child”
 
-**The Fifth-Grade Nature Retreat**
+## The Fifth-Grade Nature Retreat
 
 Every year in the spring, the fifth graders of Beecher Prep go away for three days and two nights to a place called the Broarwood Nature Reserve in Pennsylvania. It’s a four-hour bus drive away. The kids sleep in cabins with bunk beds. There are campfires and s’mores and long walks through the woods. The teachers have been prepping us about this all year long, so all the kids in the grade are excited about it—except for me. And it’s not even that I’m not excited, because I kind of am—it’s just I’ve never slept away from home before and I’m kind of nervous.
 
@@ -4678,7 +4362,7 @@ Most kids have had sleepovers by the time they’re my age. A lot of kids have g
 
 On the other hand, I’m really excited.
 
-**Known For**
+## Known For
 
 I asked Mom to buy me a new rolling duffel bag because my old one had _Star Wars_ stuff on it, and there was no way I was going to take that to the fifth-grade nature retreat. As much as I love _Star Wars_, I don’t want that to be what I’m known for. Everyone’s known for something in middle school. Like Reid is known for really being into marine life and the oceans and things like that. And Amos is known for being a really good baseball player. And Charlotte is known for having been in a TV commercial when she was six. And Ximena’s known for being really smart.
 
@@ -4688,7 +4372,7 @@ So I was actually trying to ease out of the whole _Star Wars_ thing a bit. I mea
 
 That’s not exactly true: I do know what I’m _really_ known for. But there’s nothing I can do about that. A _Star Wars_ duffel bag I could do something about.
 
-**Packing**
+## Packing
 
 Mom helped me pack the night before the big trip. We put all the clothes I was taking on my bed, and she folded everything neatly and put it inside the bag while I watched. It was a plain blue rolling duffel, by the way: no logos or artwork.
 
@@ -4782,7 +4466,7 @@ When she left my room, I took my copy of _The Lion, the Witch and the Wardrobe_ 
 
 > _ …… though the Witch knew the Deep Magic, there is a magic deeper still which she did not know. Her knowledge goes back only to the dawn of time. But if she could have looked a little further back, into the stillness and the darkness before Time dawned, she would have read there a different incantation_.
 
-**Daybreak**
+## Daybreak
 
 The next day I woke up really early. It was still dark inside my room and even darker outside, though I knew it would be morning soon. I turned over on my side but didn’t feel at all sleepy. That’s when I saw Daisy sitting near my bed. I mean, I knew it wasn’t Daisy, but for a second I saw a shadow that looked just like her. I didn’t think it was a dream then, but now, looking back, I know it must have been. It didn’t make me sad to see her at all: it just filled me up with nice feelings inside. She was gone after a second, and I couldn’t see her again in the darkness.
 
@@ -4794,7 +4478,7 @@ I took Baboo back to my room, and I laid him in my bed and taped the little note
 
 _Dear Mom, I won’t need Baboo, but if you miss me, you can cuddle with him yourself. XO Auggie_
 
-**Day One**
+## Day One
 
 The bus ride went really fast. I sat by the window and Jack was next to me in the aisle seat. Summer and Maya were in front of us. Everyone was in a good mood. Kind of loud, laughing a lot. I noticed right away that Julian wasn’t on our bus, even though Henry and Miles were. I figured he must be on the other bus, but then I overheard Miles tell Amos that Julian ditched the grade trip because he thought the whole nature-retreat thing was, quote unquote, dorky. I got totally pumped because dealing with Julian for three days in a row—and two nights—was a major reason that I was nervous about this whole trip. So now without him there, I could really just relax and not worry about anything.
 
@@ -4810,7 +4494,7 @@ I loved hanging out by the campfire after dark. I loved the way bits of fire dus
 
 I was so tired when I got back to the cabin that I didn’t need to pull out the book to read. I fell asleep almost as fast as my head hit the pillow. And maybe I dreamed about the stars, I don’t know.
 
-**The Fairgrounds**
+## The Fairgrounds
 
 The next day was just as great as the first day. We went horseback riding in the morning, and in the afternoon we rappelled up some ginormous trees with the help of the nature guides. By the time we got back to the cabins for dinner, we were all really tired again. After dinner they told us we had an hour to rest, and then we were going to take a fifteen-minute bus ride to the fairgrounds for an outdoor movie night.
 
@@ -4826,7 +4510,7 @@ By the time the other school buses pulled into the parking lots, we were back in
 
 Just then, without any announcement, all the lights at the ends of the field went on at once. They were like big bright stadium lights. I thought of that scene in _Close Encounters_ when the alien ship lands and they’re playing that music: _duh-dah-doo-da-dunnn_. Everyone in the field started applauding and cheering like something great had just happened.
 
-**Be Kind to Nature**
+## Be Kind to Nature
 
 An announcement came over the huge speakers next to the stadium lights:
 
@@ -4838,7 +4522,7 @@ The movie started playing right away. The stadium lights dimmed. Maria the nun w
 
 _The hills are alive ……_
 
-**The Woods Are Alive**
+## The Woods Are Alive
 
 Somewhere around the boring part where the guy named Rolf and the oldest daughter are singing _You are sixteen, going on seventeen_, Jack nudged me.
 
@@ -4876,7 +4560,7 @@ The woods were loud with strange sounds and chirps and croaks, like a wall of no
 
 “Let’s go.”
 
-**Alien**
+## Alien
 
 We headed back the way we came, in the direction of the giant screen. That’s when we walked straight into a group of kids we didn’t know. They’d just come out of the woods, doing stuff I’m sure they didn’t want their teachers to know about. I could smell the smoke now, the smell of both firecrackers and cigarettes. They pointed a flashlight at us. There were six of them: four boys and two girls. They looked like they were in the seventh grade.
 
@@ -4948,7 +4632,7 @@ I knew that was a lie, but I helped Jack get up, and we started walking over to 
 
 Everything got really crazy after that. Someone pulled me up by my sleeve and yelled, “Run\!” and someone else screamed, “Get ’em\!” at the same time, and for a few seconds I actually had two people pulling the sleeves of my sweatshirt in opposite directions. I heard them both cursing, until my sweatshirt ripped and the first guy yanked me by my arm and started pulling me behind him as we ran, which I did as fast as I could. I could hear footsteps just behind us, chasing us, and voices shouting and girls screaming, but it was so dark I didn’t know whose voices they were, only that everything felt like we were underwater. We were running like crazy, and it was pitch black, and whenever I started to slow down, the guy pulling me by my arm would yell, “Don’t stop\!”
 
-**Voices in the Dark**
+## Voices in the Dark
 
 Finally, after what seemed like a forever of running, someone yelled: “I think we lost them\!”
 
@@ -5060,7 +4744,7 @@ The guys were really nice to me, though. They patted me on the back.
 
 “You’re one brave little dude, you know that?” said Amos, putting his arm around my shoulders. And when I kept on crying, he put both his arms around me like my dad would have done and let me cry.
 
-**The Emperor’s Guard**
+## The Emperor’s Guard
 
 We backtracked through the grass for a good ten minutes to see if we could find my hearing aids, but it was way too dark to see anything. We literally had to hold on to each other’s shirts and walk in single file so we wouldn’t trip over one another. It was like black ink had been poured all around.
 
@@ -5090,7 +4774,7 @@ As we got closer to the screen, I could hear _High on a hill was a lonely goathe
 
 I did notice as I walked that Amos had stayed right next to me. And Jack was close on the other side of me. And Miles was in front of us and Henry was in back of us. They were surrounding me as we walked through the crowds of kids. Like I had my own emperor’s guard.
 
-**Sleep**
+## Sleep
 
 > _Then they came out of the narrow valley and at once she saw the reason. There stood Peter and Edmund and all the rest of Aslan’s army fighting desperately against the crowd of horrible creatures whom she had seen last night; only now, in the daylight, they looked even stranger and more evil and more deformed_.
 > I stopped there. I’d been reading for over an hour and sleep still didn’t come. It was almost two a.m. Everyone else was asleep. I had my flashlight on under the sleeping bag, and maybe the light was why I couldn’t sleep, but I was too afraid to turn it off. I was afraid of how dark it was outside the sleeping bag.
@@ -5113,7 +4797,7 @@ It’s their faces I kept seeing every time I closed my eyes to sleep. The look 
 
 Like a lamb to the slaughter. I remember Dad saying that ages ago, but tonight I think I finally got what it meant.
 
-**Aftermath**
+## Aftermath
 
 Mom was waiting for me in front of the school along with all the other parents when the bus arrived. Mr. Tushman told me on the bus ride home that they had called my parents to tell them there had been a “situation” the night before but that everyone was fine. He said the camp director and several of the counselors went looking for the hearing aid in the morning while we all went swimming in the lake, but they couldn’t find it anywhere. Broarwood would reimburse us the cost of the hearing aids, he said. They felt bad about what happened.
 
@@ -5127,7 +4811,7 @@ The bus driver started unloading our duffel bags, and I went to find mine while 
 
 As we started to walk away, Mr. Tushman gave me a quick, tight hug but didn’t say anything.
 
-**Home**
+## Home
 
 Mom and I didn’t talk much the whole walk home, and when we got to the front stoop, I automatically looked in the front bay window, because I forgot for a second that Daisy wasn’t going to be there like always, perched on the sofa with her front paws on the windowsill, waiting for us to come home. It made me kind of sad when we walked inside. As soon as we did, Mom dropped my duffel bag and wrapped her arms around me and kissed me on my head and on my face like she was breathing me in.
 
@@ -5253,7 +4937,7 @@ It wasn’t until she stopped that I noticed the big white cardboard box they ha
 
 I opened the box. Inside was the cutest little puppy I’ve ever seen in my life. It was black and furry, with a pointy little snout and bright black eyes and small ears that flopped down.
 
-**Bear**
+## Bear
 
 We called the puppy Bear because when Mom first saw him, she said he looked just like a little bear cub. I said: “That’s what we should call him\!” and everyone agreed that that was the perfect name.
 
@@ -5263,13 +4947,13 @@ It was fun hanging out with Via all day, just the two of us. It was like old tim
 
 So it was nice hanging out with her, laughing and playing. I think she liked it, too.
 
-**The Shift**
+## The Shift
 
 When I went back to school the next day, the first thing I noticed was that there was a big shift in the way things were. A monumental shift. A seismic shift. Maybe even a cosmic shift. Whatever you want to call it, it was a big shift. Everyone—not just in our grade but every grade—had heard about what had happened to us with the seventh graders, so suddenly I wasn’t known for what I’d always been known for, but for this other thing that had happened. And the story of what happened had gotten bigger and bigger each time it was told. Two days later, the way the story went was that Amos had gotten into a major fistfight with the kid, and Miles and Henry and Jack had thrown some punches at the other guys, too. And the escape across the field became this whole long adventure through a cornfield maze and into the deep dark woods. Jack’s version of the story was probably the best because he’s so funny, but in whatever version of the story, and no matter who was telling it, two things always stayed the same: I got picked on because of my face and Jack defended me, and those guys—Amos, Henry, and Miles—protected me. And now that they’d protected me, I was different to them. It was like I was one of them. They all called me “little dude” now—even the jocks. These big dudes I barely even knew before would knuckle-punch me in the hallways now.
 
 Another thing to come out of it was that Amos became super popular and Julian, because he missed the whole thing, was really out of the loop. Miles and Henry were hanging out with Amos all the time now, like they switched best friends. I’d like to be able to say that Julian started treating me better, too, but that wouldn’t be true. He still gave me dirty looks across the room. He still never talked to me or Jack. But he was the only one who was like that now. And me and Jack, we couldn’t care less.
 
-**Ducks**
+## Ducks
 
 The day before the last day of school, Mr. Tushman called me into his office to tell me they had found out the names of the seventh graders from the nature retreat. He read off a bunch of names that didn’t mean anything to me, and then he said the last name: “Edward Johnson.”
 
@@ -5393,7 +5077,7 @@ Mr. Tushman turned around like he didn’t know what I was talking about. “Oh,
 
 “See you tomorrow, Mr. Tushman.”
 
-**The Last Precept**
+## The Last Precept
 
 This was written on Mr. Browne’s chalkboard when we walked into English class for the last time:
 
@@ -5401,7 +5085,7 @@ This was written on Mr. Browne’s chalkboard when we walked into English class 
 > > > > > > 563 Sebastian Place
 > > > > > > Bronx, NY 10053
 
-**The Drop-Off**
+## The Drop-Off
 
 The graduation ceremony was held in the Beecher Prep Upper School auditorium. It was only about a fifteen-minute walk from our house to the other campus building, but Dad drove me because I was all dressed up and had on new shiny black shoes that weren’t broken in yet and I didn’t want my feet to hurt. Students were supposed to arrive at the auditorium an hour before the ceremony started, but we got there even earlier, so we sat in the car and waited. Dad turned on the CD player, and our favorite song come on. We both smiled and started bobbing our heads to the music.
 
@@ -5533,7 +5217,7 @@ We waved as he turned on the ignition and started to pull away, but then I ran o
 
 He smiled. “Bye, my son, my son.”
 
-**Take Your Seats, Everyone**
+## Take Your Seats, Everyone
 
 Jack and I walked right behind a couple of sixth graders into the building, and then followed them to the auditorium.
 
@@ -5563,33 +5247,33 @@ It was Summer walking over to us. She was wearing a light pink dress and, I thin
 
 I looked at my program.
 
-**_Headmaster’s Opening Remarks:_**
-**_Dr. Harold Jansen_**
+## _Headmaster’s Opening Remarks:_
+## _Dr. Harold Jansen_
 
-**_Middle-School Director’s Address:_**
-**_Mr. Lawrence Tushman_**
+## _Middle-School Director’s Address:_
+## _Mr. Lawrence Tushman_
 
-**_“Light and Day”:_**
-**_Middle-School Choir_**
+## _“Light and Day”:_
+## _Middle-School Choir_
 
-**_Fifth-Grade Student Commencement Address:_**
-**_Ximena Chin_**
+## _Fifth-Grade Student Commencement Address:_
+## _Ximena Chin_
 
-**_Pachelbel: “Canon in D”:_**
-**_Middle-School Chamber Music Ensemble_**
+## _Pachelbel: “Canon in D”:_
+## _Middle-School Chamber Music Ensemble_
 
-**_Sixth-Grade Student Commencement Address:_**
-**_Mark Antoniak_**
+## _Sixth-Grade Student Commencement Address:_
+## _Mark Antoniak_
 
-**_“Under Pressure”:_**
-**_Middle-School Choir_**
+## _“Under Pressure”:_
+## _Middle-School Choir_
 
-**_Middle-School Dean’s Address:_**
-**_Ms. Jennifer Rubin_**
+## _Middle-School Dean’s Address:_
+## _Ms. Jennifer Rubin_
 
-**_Awards Presentation \(see back\)_**
+## _Awards Presentation \(see back\)_
 
-**_Roll Call of Names_**
+## _Roll Call of Names_
 
 “Why do you think that?” I asked.
 
@@ -5631,7 +5315,7 @@ Jack looked at her blankly.
 
 “I am?” And the face he made as he got up to leave, which was a mixture of looking completely confused and looking like he’s just played a joke on someone, totally cracked me up.
 
-**A Simple Thing**
+## A Simple Thing
 
 About an hour later we were all seated in the giant auditorium waiting for Mr. Tushman to give his “middle-school address.” The auditorium was even bigger than I imagined it would be—bigger even than the one at Via’s school. I looked around, and there must have been a million people in the audience. Okay, maybe not a million, but definitely a lot.
 
@@ -5683,7 +5367,7 @@ He paused and shrugged.
 
 “Or whatever politically correct spiritual representation of universal goodness you happen to believe in,” he added quickly, smiling, which got a lot of laughs and loads of applause, especially from the back of the auditorium, where the parents were sitting.
 
-**Awards**
+## Awards
 
 I liked Mr. Tushman’s speech, but I have to admit: I kind of zoned out a little during some of the other speeches.
 
@@ -5719,7 +5403,7 @@ And again, out of the blue, he got all choked up. He put his two index fingers o
 
 “So will August Pullman please come up here to receive this award?”
 
-**Floating**
+## Floating
 
 People started applauding before Mr. Tushman’s words actually registered in my brain. I heard Maya, who was next to me, give a little happy scream when she heard my name, and Miles, who was on the other side of me, patted my back. “Stand up, get up\!” said kids all around me, and I felt lots of hands pushing me upward out of my seat, guiding me to the edge of the row, patting my back, high-fiving me. “Way to go, Auggie\!” “Nice going, Auggie\!” I even started hearing my name being chanted: “Aug-gie\! Aug-gie\! Aug-gie\!” I looked back and saw Jack leading the chant, fist in the air, smiling and signaling for me to keep going, and Amos shouting through his hands: “Woo-hoo, little dude\!”
 
@@ -5741,7 +5425,7 @@ To me, though, I’m just me. An ordinary kid.
 
 But hey, if they want to give me a medal for being me, that’s okay. I’ll take it. I didn’t destroy a Death Star or anything like that, but I did just get through the fifth grade. And that’s not easy, even if you’re not me.
 
-**Pictures**
+## Pictures
 
 Afterward there was a reception for the fifth and sixth graders under a huge white tent in the back of the school. All the kids found their parents, and I didn’t mind at all when Mom and Dad hugged me like crazy, or when Via wrapped her arms around me and swung me left and right about twenty times. Then Poppa and Tata hugged me, and Aunt Kate and Uncle Po, and Uncle Ben—everyone kind of teary-eyed and wet-cheeked. But Miranda was the funniest: she was crying more than anyone and squeezed me so tight that Via had to practically pry her off of me, which made them both laugh.
 
@@ -5749,7 +5433,7 @@ Everyone started taking pictures of me and pulling out their Flips, and then Dad
 
 And the next thing I knew, the two Maxes had come over, and Henry and Miles, and Savanna. Then Amos came over, and Ximena. And we were all in this big tight huddle as parents clicked away like we were on a red carpet somewhere. Luca. Isaiah. Nino. Pablo. Tristan. Ellie. I lost track of who else came over. Everybody, practically. All I knew for sure is that we were all laughing and squeezing in tight against each other, and no one seemed to care if it was my face that was next to theirs or not. In fact, and I don’t mean to brag here, but it kind of felt like everyone wanted to get close to me.
 
-**The Walk Home**
+## The Walk Home
 
 We walked to our house for cake and ice cream after the reception. Jack and his parents and his little brother, Jamie. Summer and her mother. Uncle Po and Aunt Kate. Uncle Ben, Tata and Poppa. Justin and Via and Miranda. Mom and Dad.
 
@@ -5775,9 +5459,9 @@ She hugged me close and leaned down and kissed the top of my head.
 
 She bent down and whispered in my ear. “You really are a wonder, Auggie. You are a wonder.”
 
-**APPENDIX**
+## APPENDIX
 
-**MR. BROWNE’S PRECEPTS**
+## MR. BROWNE’S PRECEPTS
 
 SEPTEMBER
 
@@ -5837,7 +5521,7 @@ JUNE
 
 Just follow the day and reach for the sun\! —The Polyphonic Spree, “Light and Day”
 
-**POSTCARD PRECEPTS**
+## POSTCARD PRECEPTS
 
 CHARLOTTE CODY’S PRECEPT
 
@@ -5887,7 +5571,7 @@ AUGUST PULLMAN’S PRECEPT
 
 Everyone in the world should get a standing ovation at least once in their life because we all overcometh the world. —Auggie
 
-**ACKNOWLEDGMENTS**
+## ACKNOWLEDGMENTS
 
 I am grateful beyond measure to my amazing agent, Alyssa Eisner Henkin, for loving this manuscript even in its earliest drafts and being such a strong champion for Jill Aramor, R. J. Palacio, or whatever name I decided to call myself. Thanks to Joan Slattery, whose joyful enthusiasm brought me to Knopf. And most especially, thank you to Erin Clarke, editor extraordinaire, who made this book as good as it could be and for taking such good care of Auggie & Company: I knew we were all in good hands.
 
@@ -5901,7 +5585,7 @@ Lastly, but not least, I would like to thank the little girl in front of the ice
 
 —R.J.
 
-**PERMISSIONS**
+## PERMISSIONS
 
 Grateful acknowledgment is made to the following for permission to reprint previously published material:
 

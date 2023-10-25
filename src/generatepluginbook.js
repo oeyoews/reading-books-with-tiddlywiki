@@ -41,10 +41,8 @@ module.exports = (bookinfo) => {
 
   function processHeading(heading) {
     const headingContent = $(heading);
-    const realtitle = headingContent.text(); // 获取标题文本
-    // const title = realtitle.replace(/[\/\s]/g, "-");
-    // const title = realtitle.replace(/[^a-zA-Z0-9-]/g, "-");
-    const title = realtitle.replace(/[^\u4e00-\u9fa5a-zA-Z0-9-]/g, "-");
+    const realtitle = headingContent.text();
+    const title = realtitle.replace(/[^\u4e00-\u9fa5a-zA-Z0-9-]+/g, "-");
 
     if (!title) {
       console.log("标题为空");
