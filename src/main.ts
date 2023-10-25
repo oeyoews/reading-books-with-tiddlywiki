@@ -1,13 +1,11 @@
-// @ts-nocheck
+import { getFolderSize } from "./getFolderSize";
 import { generateBookInfo } from "./generatepluginbook";
 import prompts from "prompts";
 import { booklist } from "./books";
 import { isCI } from "ci-info";
 import chalk from "chalk";
-import { getFolderSize } from "./getFolderSize";
 
-// TODO: add ora spinner
-const onPromptState = (state) => {
+const onPromptState = (state: any) => {
   if (state.aborted) {
     // If we don't re-enable the terminal cursor before exiting
     // the program, the cursor will remain hidden
@@ -38,9 +36,11 @@ async function main() {
       selectedBookNames.includes(book.bookname)
     );
   }
+
+  // @ts-ignore
   selectedBooksInfo.forEach((bookinfo) => generateBookInfo(bookinfo));
   // console.log(selectedBooksInfo.length, "本书籍制作完成");
-  const { kb, mb } = getFolderSize("plugins");
+  const { mb } = getFolderSize("plugins");
   console.log(
     chalk.cyan.bold.underline(
       `\n${selectedBooksInfo.length} 本书籍制作完成, 总计大小: ${mb} Mb`

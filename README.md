@@ -26,7 +26,7 @@
 - [x] 重新排列 tag list, 也许是使用 list: xxx(增加了插件大小)
 - [x] 更完善的标题检测, 目前不能包含符号
 - [x] plugin version automatic update by github tag
-- [x] chalk v5 ts 不支持 https://github.com/microsoft/TypeScript/issues/46930 https://github.com/chalk/chalk/releases/tag/v5.0.0
+- [x] chalk(and ora ect pure esm package) v5 ts 不支持 https://github.com/microsoft/TypeScript/issues/46930 https://github.com/chalk/chalk/releases/tag/v5.0.0
 - [x] 统计插件大小, 动态生成
 - [ ] add books plugin library, 也许使用 modern.dev 也可以
 - [ ] html to md ???

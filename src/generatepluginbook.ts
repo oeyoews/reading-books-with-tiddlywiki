@@ -1,6 +1,5 @@
-// @ts-nocheck
 import fs from "fs";
-import cheerio from "cheerio";
+import cheerio, { Element } from "cheerio";
 import path from "path";
 import MarkdownIt from "markdown-it";
 import { rimraf } from "rimraf";
@@ -13,7 +12,14 @@ const md = new MarkdownIt({
   typographer: true,
 });
 
-export const generateBookInfo = (bookinfo) => {
+export const generateBookInfo = (bookinfo: {
+  bookname: string;
+  author?: string;
+  description?: string;
+  disable?: undefined;
+  cover?: undefined;
+  version?: undefined;
+}) => {
   // TODO: 默认将图片打包到插件
   // NOTE: github 禁止跨域， 需要移除https, 动态检测
   const pluginPrefix = "$:/plugins/books";
@@ -51,9 +57,9 @@ export const generateBookInfo = (bookinfo) => {
     decodeEntities: false,
   });
 
-  const toc = [];
+  const toc: any[] = [];
 
-  function processHeading(heading) {
+  function processHeading(heading: Element) {
     const headingContent = $(heading);
     const realtitle = headingContent.text();
     const title = realtitle.replace(/[^\u4e00-\u9fa5a-zA-Z0-9-]+/g, "-");
@@ -69,6 +75,7 @@ export const generateBookInfo = (bookinfo) => {
     let headingAllContent = headingContent.nextUntil("h1, h2, h3, h4");
 
     if (!headingAllContent.length) {
+      // @ts-ignore
       headingAllContent = `!! 章节： ${realtitle}`;
     }
 
@@ -87,6 +94,7 @@ export const generateBookInfo = (bookinfo) => {
     try {
       fs.writeFileSync(path.join(bookOutputDir, `${currentLink}.tid`), content);
     } catch (error) {
+      // @ts-ignore
       console.error(`Failed to save file: ${error.message}`);
       return;
     }
@@ -95,8 +103,8 @@ export const generateBookInfo = (bookinfo) => {
   // 遍历所有标题
   const headings = $("h1, h2, h3, h4");
 
-  headings.each((index, heading) => {
-    processHeading(heading, index);
+  headings.each((_, heading) => {
+    processHeading(heading);
   });
 
   toc.forEach((currentChapter, i) => {
@@ -178,6 +186,7 @@ export const generateBookInfo = (bookinfo) => {
     size: kb,
     title: `${pluginPrefix}/${bookname}`,
     author: "oeyoews",
+    "book#author": author,
     description: bookname,
     cover,
     caption: bookname,

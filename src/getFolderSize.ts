@@ -1,8 +1,7 @@
-// @ts-nocheck
 import fs from "fs";
 import path from "path";
 
-export function getFolderSize(folderPath) {
+export function getFolderSize(folderPath: string) {
   let totalSize = 0;
 
   const stats = fs.statSync(folderPath);

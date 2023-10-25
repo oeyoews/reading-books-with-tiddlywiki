@@ -18,6 +18,8 @@
   "license": "MIT",
   "dependencies": {
     "@lint-md/cli": "^2.0.0",
+    "@types/markdown-it": "^13.0.5",
+    "@types/prompts": "^2.4.7",
     "chalk": "^4.1.2",
     "cheerio": "1.0.0-rc.12",
     "ci-info": "^3.9.0",
