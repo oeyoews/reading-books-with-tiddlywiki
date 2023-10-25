@@ -2,9 +2,7 @@ import { getFolderSize } from "@/getFolderSize";
 import { generateBookInfo } from "@/generatepluginbook";
 import prompts from "prompts";
 import { booklist } from "@/books";
-import { isCI } from "ci-info";
 import chalk from "chalk";
-
 
 const onPromptState = (state: any) => {
   if (state.aborted) {
@@ -24,7 +22,8 @@ async function main() {
     value: bookname,
   }));
 
-  if (!isCI) {
+  if (process.argv.includes("-i")) {
+    console.log(chalk.green.bold("开始交互式构建书籍"));
     const { selectedBookNames } = await prompts({
       onState: onPromptState,
       type: "multiselect",
@@ -36,8 +35,10 @@ async function main() {
     selectedBooksInfo = booklist.filter((book) =>
       selectedBookNames.includes(book.bookname)
     );
+    console.log(chalk.cyan.bold(`开始构建书籍 ${selectedBookNames}\n`));
+  } else {
+    console.log(chalk.cyan.bold("开始构建全部书籍\n"));
   }
-
   // @ts-ignore
   selectedBooksInfo.forEach((bookinfo) => generateBookInfo(bookinfo));
   // console.log(selectedBooksInfo.length, "本书籍制作完成");

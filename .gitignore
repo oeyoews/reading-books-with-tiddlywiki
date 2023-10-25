@@ -5,5 +5,6 @@ node_modules/
 Draft**
 plugins/
 \$__palette.tid
+\$__Import.tid
 epub/
 test/

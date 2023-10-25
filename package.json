@@ -6,6 +6,7 @@
   "scripts": {
     "start": "tiddlywiki --listen",
     "build:books": "ts-node ./src/main.ts",
+    "build:ibooks": "ts-node ./src/main.ts -i",
     "format:md": "lint-md markdown/** --fix",
     "format": "prettier  --write markdown/**",
     "build": "ts-node ./src/main.ts && tiddlywiki --build"
@@ -23,7 +24,6 @@
     "@types/prompts": "^2.4.7",
     "chalk": "^4.1.2",
     "cheerio": "1.0.0-rc.12",
-    "ci-info": "^3.9.0",
     "markdown-it": "^13.0.2",
     "ora": "^7.0.1",
     "prettier": "^3.0.3",
