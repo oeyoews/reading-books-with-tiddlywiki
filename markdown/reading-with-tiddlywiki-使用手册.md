@@ -11,6 +11,10 @@
 * 阅读你喜欢的书籍
 * ...
 
+> 所有的内容最终都以单文件json的格式(太微插件的形式）存储， 便于分发(tiddlywiki)
+
+## 如何自己制作书籍
+
 ## 克隆或 fork 仓库
 
 * 下载仓库代码
@@ -22,13 +26,15 @@ pnpm install
 ## 下载书籍 epub 文件
 
 * https://zh.annas-archive.org/
+* ...
 
 ## 使用 calibre 转换成 markdown
 
-* calibre 的 markdown output 插件
+* calibre 的 markdown output 插件(具体步骤待更新)
+
 <!-- * ~~convert epub to single markdown: https://www.vertopal.com/en/convert/epub-to-markdown~~ -->
 
-## 检查文件
+## 检查markdown文件
 
 * 比如章节重复，丢失.
 * 删除冗余信息
@@ -45,13 +51,12 @@ pnpm install
 
 ## 提交更新仓库， 等待自动打包书籍插件
 
-> 只需要上传通过 calibre 转换后的 markdown 文件， 即可自动制作对应的书籍插件, 支持 wikitext(这很 tiddlywiki)
-所有的流程完全自动化.
+> 只需要上传通过 calibre 转换后的 markdown 文件，github action 即可自动制作对应的书籍插件, 支持 wikitext(这很 tiddlywiki). 所有的流程完全自动化.
 
 <!-- ## NOTE
 > 绝对不保证 100%转换， 可能会丢失部分信息 -->
 
-## books
+## 仓库已有的书籍/小册子
 
 - 平凡的世界
 - 明朝那些事儿
