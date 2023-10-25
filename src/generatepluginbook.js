@@ -57,7 +57,7 @@ module.exports = (bookinfo) => {
     let headingAllContent = headingContent.nextUntil("h1, h2, h3, h4");
 
     if (!headingAllContent.length) {
-      console.log(`${title} 段落为空 @${bookname}`);
+      console.log(`${realtitle} 章节为空 @${bookname}`);
       headingAllContent = `!! 章节： ${realtitle}`;
     }
 

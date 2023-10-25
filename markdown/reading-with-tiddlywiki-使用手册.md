@@ -1,5 +1,7 @@
 ## 前言
 
+![banner](https://github.com/oeyoews/reading-books-with-tiddlywiki/raw/main/banner.png)
+
 > 借助 tiddlywiki, 将其作为一个阅读区的载体, 你的下一个阅读器有何尝不可以是太微?
 
 ## 克隆或 fork 仓库
