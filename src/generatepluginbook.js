@@ -153,7 +153,7 @@ module.exports = (bookinfo) => {
 
   const readmecontent = `title: ${pluginPrefix}/${bookname}/readme
 
-<img src='${cover}' alt='${bookname}' class="spotlight ${bookname}"/>
+<img src='${cover}' alt='' class="spotlight ${bookname}"/>
 
 > ''书籍名'': ${bookname || "未知"}\n
 > ''书籍作者'': ${author || "未知"}\n
