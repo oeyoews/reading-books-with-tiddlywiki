@@ -170,7 +170,7 @@ export const generateBookInfo = (bookinfo) => {
 > ''简要描述'': ${description || "未知"}
 >  Maked By [[reading books with tiddlywiki|https://github.com/oeyoews/reading-books-with-tiddlywiki]]
 
-> [[开始阅读 |${bookname}目录]]
+> <button>[[开始阅读 |${bookname}目录]]</button>
 
 `;
 
