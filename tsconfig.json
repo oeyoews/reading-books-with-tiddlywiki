@@ -1,6 +1,7 @@
 {
 	"compilerOptions": {
 		"esModuleInterop": true,
+		"module": "CommonJS",
 		"declaration": false,
 		"jsx": "preserve",
 		"baseUrl": "src",
