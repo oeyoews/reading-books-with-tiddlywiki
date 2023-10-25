@@ -6,18 +6,18 @@
 
 ## 可以用来做什么？
 
-* 为你的笔记快速制作一个具有导航的小册子
-* 为你的插件生成一个网站式的文档
-* 阅读你喜欢的书籍
-* ...
+- 为你的笔记快速制作一个具有导航的小册子
+- 为你的插件生成一个网站式的文档
+- 阅读你喜欢的书籍
+- ...
 
-> 所有的内容最终都以单文件json的格式(太微插件的形式）存储， 便于分发(tiddlywiki)
+> 所有的内容最终都以单文件 json 的格式(太微插件的形式）存储， 便于分发(tiddlywiki)
 
 ## 如何自己制作书籍
 
 ## 克隆或 fork 仓库
 
-* 下载仓库代码
+- 下载仓库代码
 
 ## 安装依赖
 
@@ -25,29 +25,29 @@ pnpm install
 
 ## 下载书籍 epub 文件
 
-* https://zh.annas-archive.org/
-* ...
+- https://zh.annas-archive.org/
+- ...
 
 ## 使用 calibre 转换成 markdown
 
-* calibre 的 markdown output 插件(具体步骤待更新)
+https://www.bilibili.com/read/cv13435884/
 
 <!-- * ~~convert epub to single markdown: https://www.vertopal.com/en/convert/epub-to-markdown~~ -->
 
-## 检查markdown文件
+## 检查 markdown 文件
 
-* 比如章节重复，丢失.
-* 删除冗余信息
+- 比如章节重复，丢失.
+- 删除冗余信息
 
 ## 文件位置
 
-* md 放在 markdown 目录下面
-* 图片在 images 目录下面
+- md 放在 markdown 目录下面
+- 图片在 images 目录下面
 
 ## 更新对应的文件夹
 
-* src/books.js
-* image 文件夹(文件名均以书籍命名)
+- src/books.js
+- image 文件夹(文件名均以书籍命名)
 
 ## 提交更新仓库， 等待自动打包书籍插件
 
@@ -64,7 +64,7 @@ pnpm install
 - 球状闪电
 - 肖申克的救赎
 - 提问的智慧
-> 列表不再更新， 最新书籍列表请查看 https://oeyoews.github.io/reading-books-with-tiddlywiki/#books
+  > 列表不再更新， 最新书籍列表请查看 https://oeyoews.github.io/reading-books-with-tiddlywiki/#books
 
 ## 想要添加更多书籍 ?
 

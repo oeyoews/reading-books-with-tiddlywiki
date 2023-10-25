@@ -2,6 +2,11 @@
 // TODO: add bookname link
 module.exports = [
   {
+    bookname: "奇迹男孩",
+    author: "",
+    description: "",
+  },
+  {
     bookname: "tiddlywiki-starter-kit-使用手册",
     author: "oeyoews",
     description: "tiddlywiki starter kit",
