@@ -29,3 +29,4 @@
 - [ ] 统计插件大小
 - [ ] plugin version automatic update by github tag
 - [ ] html to md ???
+- [ ] lint-md 对于空格的处理？？？
