@@ -166,6 +166,7 @@ export const generateBookInfo = (bookinfo) => {
 > ''书籍名'': ${bookname || "未知"}\n
 > ''书籍作者'': ${author || "未知"}\n
 > ''书籍大小'': {{!!size}} kb\n
+> ''插件最后构建时间'': {{!!updatetime}} \n
 > ''简要描述'': ${description || "未知"}
 >  Maked By [[reading books with tiddlywiki|https://github.com/oeyoews/reading-books-with-tiddlywiki]]
 
@@ -174,6 +175,7 @@ export const generateBookInfo = (bookinfo) => {
 `;
 
   const plugininfo = {
+    updatetime: new Date().toLocaleString(),
     size: kb,
     title: `${pluginPrefix}/${bookname}`,
     author: "oeyoews",
