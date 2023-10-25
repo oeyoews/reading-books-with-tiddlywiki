@@ -14,6 +14,7 @@ const md = new MarkdownIt({
 module.exports = (bookinfo) => {
   // TODO: 默认将图片打包到插件
   // NOTE: github 禁止跨域， 需要移除https, 动态检测
+  const pluginPrefix = "$:/plugins/books";
   const defaultcover = `//github.com/oeyoews/reading-books-with-tiddlywiki/blob/main/image/${bookinfo.bookname}.png?raw=true`;
   const {
     bookname,
@@ -150,7 +151,7 @@ module.exports = (bookinfo) => {
     ],
   };
 
-  const readmecontent = `title: ${bookname}/readme
+  const readmecontent = `title: ${pluginPrefix}/${bookname}/readme
 
 <img src='${cover}' alt='${bookname}' class="spotlight ${bookname}"/>
 
@@ -164,10 +165,11 @@ module.exports = (bookinfo) => {
 `;
 
   const plugininfo = {
-    title: bookname,
+    title: `${pluginPrefix}/${bookname}`,
     author: "oeyoews",
-    // description,
+    description: bookname,
     cover,
+    caption: bookname,
     book: bookname,
     type: "plugin",
     version,
