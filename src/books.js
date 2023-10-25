@@ -5,11 +5,15 @@ module.exports = [
     bookname: "tiddlywiki-starter-kit-使用手册",
     author: "oeyoews",
     description: "tiddlywiki starter kit",
+    cover:
+      "https://github.com/oeyoews/tiddlywiki-starter-kit/blob/main/img/snapshot02.png?raw=true",
   },
   {
     bookname: "reading-with-tiddlywiki-使用手册",
     author: "oeyoews",
     description: "reading with tiddlywiki 使用手册",
+    cover:
+      "https://github.com/oeyoews/reading-books-with-tiddlywiki/blob/main/banner.png?raw=true",
   },
   {
     bookname: "时间简史",
