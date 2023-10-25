@@ -28,6 +28,7 @@ export const generateBookInfo = (bookinfo) => {
   } = bookinfo;
   if (disable) {
     console.log(chalk.red.bold(`《《${bookname}》》 在黑名单中， 跳过制作`));
+    return;
   }
   const outputDir = "plugins";
   const bookOutputDir = path.join(outputDir, bookname, "files");
