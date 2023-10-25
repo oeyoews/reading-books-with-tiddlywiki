@@ -1,8 +1,8 @@
 ## 前言
 
-借助tiddlywiki, 将其作为一个阅读区的载体, 你的下一个阅读器有何尝不可以是太微?
+> 借助 tiddlywiki, 将其作为一个阅读区的载体, 你的下一个阅读器有何尝不可以是太微?
 
-## 克隆或fork仓库
+## 克隆或 fork 仓库
 
 * 下载仓库代码
 
@@ -17,24 +17,22 @@ pnpm install
 ## 使用 calibre 转换成 markdown
 
 * ~~convert epub to single markdown: https://www.vertopal.com/en/convert/epub-to-markdown~~
-
-* calibre 的markdown output 插件
+* calibre 的 markdown output 插件
 
 ## 检查文件
 
 * 比如章节重复，丢失.
-
 * 删除冗余信息
 
 ## 文件位置
 
-* md放在 markdown 目录下面
-
+* md 放在 markdown 目录下面
 * 图片在 images 目录下面
 
 ## 更新对应的文件夹
 
-src/books.js, image 文件夹， 文件名均以书籍命名
+* src/books.js
+* image 文件夹(文件名均以书籍命名)
 
 ## 提交更新仓库， 等待自动打包书籍插件
 
@@ -48,17 +46,11 @@ src/books.js, image 文件夹， 文件名均以书籍命名
 ## books
 
 - 平凡的世界
-
 - 明朝那些事儿
-
 - 劫持
-
 - 球状闪电
-
 - 肖申克的救赎
-
 - 提问的智慧
-
 > 列表不再更新， 最新书籍列表请查看 https://oeyoews.github.io/reading-books-with-tiddlywiki/#books
 
 ## 想要添加更多书籍

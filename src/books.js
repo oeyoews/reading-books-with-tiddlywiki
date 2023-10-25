@@ -4,6 +4,7 @@ module.exports = [
     bookname: "reading-with-tiddlywiki-使用手册",
     author: "oeyoews",
     description: "reading with tiddlywiki 使用手册",
+    indent: false,
   },
   {
     bookname: "时间简史",

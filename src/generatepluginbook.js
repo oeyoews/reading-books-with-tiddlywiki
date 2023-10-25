@@ -28,7 +28,11 @@ module.exports = (bookinfo) => {
   );
 
   // use markdown-it convert markdown to html, use cheerio to parse
-  const $ = cheerio.load(md.render(markdown), {
+  const md2html = md.render(markdown);
+
+  if (!fs.existsSync("test")) fs.mkdirSync("test");
+  fs.writeFileSync(path.join("test", `${bookname}.html`), md2html);
+  const $ = cheerio.load(md.render(md2html), {
     xmlMode: true,
     decodeEntities: false,
   });
@@ -36,11 +40,10 @@ module.exports = (bookinfo) => {
   const toc = [];
 
   function processHeading(heading) {
-    const realtitle = $(heading).text(); // 获取标题文本
-    const paragraphs = []; // 存储段落内容的数组
-    const title = $(heading)
-      .text()
-      .replace(/[\/\s]/g, "-");
+    const headingContent = $(heading);
+    const realtitle = headingContent.text(); // 获取标题文本
+    const title = realtitle.replace(/[\/\s]/g, "-");
+
     if (!title) {
       console.log("标题为空");
       return;
@@ -49,17 +52,11 @@ module.exports = (bookinfo) => {
     const chapterNumber = toc.length + 1;
     const currentLink = `${chapterNumber}-${title}@${bookname}`;
 
-    $(heading)
-      .nextUntil("h1, h2, h3, h4")
-      .each((_, element) => {
-        const paragraph = $(element).text(); // 获取每个元素的 HTML 内容
-        paragraphs.push(`&emsp;&emsp;${paragraph}`); // 将 HTML 内容添加到数组中
-      });
+    let headingAllContent = headingContent.nextUntil("h1, h2, h3, h4");
 
-    // 空的标题跳过, 会遇到大标题的情况， 暂时不处理
-    if (!paragraphs.length) {
+    if (!headingAllContent.length) {
       console.log(`${title} 段落为空 @${bookname}`);
-      return;
+      headingAllContent = `!! 章节： ${realtitle}`;
     }
 
     toc.push({ currentLink, realtitle });
@@ -72,9 +69,7 @@ module.exports = (bookinfo) => {
           }|${toc[toc.length - 2].currentLink}]]`
         : "@@display: flex;justify-content: flex-end;\n";
 
-    const content = `!! ${realtitle}\n\n${paragraphs.join(
-      "\n\n"
-    )}\n\n${prevChapterLink}`;
+    const content = `!! ${realtitle}\n\n${headingAllContent}\n\n${prevChapterLink}`;
 
     try {
       fs.writeFileSync(path.join(bookOutputDir, `${currentLink}.tid`), content);
