@@ -1,9 +1,9 @@
-const fs = require("fs");
-const cheerio = require("cheerio");
-const path = require("path");
-const MarkdownIt = require("markdown-it");
-const prompt = require("prompt");
-const { rimraf } = require("rimraf");
+// @ts-nocheck
+import fs from "fs";
+import cheerio from "cheerio";
+import path from "path";
+import MarkdownIt from "markdown-it";
+import { rimraf } from "rimraf";
 
 const md = new MarkdownIt({
   linkify: true,
@@ -11,7 +11,7 @@ const md = new MarkdownIt({
   typographer: true,
 });
 
-module.exports = (bookinfo) => {
+export const generateBookInfo = (bookinfo) => {
   // TODO: 默认将图片打包到插件
   // NOTE: github 禁止跨域， 需要移除https, 动态检测
   const pluginPrefix = "$:/plugins/books";

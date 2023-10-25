@@ -1,6 +1,6 @@
 // NOTE: 书名markdown/<bookname>.md 文件
 // TODO: add bookname link
-module.exports = [
+export const booklist = [
   {
     bookname: "我与地坛",
     author: "",

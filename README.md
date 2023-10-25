@@ -3,7 +3,7 @@
 * [Get Started](https://tw-read.vercel.app/#reading-with-tiddlywiki-%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C)
 
 > [!NOTE]
-> 更新中 ...
+> 书籍更新中 ...
 
 ## TODO
 
