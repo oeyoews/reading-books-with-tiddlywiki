@@ -64,7 +64,8 @@ export const generateBookInfo = (bookinfo: {
     const realtitle = headingContent.text();
     const title = realtitle
       .replace(/\s+/g, "")
-      .replace(/[^\u4e00-\u9fa5a-zA-Z0-9-]+/g, "-");
+      .replace(/[^\u4e00-\u9fa5a-zA-Z0-9-]+/g, "-")
+      .replace(/-+$/, "");
     // const title = realtitle.replace(/[^\u4e00-\u9fa5a-zA-Z0-9-]+/g, "-");
 
     if (!title) {
@@ -74,7 +75,7 @@ export const generateBookInfo = (bookinfo: {
 
     const chapterNumber = toc.length + 1;
     let currentLink = `${chapterNumber}-${title}`;
-    if (currentLink.length < 5) {
+    if (currentLink.length < 6) {
       currentLink += `@${bookname}`;
     }
 
