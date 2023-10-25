@@ -62,7 +62,10 @@ export const generateBookInfo = (bookinfo: {
   function processHeading(heading: Element) {
     const headingContent = $(heading);
     const realtitle = headingContent.text();
-    const title = realtitle.replace(/[^\u4e00-\u9fa5a-zA-Z0-9-]+/g, "-");
+    const title = realtitle
+      .replace(/\s+/g, "")
+      .replace(/[^\u4e00-\u9fa5a-zA-Z0-9-]+/g, "-");
+    // const title = realtitle.replace(/[^\u4e00-\u9fa5a-zA-Z0-9-]+/g, "-");
 
     if (!title) {
       // console.log("标题为空");
@@ -70,7 +73,10 @@ export const generateBookInfo = (bookinfo: {
     }
 
     const chapterNumber = toc.length + 1;
-    const currentLink = `${chapterNumber}-${title}`;
+    let currentLink = `${chapterNumber}-${title}`;
+    if (currentLink.length < 5) {
+      currentLink += `@${bookname}`;
+    }
 
     let headingAllContent = headingContent.nextUntil("h1, h2, h3, h4");
 
@@ -102,6 +108,18 @@ export const generateBookInfo = (bookinfo: {
 
   // 遍历所有标题
   const headings = $("h1, h2, h3, h4");
+  const headingMinLength = 5;
+  if (headings.length < headingMinLength) {
+    console.log(
+      chalk.red.bold(
+        `${bookname} 的标题总个数为 ${headings.length}, 请确认是否正确`
+      )
+    );
+  } else {
+    console.log(
+      chalk.cyan.underline(`${bookname} 检测到 ${headings.length} 个标题`)
+    );
+  }
 
   headings.each((_, heading) => {
     processHeading(heading);
