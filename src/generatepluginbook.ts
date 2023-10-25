@@ -64,12 +64,11 @@ export const generateBookInfo = (bookinfo) => {
     }
 
     const chapterNumber = toc.length + 1;
-    const currentLink = `${chapterNumber}-${title}@${bookname}`;
+    const currentLink = `${chapterNumber}-${title}`;
 
     let headingAllContent = headingContent.nextUntil("h1, h2, h3, h4");
 
     if (!headingAllContent.length) {
-      // console.log(`${realtitle} 章节为空 @${bookname}`);
       headingAllContent = `!! 章节： ${realtitle}`;
     }
 
@@ -83,7 +82,7 @@ export const generateBookInfo = (bookinfo) => {
           }|${toc[toc.length - 2].currentLink}]]`
         : "@@display: flex;justify-content: flex-end;\n";
 
-    const content = `!! ${realtitle}\n\n${headingAllContent}\n\n${prevChapterLink}`;
+    const content = `${headingAllContent}\n\n${prevChapterLink}`;
 
     try {
       fs.writeFileSync(path.join(bookOutputDir, `${currentLink}.tid`), content);
@@ -163,10 +162,10 @@ export const generateBookInfo = (bookinfo) => {
 
 <img src='${cover}' alt='' class="spotlight ${bookname}"/>
 
-> ''书籍名'': ${bookname || "未知"}\n
-> ''书籍作者'': ${author || "未知"}\n
-> ''书籍大小'': ${kb} kb\n
-> ''插件最后构建时间'': {{!!updatetime}} \n
+> ''书籍'': ${bookname || "未知"}\n
+> ''作者'': ${author || "未知"}\n
+> ''大小'': ${kb} kb\n
+> ''构建时间'': {{!!updatetime}} \n
 > ''简要描述'': ${description || "未知"}
 >  Maked By [[reading books with tiddlywiki|https://github.com/oeyoews/reading-books-with-tiddlywiki]]
 
