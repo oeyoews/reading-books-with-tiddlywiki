@@ -30,4 +30,4 @@
 - [x] plugin version automatic update by github tag
 - [ ] html to md ???
 - [ ] lint-md 对于空格的处理？？？
-- [ ] chalk ts 不支持
+- [x] chalk v5 ts 不支持 https://github.com/microsoft/TypeScript/issues/46930 https://github.com/chalk/chalk/releases/tag/v5.0.0
