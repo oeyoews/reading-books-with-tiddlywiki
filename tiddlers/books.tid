@@ -1,14 +1,15 @@
 created: 20231024032007663
-modified: 20231025031904907
+modified: 20231025113919316
 tags: Journal
 title: books
 type: text/vnd.tiddlywiki
 
 <center><h2>
-一共有 <$count filter="[plugin-type[plugin]author[oeyoews]has[book]]" /> 本书籍
+当前共有 <$count filter="[plugin-type[plugin]author[oeyoews]has[book]]" /> 本书籍
 </h2>
 </center>
 
-<<list-links filter:"[plugin-type[plugin]author[oeyoews]has[book]]">>
-
-<$cards filter="[plugin-type[plugin]author[oeyoews]has[book]]"  />
+<$list filter="[plugin-type[plugin]author[oeyoews]has[book]]">
+<li><$link to={{!!title}} >{{!!caption}}</$link> ({{!!size}} kb)
+</li>
+</$list>

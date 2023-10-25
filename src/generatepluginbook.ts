@@ -4,6 +4,8 @@ import cheerio from "cheerio";
 import path from "path";
 import MarkdownIt from "markdown-it";
 import { rimraf } from "rimraf";
+import chalk from "chalk";
+import { getFolderSize } from "./getFolderSize";
 
 const md = new MarkdownIt({
   linkify: true,
@@ -22,7 +24,11 @@ export const generateBookInfo = (bookinfo) => {
     description,
     cover = defaultcover,
     version = "0.0.1",
+    disable = false,
   } = bookinfo;
+  if (disable) {
+    console.log(chalk.red.bold(`《《${bookname}》》 在黑名单中， 跳过制作`));
+  }
   const outputDir = "plugins";
   const bookOutputDir = path.join(outputDir, bookname, "files");
 
@@ -52,7 +58,7 @@ export const generateBookInfo = (bookinfo) => {
     const title = realtitle.replace(/[^\u4e00-\u9fa5a-zA-Z0-9-]+/g, "-");
 
     if (!title) {
-      console.log("标题为空");
+      // console.log("标题为空");
       return;
     }
 
@@ -62,7 +68,7 @@ export const generateBookInfo = (bookinfo) => {
     let headingAllContent = headingContent.nextUntil("h1, h2, h3, h4");
 
     if (!headingAllContent.length) {
-      console.log(`${realtitle} 章节为空 @${bookname}`);
+      // console.log(`${realtitle} 章节为空 @${bookname}`);
       headingAllContent = `!! 章节： ${realtitle}`;
     }
 
@@ -120,6 +126,7 @@ export const generateBookInfo = (bookinfo) => {
 
   fs.writeFileSync(path.join(bookOutputDir, `${bookname}目录.tid`), tocContent);
 
+  const { kb, mb } = getFolderSize(path.join(outputDir, bookname));
   // 生成 TiddlyWiki 文件和目录结构
   const tiddlywikifiles = {
     tiddlers: [
@@ -157,6 +164,7 @@ export const generateBookInfo = (bookinfo) => {
 
 > ''书籍名'': ${bookname || "未知"}\n
 > ''书籍作者'': ${author || "未知"}\n
+> ''书籍大小'': {{!!size}} kb\n
 > ''简要描述'': ${description || "未知"}
 >  Maked By [[reading books with tiddlywiki|https://github.com/oeyoews/reading-books-with-tiddlywiki]]
 
@@ -165,6 +173,7 @@ export const generateBookInfo = (bookinfo) => {
 `;
 
   const plugininfo = {
+    size: kb,
     title: `${pluginPrefix}/${bookname}`,
     author: "oeyoews",
     description: bookname,
@@ -186,5 +195,5 @@ export const generateBookInfo = (bookinfo) => {
     `${bookOutputDir}/tiddlywiki.files`,
     JSON.stringify(tiddlywikifiles, null, 2)
   );
-  console.log(bookname, "书籍插件制作完成");
+  console.log(chalk.green.bold(`《《${bookname}》》 书籍制作完成. ${mb} Mb`));
 };

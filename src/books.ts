@@ -10,6 +10,7 @@ export const booklist = [
     bookname: "断舍离",
     author: "",
     description: "",
+    disable: true,
   },
   {
     bookname: "Wonder",

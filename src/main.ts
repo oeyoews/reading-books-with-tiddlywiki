@@ -4,6 +4,7 @@ import prompts from "prompts";
 import { booklist } from "./books";
 import { isCI } from "ci-info";
 import chalk from "chalk";
+import { getFolderSize } from "./getFolderSize";
 
 // TODO: add ora spinner
 const onPromptState = (state) => {
@@ -39,7 +40,12 @@ async function main() {
   }
   selectedBooksInfo.forEach((bookinfo) => generateBookInfo(bookinfo));
   // console.log(selectedBooksInfo.length, "本书籍制作完成");
-  console.log(chalk.cyan.bold(selectedBooksInfo.length), "本书籍制作完成");
+  const { kb, mb } = getFolderSize("plugins");
+  console.log(
+    chalk.cyan.bold.underline(
+      `\n${selectedBooksInfo.length} 本书籍制作完成, 总计大小: ${mb} Mb`
+    )
+  );
 }
 
 main();
