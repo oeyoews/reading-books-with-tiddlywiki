@@ -15,7 +15,13 @@ module.exports = (bookinfo) => {
   // TODO: 默认将图片打包到插件
   // NOTE: github 禁止跨域， 需要移除https, 动态检测
   const defaultcover = `//github.com/oeyoews/reading-books-with-tiddlywiki/blob/main/image/${bookinfo.bookname}.png?raw=true`;
-  const { bookname, author, description, cover = defaultcover } = bookinfo;
+  const {
+    bookname,
+    author,
+    description,
+    cover = defaultcover,
+    version = "0.0.1",
+  } = bookinfo;
   const outputDir = "plugins";
   const bookOutputDir = path.join(outputDir, bookname, "files");
 
@@ -148,11 +154,13 @@ module.exports = (bookinfo) => {
 
 <img src='${cover}' alt='${bookname}' class="spotlight ${bookname}"/>
 
-> ''bookname'': ${bookname || "未知"}\n
-> ''bookauthor'': ${author || "未知"}\n
-> ''description'': ${description || "未知"}
+> ''书籍名'': ${bookname || "未知"}\n
+> ''书籍作者'': ${author || "未知"}\n
+> ''简要描述'': ${description || "未知"}
+>  Maked By [[reading books with tiddlywiki|https://github.com/oeyoews/reading-books-with-tiddlywiki]]
 
 > [[开始阅读 ${bookname}|${bookname}目录]]
+
 `;
 
   const plugininfo = {
@@ -162,7 +170,7 @@ module.exports = (bookinfo) => {
     cover,
     book: bookname,
     type: "plugin",
-    version: "0.0.1",
+    version,
     list: `readme`,
   };
 

@@ -17,6 +17,7 @@ module.exports = [
     description: "tiddlywiki starter kit",
     cover:
       "https://github.com/oeyoews/tiddlywiki-starter-kit/blob/main/img/snapshot02.png?raw=true",
+    version: "0.0.2",
   },
   {
     bookname: "reading-with-tiddlywiki-使用手册",
