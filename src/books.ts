@@ -8,12 +8,12 @@ export const booklist = [
   },
   {
     bookname: '我与地坛',
-    author: '',
+    author: '史铁生',
     description: '',
   },
   {
     bookname: '断舍离',
-    author: '',
+    author: '山下英子',
     description: '',
     disable: true,
   },
