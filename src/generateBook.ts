@@ -28,6 +28,14 @@ export const generateBook = (bookinfo: BookInfo) => {
     console.log(chalk.red.bold(`${bookname} 在黑名单中， 跳过制作\n`));
     return;
   }
+  const source = 'markdown';
+  const booksourcefile = path.join(source, `${bookname}.md`);
+  if (!fs.existsSync(booksourcefile)) {
+    console.log(chalk.red.bold(`${booksourcefile} 不存在`));
+    return;
+  }
+  // 首先检查源文件是否存在
+
   const outputDir = 'plugins';
   const plugindir = path.join(outputDir, bookname);
   const pluginfiledir = path.join(plugindir, 'files');

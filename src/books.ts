@@ -1,5 +1,13 @@
 export const booklist: BookInfo[] = [
   {
+    bookname: '热风',
+    author: '鲁迅',
+  },
+  {
+    bookname: '呐喊',
+    author: '鲁迅',
+  },
+  {
     bookname: '瓦尔登湖',
     author: '［美］亨利·戴维·梭罗　著　李继宏　译',
   },
