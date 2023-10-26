@@ -4,7 +4,7 @@ import prompts from "prompts";
 import { booklist } from "@/books";
 import chalk from "chalk";
 
-const onPromptState = (state: any) => {
+const onPromptState = (state) => {
   if (state.aborted) {
     // If we don't re-enable the terminal cursor before exiting
     // the program, the cursor will remain hidden
@@ -39,7 +39,6 @@ async function main() {
   } else {
     console.log(chalk.cyan.bold("开始构建全部书籍\n"));
   }
-  // @ts-ignore
   selectedBooksInfo.forEach((bookinfo) => generateBookInfo(bookinfo));
   // console.log(selectedBooksInfo.length, "本书籍制作完成");
   const { mb } = getFolderSize("plugins");

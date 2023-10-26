@@ -3,7 +3,7 @@ import { CheerioAPI, Element } from "cheerio";
 
 export function generateTOC(
   $: CheerioAPI,
-  toc: Object[],
+  toc: TOC[],
   heading: Element,
   bookname: string,
   padLength: number = 3
@@ -16,9 +16,9 @@ export function generateTOC(
   if (!title) return;
 
   const chapterNumber = (toc.length + 1).toString().padStart(padLength, "0");
-  let currentLink = `${chapterNumber}-${title}`;
+  let currentLink = `${chapterNumber} ${title}`;
   if (currentLink.length < 8) {
-    currentLink += `@${bookname}`;
+    currentLink += ` @${bookname}`;
   }
   toc.push({ currentLink, vanillatitle });
 }

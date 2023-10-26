@@ -1,5 +1,5 @@
 import fs from "fs";
-import cheerio, { CheerioAPI, Element } from "cheerio";
+import cheerio, { CheerioAPI, Element, Cheerio } from "cheerio";
 import path from "path";
 import MarkdownIt from "markdown-it";
 import { rimraf } from "rimraf";
@@ -99,7 +99,6 @@ export const generateBookInfo = (bookinfo: BookInfo) => {
       const filename = path.join(bookOutputDir, `${currentLink}.tid`);
       fs.writeFileSync(filename, content);
     } catch (error) {
-      // @ts-ignore
       console.error(`Failed to save file: ${error.message}`);
       return;
     }
