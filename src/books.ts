@@ -84,6 +84,7 @@ export const booklist: BookInfo[] = [
   },
   {
     bookname: '提问的智慧',
+    disabled: true,
     author: 'Eric Steven Raymond 埃里克·史蒂文·雷蒙德',
     description:
       '《提问的智慧》主要介绍了提问的艺术和技巧。这本书对于希望在技术社区中提问并得到有用回答的人来说是一本非常有价值的参考书。',

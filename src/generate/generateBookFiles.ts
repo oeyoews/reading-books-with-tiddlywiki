@@ -20,7 +20,7 @@ export const generateBookFiles = (
   heading: Element,
   headingarrange: string,
   index: number,
-  bookinfo: BookInfo,
+  bookinfo,
   padLength,
 ) => {
   const { bookname }: BookInfo = bookinfo;
