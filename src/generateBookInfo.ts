@@ -10,7 +10,7 @@ export function generateBookInfo(toc, bookinfo) {
     author,
     description,
     cover = defaultcover,
-    version = '0.0.1',
+    version = new Date().toLocaleDateString(),
   }: BookInfo = bookinfo;
   const pluginPrefix = '$:/plugins/books';
   const outputDir = 'plugins';
