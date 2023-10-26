@@ -3,10 +3,10 @@ import cheerio, { CheerioAPI } from 'cheerio';
 import path from 'path';
 import MarkdownIt from 'markdown-it';
 import chalk from 'chalk';
-import { generateTOC } from '@/generateTOC';
-import { generateBookInfo } from '@/generateBookInfo';
+import { generateTOC } from '@/generate/generateTOC';
+import { generateBookInfo } from '@/generate/generateBookInfo';
 import { rimraf } from 'rimraf';
-import { generateBookFiles } from './generateBookFiles';
+import { generateBookFiles } from '@/generate/generateBookFiles';
 
 const md = new MarkdownIt({
   linkify: true,
@@ -25,7 +25,7 @@ export const generateBook = (bookinfo: BookInfo) => {
   // NOTE: github 禁止跨域， 需要移除https, 动态检测
   const { bookname, disable = false }: BookInfo = bookinfo;
   if (disable) {
-    console.log(chalk.red.bold(`《《${bookname}》》 在黑名单中， 跳过制作`));
+    console.log(chalk.red.bold(`${bookname} 在黑名单中， 跳过制作\n`));
     return;
   }
   const outputDir = 'plugins';

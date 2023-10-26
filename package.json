@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "tiddlywiki --listen",
-    "build:books": "ts-node ./src/main.ts",
-    "build:ibooks": "ts-node ./src/main.ts -i",
+    "build:books": "ts-node ./src/index.ts",
+    "build:ibooks": "ts-node ./src/index.ts -i",
     "format:md": "prettier  --write markdown/**",
     "format": "prettier  --write src/**",
     "lint": "eslint src/**.ts",
-    "build": "ts-node ./src/main.ts && tiddlywiki --build"
+    "build": "ts-node ./src/index.ts && tiddlywiki --build"
   },
   "keywords": [
     "books",

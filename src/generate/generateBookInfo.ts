@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { getFolderSize } from '@/getFolderSize';
+import { getFolderSize } from '@/lib/getFolderSize';
 import chalk from 'chalk';
 
 /**
@@ -104,5 +104,5 @@ export const generateBookInfo = (toc, bookinfo) => {
     `${pluginfiledir}/tiddlywiki.files`,
     JSON.stringify(tiddlywikifiles, null, 2),
   );
-  console.log(chalk.green.bold(`${bookname} 书籍制作完成. ${mb} Mb`));
+  console.log(chalk.green.bold(`${bookname} 书籍制作完成. ${mb} Mb\n`));
 };

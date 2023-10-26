@@ -1,4 +1,4 @@
-import { getTitle } from '@/getTitle';
+import { getTitle } from '@/lib/getTitle';
 import fs from 'fs';
 import path from 'path';
 import { Element } from 'cheerio';

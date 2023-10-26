@@ -1,4 +1,4 @@
-import { getTitle } from '@/getTitle';
+import { getTitle } from '@/lib/getTitle';
 import { CheerioAPI, Element } from 'cheerio';
 
 /**

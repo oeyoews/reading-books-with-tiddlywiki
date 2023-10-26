@@ -1,4 +1,4 @@
-import { getFolderSize } from '@/getFolderSize';
+import { getFolderSize } from '@/lib/getFolderSize';
 import { generateBook } from '@/generateBook';
 import prompts from 'prompts';
 import { booklist } from '@/books';
