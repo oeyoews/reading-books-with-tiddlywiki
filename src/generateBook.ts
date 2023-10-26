@@ -1,12 +1,12 @@
 import fs from "fs";
-import cheerio, { CheerioAPI, Element, Cheerio } from "cheerio";
+import cheerio, { CheerioAPI } from "cheerio";
 import path from "path";
 import MarkdownIt from "markdown-it";
 import chalk from "chalk";
-import { getTitle } from "@/getTitle";
 import { generateTOC } from "@/generateTOC";
-import { generatePluginFile } from "@/generatePluginFile";
+import { generateBookInfo } from "@/generateBookInfo";
 import { rimraf } from "rimraf";
+import { generateBookFiles } from "./generateBookFiles";
 
 const md = new MarkdownIt({
   linkify: true,
@@ -14,7 +14,7 @@ const md = new MarkdownIt({
   typographer: true,
 });
 
-export const generateBookInfo = (bookinfo: BookInfo) => {
+export const generateBook = (bookinfo: BookInfo) => {
   // TODO: 默认将图片打包到插件
   // NOTE: github 禁止跨域， 需要移除https, 动态检测
   const { bookname, disable = false }: BookInfo = bookinfo;
@@ -66,50 +66,11 @@ export const generateBookInfo = (bookinfo: BookInfo) => {
   });
 
   headings.each((index, heading) => {
-    processHeading(heading, index);
+    generateBookFiles($, toc, heading, headingarrange, index, bookinfo);
   });
 
-  generatePluginFile(toc, bookinfo);
+  generateBookInfo(toc, bookinfo);
 
-  function processHeading(heading: Element, index: number) {
-    const headingContent = $(heading);
-    // /\s{2,}/g
-    const vanillatitle = headingContent.text().replace("s+/g", " ");
-    const title = getTitle(vanillatitle);
-    if (!title) return;
-
-    const currentLink = toc[index].currentLink;
-
-    let headingAllContent = headingContent.nextUntil(headingarrange);
-
-    if (!headingAllContent.length) {
-      // @ts-ignore
-      headingAllContent = `!! 章节： ${vanillatitle}`;
-    }
-
-    const prevChapterLinkNumber = toc[index - 1];
-    const nextChapterLinkNumber = toc[index + 1];
-
-    const prevChapterLink =
-      index > 1
-        ? `@@display: flex;justify-content: space-between;\n[[« ${prevChapterLinkNumber.vanillatitle}|${prevChapterLinkNumber.currentLink}]]`
-        : "@@display: flex;justify-content: flex-end;\n";
-    const nextChapterLink =
-      index < toc.length - 1
-        ? `[[${nextChapterLinkNumber.vanillatitle} »|${nextChapterLinkNumber.currentLink}]] \n@@`
-        : `\n@@`;
-
-    const content = `${headingAllContent}\n\n${prevChapterLink}${nextChapterLink}`;
-
-    try {
-      const filename = path.join(pluginfiledir, `${currentLink}.tid`);
-      fs.writeFileSync(filename, content);
-    } catch (error) {
-      console.error(`Failed to save file: ${error.message}`);
-      return;
-    }
-  }
-
-  if (!fs.existsSync("HTML")) fs.mkdirSync("HTML");
-  fs.writeFileSync(path.join("HTML", `${bookname}.html`), md2html);
+  // if (!fs.existsSync("HTML")) fs.mkdirSync("HTML");
+  // fs.writeFileSync(path.join("HTML", `${bookname}.html`), md2html);
 };

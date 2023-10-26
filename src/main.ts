@@ -1,5 +1,5 @@
 import { getFolderSize } from "@/getFolderSize";
-import { generateBookInfo } from "@/generatepluginbook";
+import { generateBook } from "@/generateBook";
 import prompts from "prompts";
 import { booklist } from "@/books";
 import chalk from "chalk";
@@ -39,7 +39,7 @@ async function main() {
   } else {
     console.log(chalk.cyan.bold("开始构建全部书籍\n"));
   }
-  selectedBooksInfo.forEach((bookinfo) => generateBookInfo(bookinfo));
+  selectedBooksInfo.forEach((bookinfo) => generateBook(bookinfo));
   // console.log(selectedBooksInfo.length, "本书籍制作完成");
   const { mb } = getFolderSize("plugins");
   console.log(

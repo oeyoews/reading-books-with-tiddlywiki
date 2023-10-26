@@ -2,9 +2,8 @@ import fs from "fs";
 import path from "path";
 import { getFolderSize } from "@/getFolderSize";
 import chalk from "chalk";
-import rimraf from "rimraf";
 
-export function generatePluginFile(toc, bookinfo) {
+export function generateBookInfo(toc, bookinfo) {
   const defaultcover = `//github.com/oeyoews/reading-books-with-tiddlywiki/blob/main/image/${bookinfo.bookname}.png?raw=true`;
   const {
     bookname,
@@ -60,7 +59,7 @@ export function generatePluginFile(toc, bookinfo) {
 
   const readmecontent = `title: ${pluginPrefix}/${bookname}/readme
 
-<img src='${cover}' alt='' class="spotlight ${bookname}"/>
+<img src='${cover}' alt='' class="spotlight ${bookname}" width=128/>
 
 > ''书籍'': ${bookname || "未知"}\n
 > ''作者'': ${author || "未知"}\n
