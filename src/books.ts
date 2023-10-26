@@ -54,6 +54,7 @@ export const booklist: BookInfo[] = [
   {
     bookname: '明朝那些事儿',
     author: '当年明月',
+    disabled: true,
     description:
       '作品对明朝十七帝、王公权贵和小人物的命运进行全景展示，对官场政治、战争、帝王心术着墨最多，并加入对当时政治经济制度、人伦道德的演绎。',
   },
