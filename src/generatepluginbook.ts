@@ -57,6 +57,18 @@ export const generateBookInfo = (bookinfo: BookInfo) => {
   const totalchapters = headings.length;
   const padLength = totalchapters.toString().length;
 
+  if (headings.length < headingMinLength) {
+    console.log(
+      chalk.red.bold(
+        `${bookname} 的标题总个数为 ${totalchapters}, 请确认是否正确`
+      )
+    );
+  } else {
+    console.log(
+      chalk.cyan.underline(`${bookname} 检测到 ${headings.length} 个标题`)
+    );
+  }
+
   headings.each((_, heading) => {
     generateTOC($, toc, heading, bookname, padLength);
   });
@@ -102,18 +114,6 @@ export const generateBookInfo = (bookinfo: BookInfo) => {
       console.error(`Failed to save file: ${error.message}`);
       return;
     }
-  }
-
-  if (headings.length < headingMinLength) {
-    console.log(
-      chalk.red.bold(
-        `${bookname} 的标题总个数为 ${totalchapters}, 请确认是否正确`
-      )
-    );
-  } else {
-    console.log(
-      chalk.cyan.underline(`${bookname} 检测到 ${headings.length} 个标题`)
-    );
   }
 
   // 生成目录文件
