@@ -1,7 +1,7 @@
-import fs from "fs";
-import path from "path";
-import { getFolderSize } from "@/getFolderSize";
-import chalk from "chalk";
+import fs from 'fs';
+import path from 'path';
+import { getFolderSize } from '@/getFolderSize';
+import chalk from 'chalk';
 
 export function generateBookInfo(toc, bookinfo) {
   const defaultcover = `//github.com/oeyoews/reading-books-with-tiddlywiki/blob/main/image/${bookinfo.bookname}.png?raw=true`;
@@ -10,18 +10,18 @@ export function generateBookInfo(toc, bookinfo) {
     author,
     description,
     cover = defaultcover,
-    version = "0.0.1",
+    version = '0.0.1',
   }: BookInfo = bookinfo;
-  const pluginPrefix = "$:/plugins/books";
-  const outputDir = "plugins";
+  const pluginPrefix = '$:/plugins/books';
+  const outputDir = 'plugins';
   const plugindir = path.join(outputDir, bookname);
-  const pluginfiledir = path.join(plugindir, "files");
+  const pluginfiledir = path.join(plugindir, 'files');
 
   const tocContent = toc
     .map(
-      ({ currentLink, vanillatitle }) => `# [[${vanillatitle}|${currentLink}]]`
+      ({ currentLink, vanillatitle }) => `# [[${vanillatitle}|${currentLink}]]`,
     )
-    .join("\n");
+    .join('\n');
 
   fs.writeFileSync(path.join(pluginfiledir, `${bookname}目录.tid`), tocContent);
 
@@ -33,22 +33,22 @@ export function generateBookInfo(toc, bookinfo) {
         file: `${bookname}目录.tid`,
         fields: {
           title: {
-            source: "basename",
+            source: 'basename',
           },
           // type: "text/vnd.tiddlywiki",
-          tags: ["toc", bookname],
+          tags: ['toc', bookname],
           caption: bookname,
         },
       },
     ],
     directories: [
       {
-        path: ".",
-        filesRegExp: "^.*\\.tid$",
+        path: '.',
+        filesRegExp: '^.*\\.tid$',
         isTiddlerFile: false,
         fields: {
           title: {
-            source: "basename",
+            source: 'basename',
           },
           // type: "text/vnd.tiddlywiki",
           tags: `${bookname}`,
@@ -61,11 +61,11 @@ export function generateBookInfo(toc, bookinfo) {
 
 <img src='${cover}' alt='' class="spotlight ${bookname}" width=128/>
 
-> ''书籍'': ${bookname || "未知"}\n
-> ''作者'': ${author || "未知"}\n
+> ''书籍'': ${bookname || '未知'}\n
+> ''作者'': ${author || '未知'}\n
 > ''大小'': ${kb} kb\n
 > ''构建时间'': {{!!updatetime}} \n
-> ''简要描述'': ${description || "未知"}
+> ''简要描述'': ${description || '未知'}
 >  Maked By [[reading books with tiddlywiki|https://github.com/oeyoews/reading-books-with-tiddlywiki]]
 
 > <button>[[开始阅读 |${bookname}目录]]</button>
@@ -76,26 +76,26 @@ export function generateBookInfo(toc, bookinfo) {
     updatetime: new Date().toLocaleString(),
     size: kb,
     title: `${pluginPrefix}/${bookname}`,
-    author: "oeyoews",
-    "book#author": author,
+    author: 'oeyoews',
+    'book#author': author,
     description: bookname,
     cover,
     caption: bookname,
     book: bookname,
-    type: "plugin",
+    type: 'plugin',
     version,
     list: `readme`,
   };
 
-  fs.writeFileSync(path.join(outputDir, bookname, "readme.tid"), readmecontent);
+  fs.writeFileSync(path.join(outputDir, bookname, 'readme.tid'), readmecontent);
   fs.writeFileSync(
-    path.join(outputDir, bookname, "plugin.info"),
-    JSON.stringify(plugininfo, null, 2)
+    path.join(outputDir, bookname, 'plugin.info'),
+    JSON.stringify(plugininfo, null, 2),
   );
 
   fs.writeFileSync(
     `${pluginfiledir}/tiddlywiki.files`,
-    JSON.stringify(tiddlywikifiles, null, 2)
+    JSON.stringify(tiddlywikifiles, null, 2),
   );
   console.log(chalk.green.bold(`《《${bookname}》》 书籍制作完成. ${mb} Mb`));
 }

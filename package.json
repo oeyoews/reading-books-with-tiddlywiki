@@ -7,8 +7,8 @@
     "start": "tiddlywiki --listen",
     "build:books": "ts-node ./src/main.ts",
     "build:ibooks": "ts-node ./src/main.ts -i",
-    "format:md": "lint-md markdown/** --fix",
-    "format": "prettier  --write markdown/**",
+    "format:md": "prettier  --write markdown/**",
+    "format": "prettier  --write src/**",
     "build": "ts-node ./src/main.ts && tiddlywiki --build"
   },
   "keywords": [
@@ -18,14 +18,11 @@
   "author": "oeyoews",
   "license": "MIT",
   "dependencies": {
-    "@lint-md/cli": "^2.0.0",
     "@types/markdown-it": "^13.0.5",
-    "@types/ora": "^3.2.0",
     "@types/prompts": "^2.4.7",
     "chalk": "^4.1.2",
     "cheerio": "1.0.0-rc.12",
     "markdown-it": "^13.0.2",
-    "ora": "^7.0.1",
     "prettier": "^3.0.3",
     "prompts": "^2.4.2",
     "rimraf": "^5.0.5",

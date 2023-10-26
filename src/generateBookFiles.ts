@@ -1,7 +1,7 @@
-import { getTitle } from "@/getTitle";
-import fs from "fs";
-import path from "path";
-import { Element } from "cheerio";
+import { getTitle } from '@/getTitle';
+import fs from 'fs';
+import path from 'path';
+import { Element } from 'cheerio';
 
 export function generateBookFiles(
   $,
@@ -9,13 +9,13 @@ export function generateBookFiles(
   heading: Element,
   headingarrange: string,
   index: number,
-  bookinfo: BookInfo
+  bookinfo: BookInfo,
 ) {
   const { bookname }: BookInfo = bookinfo;
   const pluginfiledir = `plugins/${bookname}/files`;
   const headingContent = $(heading);
   // /\s{2,}/g
-  const vanillatitle = headingContent.text().replace("s+/g", " ");
+  const vanillatitle = headingContent.text().replace('s+/g', ' ');
   const title = getTitle(vanillatitle);
   if (!title) return;
 
@@ -25,7 +25,7 @@ export function generateBookFiles(
 
   if (!headingAllContent.length) {
     // @ts-ignore
-    headingAllContent = `!! 章节： ${vanillatitle}`;
+    headingAllContent = `!! 章节: ${vanillatitle}`;
   }
 
   const prevChapterLinkNumber = toc[index - 1];
@@ -34,7 +34,7 @@ export function generateBookFiles(
   const prevChapterLink =
     index > 1
       ? `@@display: flex;justify-content: space-between;\n[[« ${prevChapterLinkNumber.vanillatitle}|${prevChapterLinkNumber.currentLink}]]`
-      : "@@display: flex;justify-content: flex-end;\n";
+      : '@@display: flex;justify-content: flex-end;\n';
   const nextChapterLink =
     index < toc.length - 1
       ? `[[${nextChapterLinkNumber.vanillatitle} »|${nextChapterLinkNumber.currentLink}]] \n@@`
