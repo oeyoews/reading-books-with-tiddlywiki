@@ -107,7 +107,7 @@ export const generateBookInfo = (bookinfo: {
     }
   }
 
-  // 遍历所有标题
+  // 遍历所有标题, h1-h4
   const headings = $("h1, h2, h3, h4");
   const headingMinLength = 5;
   const totalchapters = headings.length;
