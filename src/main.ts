@@ -40,7 +40,6 @@ async function main() {
     console.log(chalk.cyan.bold("开始构建全部书籍\n"));
   }
   selectedBooksInfo.forEach((bookinfo) => generateBook(bookinfo));
-  // console.log(selectedBooksInfo.length, "本书籍制作完成");
   const { mb } = getFolderSize("plugins");
   console.log(
     chalk.cyan.bold.underline(
