@@ -59,7 +59,7 @@ export const generateBookInfo = (bookinfo: {
 
   const toc: any[] = [];
 
-  function processHeading(heading: Element) {
+  function processHeading(heading: Element, padLength = 3) {
     const headingContent = $(heading);
     const realtitle = headingContent.text();
     const title = realtitle
@@ -73,9 +73,9 @@ export const generateBookInfo = (bookinfo: {
       return;
     }
 
-    const chapterNumber = toc.length + 1;
+    const chapterNumber = (toc.length + 1).toString().padStart(padLength, "0");
     let currentLink = `${chapterNumber}-${title}`;
-    if (currentLink.length < 6) {
+    if (currentLink.length < 8) {
       currentLink += `@${bookname}`;
     }
 
@@ -110,10 +110,11 @@ export const generateBookInfo = (bookinfo: {
   // 遍历所有标题
   const headings = $("h1, h2, h3, h4");
   const headingMinLength = 5;
+  const totalchapters = headings.length;
   if (headings.length < headingMinLength) {
     console.log(
       chalk.red.bold(
-        `${bookname} 的标题总个数为 ${headings.length}, 请确认是否正确`
+        `${bookname} 的标题总个数为 ${totalchapters}, 请确认是否正确`
       )
     );
   } else {
@@ -123,7 +124,7 @@ export const generateBookInfo = (bookinfo: {
   }
 
   headings.each((_, heading) => {
-    processHeading(heading);
+    processHeading(heading, totalchapters.toString().length);
   });
 
   toc.forEach((currentChapter, i) => {
