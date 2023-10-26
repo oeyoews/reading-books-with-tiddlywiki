@@ -10,7 +10,8 @@ import chalk from 'chalk';
  * @param {Object} bookinfo - The information about the book.
  * @return {void} This function does not return a value.
  */
-export const generateBookInfo = (toc, bookinfo) => {
+export const generateBookInfo = (toc, bookinfo, padLength) => {
+  const zeroString = '0'.repeat(padLength);
   const defaultcover = `//github.com/oeyoews/reading-books-with-tiddlywiki/blob/main/image/${bookinfo.bookname}.png?raw=true`;
   const {
     bookname,
@@ -30,14 +31,17 @@ export const generateBookInfo = (toc, bookinfo) => {
     )
     .join('\n');
 
-  fs.writeFileSync(path.join(pluginfiledir, `${bookname}目录.tid`), tocContent);
+  fs.writeFileSync(
+    path.join(pluginfiledir, `${zeroString} ${bookname}目录.tid`),
+    tocContent,
+  );
 
   const { kb, mb } = getFolderSize(path.join(outputDir, bookname));
   // 生成 TiddlyWiki 文件和目录结构
   const tiddlywikifiles = {
     tiddlers: [
       {
-        file: `${bookname}目录.tid`,
+        file: `${zeroString} ${bookname}目录.tid`,
         fields: {
           title: {
             source: 'basename',
@@ -75,7 +79,7 @@ export const generateBookInfo = (toc, bookinfo) => {
 > ''简要描述'': ${description || '未知'}
 >  Maked By [[reading books with tiddlywiki|https://github.com/oeyoews/reading-books-with-tiddlywiki]]
 
-> <button>[[开始阅读 |${bookname}目录]]</button>
+> <button>[[开始阅读 |${zeroString} ${bookname}目录]]</button>
 
 `;
 

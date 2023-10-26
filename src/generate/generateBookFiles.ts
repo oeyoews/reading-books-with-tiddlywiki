@@ -21,6 +21,7 @@ export const generateBookFiles = (
   headingarrange: string,
   index: number,
   bookinfo: BookInfo,
+  padLength,
 ) => {
   const { bookname }: BookInfo = bookinfo;
   const pluginfiledir = `plugins/${bookname}/files`;
@@ -45,11 +46,11 @@ export const generateBookFiles = (
   const prevChapterLink =
     index > 1
       ? `@@display: flex;justify-content: space-between;\n[[« ${prevChapterLinkNumber.vanillatitle}|${prevChapterLinkNumber.currentLink}]]`
-      : '@@display: flex;justify-content: flex-end;\n';
+      : `@@display: flex;justify-content: flex-end;\n`;
   const nextChapterLink =
     index < toc.length - 1
       ? `[[${nextChapterLinkNumber.vanillatitle} »|${nextChapterLinkNumber.currentLink}]] \n@@`
-      : `\n@@`;
+      : `[[回到目录↝|${'0'.repeat(padLength)} ${bookname}目录]]\n@@`;
 
   const content = `${headingAllContent}\n\n${prevChapterLink}${nextChapterLink}`;
 

@@ -72,10 +72,18 @@ export const generateBook = (bookinfo: BookInfo) => {
   });
 
   headings.each((index, heading) => {
-    generateBookFiles($, toc, heading, headingarrange, index, bookinfo);
+    generateBookFiles(
+      $,
+      toc,
+      heading,
+      headingarrange,
+      index,
+      bookinfo,
+      padLength,
+    );
   });
 
-  generateBookInfo(toc, bookinfo);
+  generateBookInfo(toc, bookinfo, padLength);
 
   // if (!fs.existsSync("HTML")) fs.mkdirSync("HTML");
   // fs.writeFileSync(path.join("HTML", `${bookname}.html`), md2html);

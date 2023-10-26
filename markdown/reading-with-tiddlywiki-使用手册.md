@@ -13,17 +13,17 @@
 
 > 所有的内容最终都以单文件 json 的格式(太微插件的形式）存储， 便于分发(tiddlywiki)
 
+## 本地预览书籍
+
+```bash
+git clone --depth 1 https://github.com/oeyoews/reading-books-with-tiddlywiki.git
+pnpm build:ibooks
+pnpm start
+```
+
 ## 如何自己制作书籍
 
-## 克隆或 fork 仓库
-
-- 下载仓库代码
-
-## 安装依赖
-
-pnpm install
-
-## 下载书籍 epub 文件
+1. 下载书籍 epub 文件
 
 - https://zh.annas-archive.org/
 - ...
@@ -38,8 +38,7 @@ https://www.bilibili.com/read/cv13435884/
 
 - 比如章节重复，丢失.
 - 删除冗余信息, 空白行, 广告
-
-* vscode 正则替换是个好东西， 一个正则解决不了的事情， 就多写几个正则
+- vscode 正则替换是个好东西， 一个正则解决不了的事情， 就多写几个正则
 
 ## 文件位置
 
