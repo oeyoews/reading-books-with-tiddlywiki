@@ -1,5 +1,5 @@
 import fs from 'fs';
-import cheerio, { CheerioAPI } from 'cheerio';
+import { load, type CheerioAPI } from 'cheerio';
 import path from 'path';
 import MarkdownIt from 'markdown-it';
 import chalk from 'chalk';
@@ -53,7 +53,7 @@ export const generateBook = (bookinfo: BookInfo) => {
 
   const md2html = md.render(markdown);
   // TODO: deprecated cheerio
-  const $: CheerioAPI = cheerio.load(md.render(md2html), {
+  const $: CheerioAPI = load(md.render(md2html), {
     xmlMode: true,
     decodeEntities: false,
   });
@@ -96,6 +96,6 @@ export const generateBook = (bookinfo: BookInfo) => {
 
   generateBookInfo(toc, bookinfo, padLength);
 
-  if (!fs.existsSync('HTML')) fs.mkdirSync('HTML');
-  fs.writeFileSync(path.join('HTML', `${bookname}.html`), md2html);
+  // if (!fs.existsSync('HTML')) fs.mkdirSync('HTML');
+  // fs.writeFileSync(path.join('HTML', `${bookname}.html`), md2html);
 };
