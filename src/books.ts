@@ -2,6 +2,11 @@
 // TODO: add bookname link
 export const booklist = [
   {
+    bookname: '瓦尔登湖',
+    author: '［美］亨利·戴维·梭罗　著　李继宏　译',
+    description: '',
+  },
+  {
     bookname: '我与地坛',
     author: '',
     description: '',
