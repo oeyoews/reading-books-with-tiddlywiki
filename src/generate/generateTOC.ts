@@ -1,26 +1,23 @@
 import { getTitle } from '@/lib/getTitle';
-import { CheerioAPI, Element } from 'cheerio';
+import { Node } from 'node-html-parser';
 
 /**
  * Generates a table of contents (TOC) based on the provided parameters.
  *
- * @param {CheerioAPI} $ - The Cheerio API object.
  * @param {TOC[]} toc - The array of table of contents.
- * @param {Element} heading - The heading element.
+ * @param {Node} heading - The heading node.
  * @param {string} bookname - The name of the book.
  * @param {number} [padLength=3] - The length to pad the chapter number.
  */
 export const generateTOC = (
-  $: CheerioAPI,
   toc: TOC[],
-  heading: Element,
+  heading: Node,
   bookname: string,
   padLength: number = 3,
 ) => {
-  const headingContent = $(heading);
-
-  const vanillatitle = headingContent.text().replace(/\s+/g, ' ');
-  const title = getTitle(vanillatitle);
+  console.log(heading);
+  const headingContent = heading.text.replace(/\s+/g, ' ');
+  const title = getTitle(headingContent);
 
   if (!title) return;
 
@@ -29,5 +26,5 @@ export const generateTOC = (
   if (currentLink.length < 8) {
     currentLink += ` @${bookname}`;
   }
-  toc.push({ currentLink, vanillatitle });
+  toc.push({ currentLink, vanillatitle: headingContent });
 };

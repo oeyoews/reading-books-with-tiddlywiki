@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { load, type CheerioAPI } from 'cheerio';
+import { parse } from 'node-html-parser';
 import path from 'path';
 import MarkdownIt from 'markdown-it';
 import chalk from 'chalk';
@@ -23,10 +23,10 @@ const md = new MarkdownIt({
  * @param {BookInfo} bookinfo - The information of the book to be generated.
  * @return {void} This function does not return a value.
  */
-export const generateBook = (bookinfo: BookInfo) => {
+export const generateBook = (bookinfo) => {
   // TODO: 默认将图片打包到插件
   // NOTE: github 禁止跨域， 需要移除https, 动态检测
-  const { bookname, disabled = false }: BookInfo = bookinfo;
+  const { bookname, disabled = false } = bookinfo;
   if (disabled) {
     console.log(chalk.red.bold(`${bookname} 在黑名单中， 跳过制作\n`));
     return;
@@ -52,16 +52,21 @@ export const generateBook = (bookinfo: BookInfo) => {
   );
 
   const md2html = md.render(markdown);
-  // TODO: deprecated cheerio
-  const $: CheerioAPI = load(md.render(md2html), {
-    xmlMode: true,
-    decodeEntities: false,
+  const root = parse(md2html, {
+    lowerCaseTagName: false,
+    comment: false,
+    blockTextElements: {
+      script: true,
+      noscript: true,
+      style: true,
+      pre: true,
+    },
   });
 
   // 遍历所有标题, h1-h4
-  const toc: TOC[] = [];
+  const toc = [];
   const headingarrange = 'h1, h2, h3, h4'; // TODO hr no close tag
-  const headings = $(headingarrange);
+  const headings = root.querySelectorAll(headingarrange);
   const headingMinLength = 5;
   const totalchapters = headings.length;
   const padLength = totalchapters.toString().length;
@@ -78,24 +83,26 @@ export const generateBook = (bookinfo: BookInfo) => {
     );
   }
 
-  headings.each((_, heading) => {
-    generateTOC($, toc, heading, bookname, padLength);
+  headings.forEach((heading) => {
+    // @ts-ignore
+    generateTOC(root, toc, heading, bookname, padLength);
   });
 
-  headings.each((index, heading) => {
-    generateBookFiles(
-      $,
-      toc,
-      heading,
-      headingarrange,
-      index,
-      bookinfo,
-      padLength,
-    );
+  headings.forEach((heading, index) => {
+    console.log(heading, index);
+    // generateBookFiles(
+    //   toc,
+    //   // @ts-ignore
+    //   heading,
+    //   headingarrange,
+    //   index,
+    //   bookinfo,
+    //   padLength,
+    // );
   });
 
   generateBookInfo(toc, bookinfo, padLength);
 
-  // if (!fs.existsSync('HTML')) fs.mkdirSync('HTML');
-  // fs.writeFileSync(path.join('HTML', `${bookname}.html`), md2html);
+  if (!fs.existsSync('HTML')) fs.mkdirSync('HTML');
+  fs.writeFileSync(path.join('HTML', `${bookname}.html`), md2html);
 };

@@ -1,43 +1,49 @@
 import { getTitle } from '@/lib/getTitle';
 import fs from 'fs';
 import path from 'path';
-import { Element } from 'cheerio';
 
 /**
  * Generates book files based on the provided parameters.
  *
- * @param {any} $ - the jQuery object
- * @param {Array} toc - the table of contents
- * @param {Element} heading - the heading element
- * @param {string} headingarrange - the heading arrange string
- * @param {number} index - the index of the current chapter
- * @param {BookInfo} bookinfo - the book information
+ * @param {Document} document - The HTML document object.
+ * @param {Array} toc - The table of contents.
+ * @param {Element} heading - The heading element.
+ * @param {string} headingarrange - The heading arrange string.
+ * @param {number} index - The index of the current chapter.
+ * @param {BookInfo} bookinfo - The book information.
+ * @param {number} padLength - The length to pad the chapter number.
  * @return {void}
  */
 export const generateBookFiles = (
-  $,
   toc,
-  heading: Element,
-  headingarrange: string,
-  index: number,
-  bookinfo: BookInfo,
+  heading,
+  headingarrange,
+  index,
+  bookinfo,
   padLength,
 ) => {
-  const { bookname }: BookInfo = bookinfo;
+  const { bookname } = bookinfo;
   const pluginfiledir = `plugins/${bookname}/files`;
-  const headingContent = $(heading);
-  // /\s{2,}/g
-  const vanillatitle = headingContent.text().replace('s+/g', ' ');
+  const vanillatitle = heading.textContent.replace(/\s+/g, ' ');
   const title = getTitle(vanillatitle);
   if (!title) return;
 
   const currentLink = toc[index].currentLink;
+  console.log(currentLink);
 
-  let headingAllContent = headingContent.nextUntil(headingarrange);
+  let headingAllContent = [];
+  let nextSibling = heading.nextElementSibling;
+  while (nextSibling && !nextSibling.matchesSelector(headingarrange)) {
+    headingAllContent.push(nextSibling.textContent);
+    nextSibling = nextSibling.nextElementSibling;
+  }
 
   if (!headingAllContent.length) {
     // @ts-ignore
     headingAllContent = `!! 章节: ${vanillatitle}`;
+  } else {
+    // @ts-ignore
+    headingAllContent = headingAllContent.join('\n');
   }
 
   const prevChapterLinkNumber = toc[index - 1];
