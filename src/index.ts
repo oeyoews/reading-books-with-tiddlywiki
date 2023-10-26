@@ -21,7 +21,7 @@ const onPromptState = (state) => {
 };
 
 // 定义一个计数器，用于统计被禁用的选项数量
-let disabledCount :number= 0;
+let disabledCount: number = 0;
 
 // 遍历书籍列表中的每个选项，并检查是否被禁用
 booklist.forEach(({ disabled }) => {
