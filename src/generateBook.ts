@@ -8,9 +8,12 @@ import { generateBookInfo } from '@/generate/generateBookInfo';
 import { rimraf } from 'rimraf';
 import { generateBookFiles } from '@/generate/generateBookFiles';
 
+// https://markdown-it.github.io/
 const md = new MarkdownIt({
-  linkify: true,
   html: true,
+  xhtmlOut: true, // 使用闭合标签 hr
+  breaks: true,
+  linkify: true,
   typographer: true,
 });
 
@@ -57,7 +60,7 @@ export const generateBook = (bookinfo: BookInfo) => {
 
   // 遍历所有标题, h1-h4
   const toc: TOC[] = [];
-  const headingarrange = 'h1, h2, h3, h4';
+  const headingarrange = 'h1, h2, h3, h4'; // TODO hr no close tag
   const headings = $(headingarrange);
   const headingMinLength = 5;
   const totalchapters = headings.length;
@@ -93,6 +96,6 @@ export const generateBook = (bookinfo: BookInfo) => {
 
   generateBookInfo(toc, bookinfo, padLength);
 
-  // if (!fs.existsSync("HTML")) fs.mkdirSync("HTML");
-  // fs.writeFileSync(path.join("HTML", `${bookname}.html`), md2html);
+  if (!fs.existsSync('HTML')) fs.mkdirSync('HTML');
+  fs.writeFileSync(path.join('HTML', `${bookname}.html`), md2html);
 };

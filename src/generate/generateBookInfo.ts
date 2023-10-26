@@ -24,6 +24,11 @@ export const generateBookInfo = (toc, bookinfo, padLength) => {
   const outputDir = 'plugins';
   const plugindir = path.join(outputDir, bookname);
   const pluginfiledir = path.join(plugindir, 'files');
+  const booksourcefile = path.join('markdown', `${bookname}.md`);
+  const sourceSize = getFolderSize(booksourcefile);
+  console.log(
+    chalk.bgCyan.bold(`${bookname} 源文件大小为 ${sourceSize.kb} kb`),
+  );
 
   const tocContent = toc
     .map(
@@ -36,7 +41,7 @@ export const generateBookInfo = (toc, bookinfo, padLength) => {
     tocContent,
   );
 
-  const { kb, mb } = getFolderSize(path.join(outputDir, bookname));
+  const { kb } = getFolderSize(path.join(outputDir, bookname));
   // 生成 TiddlyWiki 文件和目录结构
   const tiddlywikifiles = {
     tiddlers: [
@@ -108,5 +113,5 @@ export const generateBookInfo = (toc, bookinfo, padLength) => {
     `${pluginfiledir}/tiddlywiki.files`,
     JSON.stringify(tiddlywikifiles, null, 2),
   );
-  console.log(chalk.green.bold(`${bookname} 书籍制作完成. ${mb} Mb\n`));
+  console.log(chalk.green.bold(`${bookname} 书籍制作完成. ${kb} kb\n`));
 };
