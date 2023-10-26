@@ -3,14 +3,25 @@ import fs from 'fs';
 import path from 'path';
 import { Element } from 'cheerio';
 
-export function generateBookFiles(
+/**
+ * Generates book files based on the provided parameters.
+ *
+ * @param {any} $ - the jQuery object
+ * @param {Array} toc - the table of contents
+ * @param {Element} heading - the heading element
+ * @param {string} headingarrange - the heading arrange string
+ * @param {number} index - the index of the current chapter
+ * @param {BookInfo} bookinfo - the book information
+ * @return {void}
+ */
+export const generateBookFiles = (
   $,
   toc,
   heading: Element,
   headingarrange: string,
   index: number,
   bookinfo: BookInfo,
-) {
+) => {
   const { bookname }: BookInfo = bookinfo;
   const pluginfiledir = `plugins/${bookname}/files`;
   const headingContent = $(heading);
@@ -49,4 +60,4 @@ export function generateBookFiles(
     console.error(`Failed to save file: ${error.message}`);
     return;
   }
-}
+};

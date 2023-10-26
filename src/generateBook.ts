@@ -14,6 +14,12 @@ const md = new MarkdownIt({
   typographer: true,
 });
 
+/**
+ * Generates a book based on the provided book information.
+ *
+ * @param {BookInfo} bookinfo - The information of the book to be generated.
+ * @return {void} This function does not return a value.
+ */
 export const generateBook = (bookinfo: BookInfo) => {
   // TODO: 默认将图片打包到插件
   // NOTE: github 禁止跨域， 需要移除https, 动态检测

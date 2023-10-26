@@ -3,7 +3,14 @@ import path from 'path';
 import { getFolderSize } from '@/getFolderSize';
 import chalk from 'chalk';
 
-export function generateBookInfo(toc, bookinfo) {
+/**
+ * Generates book information and creates the necessary files and directories.
+ *
+ * @param {Array} toc - The table of contents of the book.
+ * @param {Object} bookinfo - The information about the book.
+ * @return {void} This function does not return a value.
+ */
+export const generateBookInfo = (toc, bookinfo) => {
   const defaultcover = `//github.com/oeyoews/reading-books-with-tiddlywiki/blob/main/image/${bookinfo.bookname}.png?raw=true`;
   const {
     bookname,
@@ -98,4 +105,4 @@ export function generateBookInfo(toc, bookinfo) {
     JSON.stringify(tiddlywikifiles, null, 2),
   );
   console.log(chalk.green.bold(`${bookname} 书籍制作完成. ${mb} Mb`));
-}
+};

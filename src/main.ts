@@ -4,6 +4,12 @@ import prompts from 'prompts';
 import { booklist } from '@/books';
 import chalk from 'chalk';
 
+/**
+ * Executes a callback function when the state is not aborted.
+ *
+ * @param {Object} state - The state object.
+ * @return {void} This function does not return a value.
+ */
 const onPromptState = (state) => {
   if (state.aborted) {
     // If we don't re-enable the terminal cursor before exiting
@@ -14,7 +20,11 @@ const onPromptState = (state) => {
   }
 };
 
-// TODO 支持搜索
+/**
+ * Executes the main function.
+ *
+ * @return {Promise<void>} Returns a promise that resolves when the function is complete.
+ */
 async function main() {
   let selectedBooksInfo = booklist;
   const choices = booklist.map(({ bookname }) => ({

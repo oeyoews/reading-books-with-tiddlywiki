@@ -1,13 +1,22 @@
 import { getTitle } from '@/getTitle';
 import { CheerioAPI, Element } from 'cheerio';
 
-export function generateTOC(
+/**
+ * Generates a table of contents (TOC) based on the provided parameters.
+ *
+ * @param {CheerioAPI} $ - The Cheerio API object.
+ * @param {TOC[]} toc - The array of table of contents.
+ * @param {Element} heading - The heading element.
+ * @param {string} bookname - The name of the book.
+ * @param {number} [padLength=3] - The length to pad the chapter number.
+ */
+export const generateTOC = (
   $: CheerioAPI,
   toc: TOC[],
   heading: Element,
   bookname: string,
   padLength: number = 3,
-) {
+) => {
   const headingContent = $(heading);
 
   const vanillatitle = headingContent.text().replace(/\s+/g, ' ');
@@ -21,4 +30,4 @@ export function generateTOC(
     currentLink += ` @${bookname}`;
   }
   toc.push({ currentLink, vanillatitle });
-}
+};

@@ -1,6 +1,12 @@
 import fs from 'fs';
 import path from 'path';
 
+/**
+ * Calculates the size of a folder and its subfolders.
+ *
+ * @param {string} folderPath - The path to the folder.
+ * @return {FolderSize} An object containing the total size of the folder and its subfolders, in bytes, kilobytes, and megabytes.
+ */
 export const getFolderSize = (folderPath: string): FolderSize => {
   let totalSize = 0;
 
