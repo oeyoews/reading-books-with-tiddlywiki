@@ -31,3 +31,4 @@
 - [x] add books plugin library, 也许使用 modern.dev 也可以
 - [x] html to md ???
 - [x] lint-md 对于空格的处理？？？
+- [x] ts-node 不识别type.d.ts https://juejin.cn/post/7075525132998934559

@@ -1,10 +1,12 @@
 import fs from "fs";
-import cheerio, { Element } from "cheerio";
+import cheerio, { CheerioAPI, Element } from "cheerio";
 import path from "path";
 import MarkdownIt from "markdown-it";
 import { rimraf } from "rimraf";
 import chalk from "chalk";
 import { getFolderSize } from "@/getFolderSize";
+import { getTitle } from "@/getTitle";
+import { generateTOC } from "@/generateTOC";
 
 const md = new MarkdownIt({
   linkify: true,
@@ -12,14 +14,7 @@ const md = new MarkdownIt({
   typographer: true,
 });
 
-export const generateBookInfo = (bookinfo: {
-  bookname: string;
-  author?: string;
-  description?: string;
-  disable?: undefined;
-  cover?: undefined;
-  version?: undefined;
-}) => {
+export const generateBookInfo = (bookinfo: BookInfo) => {
   // TODO: 默认将图片打包到插件
   // NOTE: github 禁止跨域， 需要移除https, 动态检测
   const pluginPrefix = "$:/plugins/books";
@@ -31,7 +26,7 @@ export const generateBookInfo = (bookinfo: {
     cover = defaultcover,
     version = "0.0.1",
     disable = false,
-  } = bookinfo;
+  }: BookInfo = bookinfo;
   if (disable) {
     console.log(chalk.red.bold(`《《${bookname}》》 在黑名单中， 跳过制作`));
     return;
@@ -47,59 +42,62 @@ export const generateBookInfo = (bookinfo: {
     "utf-8"
   );
 
-  // use markdown-it convert markdown to html, use cheerio to parse
   const md2html = md.render(markdown);
-
-  if (!fs.existsSync("test")) fs.mkdirSync("test");
-  fs.writeFileSync(path.join("test", `${bookname}.html`), md2html);
-  const $ = cheerio.load(md.render(md2html), {
+  // TODO: deprecated cheerio
+  const $: CheerioAPI = cheerio.load(md.render(md2html), {
     xmlMode: true,
     decodeEntities: false,
   });
 
-  const toc: any[] = [];
+  // 遍历所有标题, h1-h4
+  const toc: TOC[] = [];
+  const headingarrange = "h1, h2, h3, h4";
+  const headings = $(headingarrange);
+  const headingMinLength = 5;
+  const totalchapters = headings.length;
+  const padLength = totalchapters.toString().length;
 
-  function processHeading(heading: Element, padLength = 3) {
+  headings.each((_, heading) => {
+    generateTOC($, toc, heading, bookname, padLength);
+  });
+
+  headings.each((index, heading) => {
+    processHeading(heading, index, padLength);
+  });
+
+  function processHeading(heading: Element, index: number, padLength = 3) {
     const headingContent = $(heading);
-    const realtitle = headingContent.text();
-    const title = realtitle
-      .replace(/\s+/g, "")
-      .replace(/[^\u4e00-\u9fa5a-zA-Z0-9-]+/g, "-")
-      .replace(/-+$/, "");
-    // const title = realtitle.replace(/[^\u4e00-\u9fa5a-zA-Z0-9-]+/g, "-");
+    // /\s{2,}/g
+    const vanillatitle = headingContent.text().replace("s+/g", " ");
+    const title = getTitle(vanillatitle);
+    if (!title) return;
 
-    if (!title) {
-      // console.log("标题为空");
-      return;
-    }
+    const currentLink = toc[index].currentLink;
 
-    const chapterNumber = (toc.length + 1).toString().padStart(padLength, "0");
-    let currentLink = `${chapterNumber}-${title}`;
-    if (currentLink.length < 8) {
-      currentLink += `@${bookname}`;
-    }
-
-    let headingAllContent = headingContent.nextUntil("h1, h2, h3, h4");
+    let headingAllContent = headingContent.nextUntil(headingarrange);
 
     if (!headingAllContent.length) {
       // @ts-ignore
-      headingAllContent = `!! 章节： ${realtitle}`;
+      headingAllContent = `!! 章节： ${vanillatitle}`;
     }
 
-    toc.push({ currentLink, realtitle });
+    const prevChapterLinkNumber = toc[index - 1];
+    const nextChapterLinkNumber = toc[index + 1];
 
-    // 处理上一章节link
     const prevChapterLink =
-      toc.length > 1
-        ? `@@display: flex;justify-content: space-between;\n[[« ${
-            toc[toc.length - 2].realtitle
-          }|${toc[toc.length - 2].currentLink}]]`
+      index > 1
+        ? `@@display: flex;justify-content: space-between;\n[[« ${prevChapterLinkNumber.vanillatitle}|${prevChapterLinkNumber.currentLink}]]`
         : "@@display: flex;justify-content: flex-end;\n";
+    const nextChapterLink =
+      index < toc.length - 1
+        ? `[[${nextChapterLinkNumber.vanillatitle} »|${nextChapterLinkNumber.currentLink}]] \n@@`
+        : `\n@@`;
 
-    const content = `${headingAllContent}\n\n${prevChapterLink}`;
+    const content = `${headingAllContent}\n\n${prevChapterLink}${nextChapterLink}`;
 
     try {
-      fs.writeFileSync(path.join(bookOutputDir, `${currentLink}.tid`), content);
+      const filename = path.join(bookOutputDir, `${currentLink}.tid`);
+      fs.writeFileSync(filename, content);
     } catch (error) {
       // @ts-ignore
       console.error(`Failed to save file: ${error.message}`);
@@ -107,10 +105,6 @@ export const generateBookInfo = (bookinfo: {
     }
   }
 
-  // 遍历所有标题, h1-h4
-  const headings = $("h1, h2, h3, h4");
-  const headingMinLength = 5;
-  const totalchapters = headings.length;
   if (headings.length < headingMinLength) {
     console.log(
       chalk.red.bold(
@@ -123,33 +117,11 @@ export const generateBookInfo = (bookinfo: {
     );
   }
 
-  headings.each((_, heading) => {
-    processHeading(heading, totalchapters.toString().length);
-  });
-
-  toc.forEach((currentChapter, i) => {
-    const nextChapter = toc[i + 1];
-
-    const nextLink = nextChapter
-      ? `[[${nextChapter.realtitle} »|${nextChapter.currentLink}]] \n@@`
-      : `\n@@`;
-
-    const currentChapterFile = fs.readFileSync(
-      path.join(bookOutputDir, `${currentChapter.currentLink}.tid`),
-      "utf-8"
-    );
-
-    const updatedChapterFile = `${currentChapterFile}\t${nextLink}`;
-
-    fs.writeFileSync(
-      path.join(bookOutputDir, `${currentChapter.currentLink}.tid`),
-      updatedChapterFile
-    );
-  });
-
   // 生成目录文件
   const tocContent = toc
-    .map(({ currentLink, realtitle }) => `# [[${realtitle}|${currentLink}]]`)
+    .map(
+      ({ currentLink, vanillatitle }) => `# [[${vanillatitle}|${currentLink}]]`
+    )
     .join("\n");
 
   fs.writeFileSync(path.join(bookOutputDir, `${bookname}目录.tid`), tocContent);
@@ -227,4 +199,7 @@ export const generateBookInfo = (bookinfo: {
     JSON.stringify(tiddlywikifiles, null, 2)
   );
   console.log(chalk.green.bold(`《《${bookname}》》 书籍制作完成. ${mb} Mb`));
+
+  if (!fs.existsSync("HTML")) fs.mkdirSync("HTML");
+  fs.writeFileSync(path.join("HTML", `${bookname}.html`), md2html);
 };

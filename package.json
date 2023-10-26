@@ -31,5 +31,8 @@
     "rimraf": "^5.0.5",
     "tiddlywiki": "^5.3.1",
     "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "tsconfig-paths": "^4.2.0"
   }
 }
