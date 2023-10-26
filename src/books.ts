@@ -1,5 +1,9 @@
 export const booklist: BookInfo[] = [
   {
+    bookname: '三体全集',
+    author: '刘慈欣',
+  },
+  {
     bookname: '热风',
     author: '鲁迅',
   },
