@@ -97,5 +97,5 @@ export function generateBookInfo(toc, bookinfo) {
     `${pluginfiledir}/tiddlywiki.files`,
     JSON.stringify(tiddlywikifiles, null, 2),
   );
-  console.log(chalk.green.bold(`《《${bookname}》》 书籍制作完成. ${mb} Mb`));
+  console.log(chalk.green.bold(`${bookname} 书籍制作完成. ${mb} Mb`));
 }

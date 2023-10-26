@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-export function getFolderSize(folderPath: string) {
+export const getFolderSize = (folderPath: string): FolderSize => {
   let totalSize = 0;
 
   const stats = fs.statSync(folderPath);
@@ -21,4 +21,4 @@ export function getFolderSize(folderPath: string) {
     kb: (totalSize / 1024).toFixed(0),
     mb: (totalSize / (1024 * 1024)).toFixed(2),
   };
-}
+};
