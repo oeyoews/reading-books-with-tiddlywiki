@@ -1,6 +1,4 @@
-// NOTE: 书名markdown/<bookname>.md 文件
-// TODO: add bookname link
-export const booklist = [
+export const booklist: BookInfo[] = [
   {
     bookname: '瓦尔登湖',
     author: '［美］亨利·戴维·梭罗　著　李继宏　译',
