@@ -68,6 +68,14 @@ https://www.bilibili.com/read/cv13435884/
 - src/books.js
 - image 文件夹(文件名均以书籍命名)
 
+## 图片压缩
+
+```bash
+## 下载pngquant  https://pngquant.org/
+pngquant image/**.png -ext -banner.png
+find image/ -type f -regextype posix-extended ! -regex ".*-banner.png$" -exec rm {} +
+```
+
 ## 提交更新仓库， 等待自动打包书籍插件
 
 > 只需要上传通过 calibre 转换后的 markdown 文件，github action 即可自动制作对应的书籍插件, 支持 wikitext(这很 tiddlywiki). 所有的流程完全自动化.
