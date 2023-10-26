@@ -7,15 +7,55 @@ import { generateTOC } from '@/generate/generateTOC';
 import { generateBookInfo } from '@/generate/generateBookInfo';
 import { rimraf } from 'rimraf';
 import { generateBookFiles } from '@/generate/generateBookFiles';
+import emoji from 'markdown-it-emoji';
+import checkbox from 'markdown-it-task-checkbox';
+import footnote from 'markdown-it-footnote';
+import sub from 'markdown-it-sub';
+import sup from 'markdown-it-sup';
+import mark from 'markdown-it-mark';
+import ins from 'markdown-it-ins';
+import smarkarrows from 'markdown-it-smartarrows';
+import deflist from 'markdown-it-deflist';
+import hljs from 'highlight.js';
 
 // https://markdown-it.github.io/
+// https://github.com/markdown-it/markdown-it
 const md = new MarkdownIt({
-  html: true,
-  xhtmlOut: true, // 使用闭合标签 hr
-  breaks: true,
+  html: true, // Enable HTML tags in source
+  xhtmlOut: true, // Use '/' to close single tags (<br />).
+  breaks: true, // Convert '\n' in paragraphs into <br>
+  langPrefix: 'language-',
   linkify: true,
+  quotes: '“”‘’',
   typographer: true,
+  highlight: function (str, lang) {
+    if (lang && hljs.getLanguage(lang)) {
+      try {
+        return (
+          '<pre class="hljs"><code>' +
+          hljs.highlight(str, { language: lang, ignoreIllegals: true }).value +
+          '</code></pre>'
+        );
+      } catch (e) {
+        console.log(e);
+      }
+    }
+
+    return (
+      '<pre class="hljs"><code>' + md.utils.escapeHtml(str) + '</code></pre>'
+    );
+  },
 });
+
+md.use(emoji)
+  .use(checkbox)
+  .use(footnote)
+  .use(sub)
+  .use(sup)
+  .use(mark)
+  .use(ins)
+  .use(deflist)
+  .use(smarkarrows);
 
 /**
  * Generates a book based on the provided book information.

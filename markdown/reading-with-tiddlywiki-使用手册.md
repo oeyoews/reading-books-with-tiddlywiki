@@ -8,7 +8,7 @@
 
 - 为你的笔记快速制作一个具有导航的小册子
 - 为你的插件生成一个网站式的文档
-- 阅读你喜欢的籍
+- 阅读你喜欢的书籍
 - ...
 
 > 所有的内容最终都以单文件 json 的格式(太微插件的形式）存储， 便于分发(tiddlywiki)
@@ -65,7 +65,7 @@ https://www.bilibili.com/read/cv13435884/
 
 ## 更新对应的文件夹
 
-- src/books.js
+- `src/books.js`
 - image 文件夹(文件名均以书籍命名)
 
 ## 图片压缩
@@ -78,7 +78,8 @@ find image/ -type f -regextype posix-extended ! -regex ".*-banner.png$" -exec rm
 
 ## 提交更新仓库， 等待自动打包书籍插件
 
-> 只需要上传通过 calibre 转换后的 markdown 文件，github action 即可自动制作对应的书籍插件, 支持 wikitext(这很 tiddlywiki). 所有的流程完全自动化.
+> 只需要上传通过 calibre 转换后的 markdown 文件，github action 即可自动制作 --> 对应的书籍插件, 支持 wikitext(这很 tiddlywiki :rocket:). ++所有的流程完全++ ==自动化==. (c)
+
 
 <!-- ## NOTE
 > 绝对不保证 100%转换， 可能会丢失部分信息 -->
