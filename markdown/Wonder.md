@@ -1258,6 +1258,7 @@ She kissed me all over my face. She kissed my eyes that came down too far. She k
 She said soft words that I know were meant to help me, but words can’t change my face.
 
 ## Wake Me Up
+
 ## when September Ends
 
 The rest of September was hard. I wasn’t used to getting up so early in the morning. I wasn’t used to this whole notion of homework. And I got my first “quiz” at the end of the month. I never got “quizzes” when Mom homeschooled me. I also didn’t like how I had no free time anymore. Before, I was able to play whenever I wanted to, but now it felt like I always had stuff to do for school.
@@ -1616,6 +1617,7 @@ She smiled and stroked my hair, like she was thinking about what to say.
 I understood her. And I knew why she said it was a secret. Grandmothers aren’t supposed to have favorites. Everyone knows that. But after she died, I held on to that secret and let it cover me like a blanket.
 
 ## August
+
 ## Through the Peephole
 
 His eyes are about an inch below where they should be on his face, almost to halfway down his cheeks. They slant downward at an extreme angle, almost like diagonal slits that someone cut into his face, and the left one is noticeably lower than the right one. They bulge outward because his eye cavities are too shallow to accommodate them. The top eyelids are always halfway closed, like he’s on the verge of sleeping. The lower eyelids sag so much they almost look like a piece of invisible string is pulling them downward: you can see the red part on the inside, like they’re almost inside out. He doesn’t have eyebrows or eyelashes. His nose is disproportionately big for his face, and kind of fleshy. His head is pinched in on the sides where the ears should be, like someone used giant pliers and crushed the middle part of his face. He doesn’t have cheekbones. There are deep creases running down both sides of his nose to his mouth, which gives him a waxy appearance. Sometimes people assume he’s been burned in a fire: his features look like they’ve been melted, like the drippings on the side of a candle. Several surgeries to correct his palate have left a few scars around his mouth, the most noticeable one being a jagged gash running from the middle of his upper lip to his nose. His upper teeth are small and splay out. He has a severe overbite and an extremely undersized jawbone. He has a very small chin. When he was very little, before a piece of his hip bone was surgically implanted into his lower jaw, he really had no chin at all. His tongue would just hang out of his mouth with nothing underneath to block it. Thankfully, it’s better now. He can eat, at least: when he was younger, he had a feeding tube. And he can talk. And he’s learned to keep his tongue inside his mouth, though that took him several years to master. He’s also learned to control the drool that used to run down his neck. These are considered miracles. When he was a baby, the doctors didn’t think he’d live.
@@ -3002,6 +3004,7 @@ Oh great, like that was going to help. Before they could be forced to sit back d
 It was Summer. She and August were sitting at their table, and they were both waving me over.
 
 ## Why I Didn’t Sit with August
+
 ## the First Day of School
 
 Okay, I’m a total hypocrite. I know. That very first day of school I remember seeing August in the cafeteria. Everybody was looking at him. Talking about him. Back then, no one was used to his face or even knew that he was coming to Beecher, so it was a total shocker for a lot of people to see him there on the first day of school. Most kids were even afraid to get near him.
@@ -5248,27 +5251,35 @@ It was Summer walking over to us. She was wearing a light pink dress and, I thin
 I looked at my program.
 
 ## _Headmaster’s Opening Remarks:_
+
 ## _Dr. Harold Jansen_
 
 ## _Middle-School Director’s Address:_
+
 ## _Mr. Lawrence Tushman_
 
 ## _“Light and Day”:_
+
 ## _Middle-School Choir_
 
 ## _Fifth-Grade Student Commencement Address:_
+
 ## _Ximena Chin_
 
 ## _Pachelbel: “Canon in D”:_
+
 ## _Middle-School Chamber Music Ensemble_
 
 ## _Sixth-Grade Student Commencement Address:_
+
 ## _Mark Antoniak_
 
 ## _“Under Pressure”:_
+
 ## _Middle-School Choir_
 
 ## _Middle-School Dean’s Address:_
+
 ## _Ms. Jennifer Rubin_
 
 ## _Awards Presentation \(see back\)_
