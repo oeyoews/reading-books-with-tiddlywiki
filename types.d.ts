@@ -7,7 +7,7 @@ interface BookInfo {
   bookname: string;
   author?: string;
   description?: string;
-  disable?: boolean;
+  disabled?: boolean;
   cover?: string;
   version?: string;
 }

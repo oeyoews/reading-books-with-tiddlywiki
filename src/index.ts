@@ -1,6 +1,6 @@
 import { getFolderSize } from '@/lib/getFolderSize';
 import { generateBook } from '@/generateBook';
-import prompts from 'prompts';
+import prompts, { type Choice } from 'prompts';
 import { booklist } from '@/books';
 import chalk from 'chalk';
 
@@ -27,10 +27,15 @@ const onPromptState = (state) => {
  */
 async function main() {
   let selectedBooksInfo = booklist;
-  const choices = booklist.map(({ bookname }) => ({
-    title: bookname,
-    value: bookname,
-  }));
+
+  const choices: Choice[] = booklist.map(
+    ({ bookname, disabled, description = '暂无更多简介' }) => ({
+      title: bookname,
+      value: bookname,
+      disabled,
+      description,
+    }),
+  );
 
   if (process.argv.includes('-i')) {
     console.log(chalk.green.bold('开始交互式构建书籍'));
@@ -40,6 +45,7 @@ async function main() {
       name: 'selectedBookNames',
       message: 'Select',
       choices,
+      // initial,
     });
 
     selectedBooksInfo = booklist.filter((book) =>

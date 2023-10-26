@@ -2,28 +2,21 @@ export const booklist: BookInfo[] = [
   {
     bookname: '瓦尔登湖',
     author: '［美］亨利·戴维·梭罗　著　李继宏　译',
-    description: '',
   },
   {
     bookname: '我与地坛',
     author: '史铁生',
-    description: '',
   },
   {
     bookname: '断舍离',
     author: '山下英子',
-    description: '',
-    disable: true,
+    disabled: true,
   },
   {
     bookname: 'Wonder',
-    author: '',
-    description: '',
   },
   {
     bookname: '奇迹男孩',
-    author: '',
-    description: '',
   },
   {
     bookname: 'tiddlywiki-starter-kit-使用手册',

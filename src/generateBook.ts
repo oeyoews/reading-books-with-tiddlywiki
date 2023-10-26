@@ -23,8 +23,8 @@ const md = new MarkdownIt({
 export const generateBook = (bookinfo: BookInfo) => {
   // TODO: 默认将图片打包到插件
   // NOTE: github 禁止跨域， 需要移除https, 动态检测
-  const { bookname, disable = false }: BookInfo = bookinfo;
-  if (disable) {
+  const { bookname, disabled = false }: BookInfo = bookinfo;
+  if (disabled) {
     console.log(chalk.red.bold(`${bookname} 在黑名单中， 跳过制作\n`));
     return;
   }
