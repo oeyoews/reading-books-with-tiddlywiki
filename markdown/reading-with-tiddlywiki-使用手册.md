@@ -21,6 +21,10 @@ pnpm build:ibooks
 pnpm start
 ```
 
+## 想要保存此网站?
+
+`https://oeyoews.github.io/reading-books-with-tiddlywiki/offline.html`
+
 ## 如何自己制作书籍
 
 1. 下载书籍 epub 文件
