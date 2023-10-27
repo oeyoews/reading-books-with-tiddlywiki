@@ -84,7 +84,7 @@ find image/ -type f -regextype posix-extended ! -regex ".*-banner.png$" -exec rm
 
 ## TODO
 
-- [ ] 有的书籍转换过来的很少有自动带有章节的
+- [ ] 有的书籍转换过来的很少有自动带有章节的, 或者章节下面不是空的段落, 目前仅仅只能检测空内容的章节标题
 - [x] learn use calibre to make better epub with markdown-output calibre plugins
 - [x] 改进脚本
 - [x] 使用插件的形式分发书籍
