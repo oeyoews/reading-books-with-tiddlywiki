@@ -16,7 +16,7 @@ import { Element } from 'cheerio';
  */
 export const generateBookFiles = (
   $,
-  toc,
+  toc: TOC[],
   heading: Element,
   headingarrange: string,
   index: number,
@@ -31,25 +31,33 @@ export const generateBookFiles = (
   const title = getTitle(vanillatitle);
   if (!title) return;
 
-  const currentLink = toc[index].currentLink;
-
   let headingAllContent = headingContent.nextUntil(headingarrange);
-
   if (!headingAllContent.length) {
     // @ts-ignore
     headingAllContent = `!! 章节: ${vanillatitle}`;
+    // console.log(`检测到 章节 ${vanillatitle}`);
+    return;
   }
 
-  const prevChapterLinkNumber = toc[index - 1];
-  const nextChapterLinkNumber = toc[index + 1];
+  const currentLink = toc[index].currentLink;
+
+  //  TODO
+  let prevChapterLinkNode = toc[index - 1];
+  let nextChapterLinkNode = toc[index + 1];
+  if (prevChapterLinkNode?.chapter && index >= 1) {
+    prevChapterLinkNode = toc[index - 2];
+  }
+  if (nextChapterLinkNode?.chapter && index <= toc.length - 3) {
+    nextChapterLinkNode = toc[index + 2];
+  }
 
   const prevChapterLink =
     index > 1
-      ? `@@display: flex;justify-content: space-between;\n[[« ${prevChapterLinkNumber.vanillatitle}|${prevChapterLinkNumber.currentLink}]]`
+      ? `@@display: flex;justify-content: space-between;\n[[« ${prevChapterLinkNode.vanillatitle}|${prevChapterLinkNode.currentLink}]]`
       : `@@display: flex;justify-content: flex-end;\n`;
   const nextChapterLink =
     index < toc.length - 1
-      ? `[[${nextChapterLinkNumber.vanillatitle} »|${nextChapterLinkNumber.currentLink}]] \n@@`
+      ? `[[${nextChapterLinkNode.vanillatitle} »|${nextChapterLinkNode.currentLink}]] \n@@`
       : `[[回到目录↝|${'0'.repeat(padLength)} ${bookname}目录]]\n@@`;
 
   const content = `${headingAllContent}\n\n${prevChapterLink}${nextChapterLink}`;

@@ -10,7 +10,7 @@ import chalk from 'chalk';
  * @param {Object} bookinfo - The information about the book.
  * @return {void} This function does not return a value.
  */
-export const generateBookInfo = (toc, bookinfo, padLength) => {
+export const generateBookInfo = (toc: TOC[], bookinfo, padLength) => {
   const zeroString = '0'.repeat(padLength);
   const defaultcover = `//github.com/oeyoews/reading-books-with-tiddlywiki/blob/main/image/${bookinfo.bookname}-banner.png?raw=true`;
   const {
@@ -31,9 +31,13 @@ export const generateBookInfo = (toc, bookinfo, padLength) => {
   );
 
   const tocContent = toc
-    .map(
-      ({ currentLink, vanillatitle }) => `# [[${vanillatitle}|${currentLink}]]`,
-    )
+    .map(({ currentLink, vanillatitle, chapter }) => {
+      if (chapter) {
+        return `!! ${vanillatitle}`;
+      } else {
+        return `# [[${vanillatitle}|${currentLink}]]`;
+      }
+    })
     .join('\n');
 
   fs.writeFileSync(

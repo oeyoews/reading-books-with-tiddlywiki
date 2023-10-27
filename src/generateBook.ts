@@ -119,7 +119,7 @@ export const generateBook = (bookinfo: BookInfo) => {
   }
 
   headings.each((_, heading) => {
-    generateTOC($, toc, heading, bookname, padLength);
+    generateTOC($, toc, heading, bookname, padLength, headingarrange);
   });
 
   headings.each((index, heading) => {

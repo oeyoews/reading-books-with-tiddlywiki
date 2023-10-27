@@ -16,12 +16,15 @@ export const generateTOC = (
   heading: Element,
   bookname: string,
   padLength: number = 3,
+  headingarrange,
 ) => {
   const headingContent = $(heading);
 
   const vanillatitle = headingContent.text().replace(/\s+/g, ' ');
   const title = getTitle(vanillatitle);
-
+  const headingAllContent = headingContent.nextUntil(headingarrange);
+  let chapter: boolean = false;
+  if (!headingAllContent.length) chapter = true;
   if (!title) return;
 
   const chapterNumber = (toc.length + 1).toString().padStart(padLength, '0');
@@ -29,5 +32,5 @@ export const generateTOC = (
   if (currentLink.length < 8) {
     currentLink += ` @${bookname}`;
   }
-  toc.push({ currentLink, vanillatitle });
+  toc.push({ currentLink, vanillatitle, chapter });
 };

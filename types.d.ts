@@ -1,6 +1,7 @@
 interface TOC {
   currentLink: string;
   vanillatitle: string;
+  chapter: boolean;
 }
 
 interface BookInfo {
