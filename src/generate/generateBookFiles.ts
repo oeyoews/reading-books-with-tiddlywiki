@@ -1,7 +1,7 @@
-import { getTitle } from '@/lib/getTitle';
 import fs from 'fs';
 import path from 'path';
 import { Element } from 'cheerio';
+import { getLinkNode } from '@/lib/getLinkNode';
 
 /**
  * Generates book files based on the provided parameters.
@@ -20,51 +20,34 @@ export const generateBookFiles = (
   heading: Element,
   headingarrange: string,
   index: number,
-  bookinfo,
+  bookinfo: BookInfo,
   padLength,
 ) => {
+  // 不对章节内容生成内容
   const { bookname }: BookInfo = bookinfo;
+  // 如果是章节, 不生成文件
+  if (toc[index].chapter) return;
   const pluginfiledir = `plugins/${bookname}/files`;
   const headingContent = $(heading);
-  // /\s{2,}/g
-  const vanillatitle = headingContent.text().replace('s+/g', ' ');
-  const title = getTitle(vanillatitle);
-  if (!title) return;
+  const headingAllContent = headingContent.nextUntil(headingarrange);
 
-  let headingAllContent = headingContent.nextUntil(headingarrange);
-  if (!headingAllContent.length) {
-    // @ts-ignore
-    headingAllContent = `!! 章节: ${vanillatitle}`;
-    // console.log(`检测到 章节 ${vanillatitle}`);
-    return;
-  }
+  const currentLink = toc[index]?.currentLink;
 
-  const currentLink = toc[index].currentLink;
+  const prevChapterLinkNode = getLinkNode(toc, index, 'pre');
+  const nextChapterLinkNode = getLinkNode(toc, index, 'next');
 
-  let prevChapterLinkNode = toc[index - 1];
-  let nextChapterLinkNode = toc[index + 1];
-  // TODO 递归检测下一个标题是否为章节
-  if (prevChapterLinkNode?.chapter && index >= 1) {
-    prevChapterLinkNode = toc[index - 2];
-  }
-  if (nextChapterLinkNode?.chapter && index <= toc.length - 3) {
-    nextChapterLinkNode = toc[index + 2];
-  }
-
-  const prevChapterLink =
-    index > 1
-      ? `@@display: flex;justify-content: space-between;\n[[« ${prevChapterLinkNode.vanillatitle}|${prevChapterLinkNode.currentLink}]]`
-      : `@@display: flex;justify-content: flex-end;\n`;
-  const nextChapterLink =
-    index < toc.length - 1
-      ? `[[${nextChapterLinkNode.vanillatitle} »|${nextChapterLinkNode.currentLink}]] \n@@`
-      : `[[回到目录↝|${'0'.repeat(padLength)} ${bookname}目录]]\n@@`;
+  const prevChapterLink = prevChapterLinkNode
+    ? `@@display: flex;justify-content: space-between;\n[[« ${prevChapterLinkNode?.vanillatitle}|${prevChapterLinkNode?.currentLink}]]`
+    : `@@display: flex;justify-content: flex-end;\n`;
+  const nextChapterLink = nextChapterLinkNode
+    ? `[[${nextChapterLinkNode?.vanillatitle} »|${nextChapterLinkNode?.currentLink}]] \n@@`
+    : `[[回到目录↝|${'0'.repeat(padLength)} ${bookname}目录]]\n@@`;
 
   const content = `${headingAllContent}\n\n${prevChapterLink}${nextChapterLink}`;
 
   try {
     const filename = path.join(pluginfiledir, `${currentLink}.tid`);
-    fs.writeFileSync(filename, content);
+    currentLink && fs.writeFileSync(filename, content);
   } catch (error) {
     console.error(`Failed to save file: ${error.message}`);
     return;

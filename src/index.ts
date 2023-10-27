@@ -20,14 +20,6 @@ const onPromptState = (state) => {
   }
 };
 
-// 定义一个计数器，用于统计被禁用的选项数量
-let disabledCount: number = 0;
-
-// 遍历书籍列表中的每个选项，并检查是否被禁用
-booklist.forEach(({ disabled }) => {
-  disabled && disabledCount++;
-});
-
 /**
  * Executes the main function.
  *
@@ -63,13 +55,13 @@ async function main() {
   } else {
     console.log(chalk.cyan.bold('开始构建全部书籍\n'));
   }
-  selectedBooksInfo.forEach((bookinfo) => generateBook(bookinfo));
+  selectedBooksInfo.forEach((bookinfo) => {
+    generateBook(bookinfo);
+  });
   const { mb } = getFolderSize('plugins');
   console.log(
     chalk.cyan.bold.underline(
-      `\n一共有 ${selectedBooksInfo.length} 本书, 本次制作了 ${
-        selectedBooksInfo.length - disabledCount
-      } 本, 总计大小: ${mb} Mb`,
+      `\n 本次制作了 ${selectedBooksInfo.length} 本, 总计大小: ${mb} Mb`,
     ),
   );
 }

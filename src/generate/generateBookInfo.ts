@@ -31,13 +31,11 @@ export const generateBookInfo = (toc: TOC[], bookinfo, padLength) => {
   );
 
   const tocContent = toc
-    .map(({ currentLink, vanillatitle, chapter }) => {
-      if (chapter) {
-        return `!! ${vanillatitle}`;
-      } else {
-        return `# [[${vanillatitle}|${currentLink}]]`;
-      }
-    })
+    .map(({ currentLink, vanillatitle, chapter }) =>
+      chapter
+        ? `\n!! ${vanillatitle}\n`
+        : `# [[${vanillatitle}|${currentLink}]]`,
+    )
     .join('\n');
 
   fs.writeFileSync(

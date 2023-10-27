@@ -23,14 +23,18 @@ export const generateTOC = (
   const vanillatitle = headingContent.text().replace(/\s+/g, ' ');
   const title = getTitle(vanillatitle);
   const headingAllContent = headingContent.nextUntil(headingarrange);
+  let currentLink = null;
   let chapter: boolean = false;
-  if (!headingAllContent.length) chapter = true;
   if (!title) return;
 
   const chapterNumber = (toc.length + 1).toString().padStart(padLength, '0');
-  let currentLink = `${chapterNumber} ${title}`;
-  if (currentLink.length < 8) {
-    currentLink += ` @${bookname}`;
+  if (headingAllContent.length) {
+    currentLink = `${chapterNumber} ${title}`;
+    if (currentLink.length < 8) {
+      currentLink += ` @${bookname}`;
+    }
+  } else {
+    chapter = true;
   }
   toc.push({ currentLink, vanillatitle, chapter });
 };
