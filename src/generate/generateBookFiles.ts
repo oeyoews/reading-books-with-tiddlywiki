@@ -37,7 +37,7 @@ export const generateBookFiles = (
   const nextChapterLinkNode = getLinkNode(toc, index, 'next');
 
   const prevChapterLink = prevChapterLinkNode
-    ? `@@display: flex;justify-content: space-between;flex-wrap:wrap;\n[[« ${prevChapterLinkNode?.vanillatitle}|${prevChapterLinkNode?.currentLink}]]`
+    ? `@@display: flex;justify-content: space-between;\n[[« ${prevChapterLinkNode?.vanillatitle}|${prevChapterLinkNode?.currentLink}]]`
     : `@@display: flex;justify-content: flex-end;\n`;
   const nextChapterLink = nextChapterLinkNode
     ? `[[${nextChapterLinkNode?.vanillatitle} »|${nextChapterLinkNode?.currentLink}]] \n@@`
