@@ -5250,40 +5250,6 @@ It was Summer walking over to us. She was wearing a light pink dress and, I thin
 
 I looked at my program.
 
-## _Headmaster’s Opening Remarks:_
-
-## _Dr. Harold Jansen_
-
-## _Middle-School Director’s Address:_
-
-## _Mr. Lawrence Tushman_
-
-## _“Light and Day”:_
-
-## _Middle-School Choir_
-
-## _Fifth-Grade Student Commencement Address:_
-
-## _Ximena Chin_
-
-## _Pachelbel: “Canon in D”:_
-
-## _Middle-School Chamber Music Ensemble_
-
-## _Sixth-Grade Student Commencement Address:_
-
-## _Mark Antoniak_
-
-## _“Under Pressure”:_
-
-## _Middle-School Choir_
-
-## _Middle-School Dean’s Address:_
-
-## _Ms. Jennifer Rubin_
-
-## _Awards Presentation \(see back\)_
-
 ## _Roll Call of Names_
 
 “Why do you think that?” I asked.

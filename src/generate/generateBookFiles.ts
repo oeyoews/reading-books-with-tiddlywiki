@@ -41,9 +41,9 @@ export const generateBookFiles = (
 
   const currentLink = toc[index].currentLink;
 
-  //  TODO
   let prevChapterLinkNode = toc[index - 1];
   let nextChapterLinkNode = toc[index + 1];
+  // TODO 递归检测下一个标题是否为章节
   if (prevChapterLinkNode?.chapter && index >= 1) {
     prevChapterLinkNode = toc[index - 2];
   }

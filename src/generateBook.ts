@@ -106,18 +106,6 @@ export const generateBook = (bookinfo: BookInfo) => {
   const totalchapters = headings.length;
   const padLength = totalchapters.toString().length;
 
-  if (headings.length < headingMinLength) {
-    console.log(
-      chalk.red.bold(
-        `${bookname} 的标题总个数为 ${totalchapters}, 请确认是否正确`,
-      ),
-    );
-  } else {
-    console.log(
-      chalk.cyan.underline(`${bookname} 检测到 ${headings.length} 个标题`),
-    );
-  }
-
   headings.each((_, heading) => {
     generateTOC($, toc, heading, bookname, padLength, headingarrange);
   });
@@ -135,6 +123,26 @@ export const generateBook = (bookinfo: BookInfo) => {
   });
 
   generateBookInfo(toc, bookinfo, padLength);
+
+  let chaptercount: number = 0;
+  toc.forEach(({ chapter }) => {
+    chapter && chaptercount++;
+  });
+
+  if (headings.length < headingMinLength) {
+    console.log(
+      chalk.red.bold(
+        `${bookname} 的标题总个数为 ${totalchapters}, 请确认是否正确`,
+      ),
+    );
+  } else {
+    console.log(
+      chalk.cyan.underline(
+        `${bookname} 检测到 ${chaptercount} 个章节, ${headings.length} 个标题`,
+      ),
+    );
+  }
+
 
   // if (!fs.existsSync('HTML')) fs.mkdirSync('HTML');
   // fs.writeFileSync(path.join('HTML', `${bookname}.html`), md2html);
