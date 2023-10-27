@@ -25,9 +25,7 @@ pnpm start
 
 `https://oeyoews.github.io/reading-books-with-tiddlywiki/offline.html`
 
-## 如何自己制作书籍
-
-1. 下载书籍 epub 文件
+## 下载书籍 epub 文件
 
 - https://zh.annas-archive.org/
 - ...
@@ -86,6 +84,7 @@ find image/ -type f -regextype posix-extended ! -regex ".*-banner.png$" -exec rm
 
 ## TODO
 
+- [ ] 有的书籍转换过来的很少有自动带有章节的
 - [x] learn use calibre to make better epub with markdown-output calibre plugins
 - [x] 改进脚本
 - [x] 使用插件的形式分发书籍
