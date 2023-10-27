@@ -100,7 +100,7 @@ export const generateBookInfo = (toc: TOC[], bookinfo, padLength) => {
     description: bookname,
     cover,
     caption: bookname,
-    bookname,
+    book: bookname,
     type: 'plugin',
     version,
     list: `readme`,
