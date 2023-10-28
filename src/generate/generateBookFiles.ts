@@ -41,7 +41,7 @@ export const generateBookFiles = (
     : `@@display: flex;justify-content: flex-end;\n`;
   const nextChapterLink = nextChapterLinkNode
     ? `[[${nextChapterLinkNode?.vanillatitle} »|${nextChapterLinkNode?.currentLink}]] \n@@`
-    : `[[回到目录↝|${'0'.repeat(padLength)} ${bookname}目录]]\n@@`;
+    : `[[回到目录↝|${'0'.repeat(padLength)} ${bookname}主页]]\n@@`;
 
   const content = `${headingAllContent}\n\n${prevChapterLink}${nextChapterLink}`;
 
