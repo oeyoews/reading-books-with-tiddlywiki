@@ -38,16 +38,17 @@ export const generateBookInfo = (toc: TOC[], bookinfo, padLength) => {
     )
     .join('\n');
 
-  const tocContent = `title: ${pluginPrefix}/${bookname}/toc
+  const tocContent = `title: ${bookname}目录
+  caption: ${bookname}目录
 
   ${tocText};
   `;
 
   const homepagecontent = `title: ${zeroString} ${bookname}主页
-caption: ${bookname}
+caption: ${bookname}主页
 tags: ${bookname}
 
- <<tabs "$:/plugins/books/${bookname}/toc $:/plugins/books/${bookname}/status" "$:/plugins/books/${bookname}/toc">>`;
+ <<tabs "${bookname}目录 $:/plugins/books/${bookname}/status" "${bookname}目录">>`;
 
   const { kb } = getFolderSize(path.join(outputDir, bookname));
   // 生成 TiddlyWiki 文件和目录结构
@@ -70,7 +71,7 @@ tags: ${bookname}
   };
 
   const statuscontent = `title: ${pluginPrefix}/${bookname}/status
-caption: ${bookname} 阅读记录
+caption: ${bookname}阅读记录
 
 <% if [[$:/plugins/oeyoews/book-status]has[plugin-type]] %>
   <$tocstatus bookname=${bookname}/>
