@@ -1,0 +1,10 @@
+author: oeyoews
+core-version: >=5.3.0
+dependents: $:/plugins/oeyoews/tiddlywiki-tailwindcss-plus
+description: neotw-info
+list: readme
+name: neotw-info
+plugin-type: plugin
+title: $:/plugins/oeyoews/neotw-info
+type: application/json
+version: 0.0.1

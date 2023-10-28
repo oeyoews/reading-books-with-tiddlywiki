@@ -1,0 +1,10 @@
+author: oeyoews
+core-version: >=5.2.5
+dependents: 
+description: Show Tiddler Info
+list: readme info-config
+name: Tiddlywiki Tiddler Info
+plugin-type: plugin
+title: $:/plugins/oeyoews/tiddlywiki-tiddler-info
+type: application/json
+version: 0.2.1
