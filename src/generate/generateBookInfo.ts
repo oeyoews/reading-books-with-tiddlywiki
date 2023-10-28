@@ -30,7 +30,7 @@ export const generateBookInfo = (toc: TOC[], bookinfo, padLength) => {
     chalk.bgCyan.bold(`${bookname} 源文件大小为 ${sourceSize.kb} kb`),
   );
 
-  const tocContent = toc
+  const tocText = toc
     .map(({ currentLink, vanillatitle, chapter }) =>
       chapter
         ? `\n!! ${vanillatitle}\n`
@@ -38,27 +38,20 @@ export const generateBookInfo = (toc: TOC[], bookinfo, padLength) => {
     )
     .join('\n');
 
-  fs.writeFileSync(
-    path.join(pluginfiledir, `${zeroString} ${bookname}目录.tid`),
-    tocContent,
-  );
+  const tocContent = `title: ${pluginPrefix}/${bookname}/toc
+
+  ${tocText};
+  `;
+
+  const homepagecontent = `title: ${zeroString} ${bookname}主页
+caption: ${bookname}
+tags: ${bookname}
+
+ <<tabs "$:/plugins/books/${bookname}/toc $:/plugins/books/${bookname}/status" "$:/plugins/books/${bookname}/toc">>`;
 
   const { kb } = getFolderSize(path.join(outputDir, bookname));
   // 生成 TiddlyWiki 文件和目录结构
   const tiddlywikifiles = {
-    tiddlers: [
-      {
-        file: `${zeroString} ${bookname}目录.tid`,
-        fields: {
-          title: {
-            source: 'basename',
-          },
-          // type: "text/vnd.tiddlywiki",
-          tags: ['toc', bookname],
-          caption: bookname,
-        },
-      },
-    ],
     directories: [
       {
         path: '.',
@@ -77,6 +70,7 @@ export const generateBookInfo = (toc: TOC[], bookinfo, padLength) => {
   };
 
   const statuscontent = `title: ${pluginPrefix}/${bookname}/status
+caption: ${bookname} 阅读记录
 
 <% if [[$:/plugins/oeyoews/book-status]has[plugin-type]] %>
   <$tocstatus bookname=${bookname}/>
@@ -96,7 +90,7 @@ export const generateBookInfo = (toc: TOC[], bookinfo, padLength) => {
 > ''简要描述'': ${description || '未知'}
 >  Maked By [[reading books with tiddlywiki|https://github.com/oeyoews/reading-books-with-tiddlywiki]]
 
-> <button>[[开始阅读 |${zeroString} ${bookname}目录]]</button>
+> <button>[[开始阅读 |${zeroString} ${bookname}主页]]</button>
 
 `;
 
@@ -117,6 +111,11 @@ export const generateBookInfo = (toc: TOC[], bookinfo, padLength) => {
 
   fs.writeFileSync(path.join(outputDir, bookname, 'readme.tid'), readmecontent);
   fs.writeFileSync(path.join(outputDir, bookname, 'status.tid'), statuscontent);
+  fs.writeFileSync(path.join(outputDir, bookname, 'toc.tid'), tocContent);
+  fs.writeFileSync(
+    path.join(outputDir, bookname, `${bookname}主页.tid`),
+    homepagecontent,
+  );
   fs.writeFileSync(
     path.join(outputDir, bookname, 'plugin.info'),
     JSON.stringify(plugininfo, null, 2),
