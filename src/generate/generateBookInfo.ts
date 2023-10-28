@@ -78,7 +78,12 @@ export const generateBookInfo = (toc: TOC[], bookinfo, padLength) => {
 
   const statuscontent = `title: ${pluginPrefix}/${bookname}/status
 
-  <$tocstatus bookname=${bookname}/>`;
+<% if [[$:/plugins/oeyoews/book-status]has[plugin-type]] %>
+  <$tocstatus bookname=${bookname}/>
+<% else %>
+@@color:red;font-weight:bold;Please Install [[bookstatus|https://oeyoews.github.io/tiddlywiki-starter-kit//#%24%3A%2Fplugins%2Foeyoews%2Fbook-status]] plugin@@
+<% endif %>
+`;
 
   const readmecontent = `title: ${pluginPrefix}/${bookname}/readme
 
