@@ -76,6 +76,10 @@ export const generateBookInfo = (toc: TOC[], bookinfo, padLength) => {
     ],
   };
 
+  const statuscontent = `title: ${pluginPrefix}/${bookname}/status
+
+  <$tocstatus bookname=${bookname}/>`;
+
   const readmecontent = `title: ${pluginPrefix}/${bookname}/readme
 
 <img src='${cover}' alt='' class="spotlight ${bookname}" width=128/>
@@ -103,10 +107,11 @@ export const generateBookInfo = (toc: TOC[], bookinfo, padLength) => {
     book: bookname,
     type: 'plugin',
     version,
-    list: `readme`,
+    list: `readme status`,
   };
 
   fs.writeFileSync(path.join(outputDir, bookname, 'readme.tid'), readmecontent);
+  fs.writeFileSync(path.join(outputDir, bookname, 'status.tid'), statuscontent);
   fs.writeFileSync(
     path.join(outputDir, bookname, 'plugin.info'),
     JSON.stringify(plugininfo, null, 2),
