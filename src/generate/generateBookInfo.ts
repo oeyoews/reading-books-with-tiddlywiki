@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { getFolderSize } from '@/lib/getFolderSize';
 import chalk from 'chalk';
+import getfilename from './getfilename';
 
 /**
  * Generates book information and creates the necessary files and directories.
@@ -20,7 +21,13 @@ export const generateBookInfo = (toc: TOC[], bookinfo, padLength) => {
     cover = defaultcover,
     version = new Date().toLocaleDateString(),
   }: BookInfo = bookinfo;
-  const pluginPrefix = '$:/plugins/books';
+  const {
+    pluginfilename,
+    readmefilename,
+    statusfilename,
+    tocfilename,
+    homepagefilename,
+  } = getfilename(bookname);
   const outputDir = 'plugins';
   const plugindir = path.join(outputDir, bookname);
   const pluginfiledir = path.join(plugindir, 'files');
@@ -38,17 +45,17 @@ export const generateBookInfo = (toc: TOC[], bookinfo, padLength) => {
     )
     .join('\n');
 
-  const tocContent = `title: ${bookname}目录
-  caption: ${bookname}目录
+  const tocContent = `title: ${tocfilename}
+  caption: ${tocfilename}
 
   ${tocText};
   `;
 
-  const homepagecontent = `title: ${zeroString} ${bookname}主页
-caption: ${bookname}主页
+  const homepagecontent = `title: ${zeroString} ${homepagefilename}
+caption: ${homepagefilename}
 tags: ${bookname}
 
- <<tabs "${bookname}目录 $:/plugins/books/${bookname}/status" "${bookname}目录">>`;
+ <<tabs "${tocfilename} ${statusfilename}" "${tocfilename}">>`;
 
   const { kb } = getFolderSize(path.join(outputDir, bookname));
   // 生成 TiddlyWiki 文件和目录结构
@@ -70,7 +77,7 @@ tags: ${bookname}
     ],
   };
 
-  const statuscontent = `title: ${pluginPrefix}/${bookname}/status
+  const statuscontent = `title: ${statusfilename}
 caption: ${bookname}阅读记录
 
 <% if [[$:/plugins/oeyoews/book-status]has[plugin-type]] %>
@@ -80,7 +87,7 @@ caption: ${bookname}阅读记录
 <% endif %>
 `;
 
-  const readmecontent = `title: ${pluginPrefix}/${bookname}/readme
+  const readmecontent = `title: ${readmefilename}
 
 <img src='${cover}' alt='' class="spotlight ${bookname}" width=128/>
 
@@ -91,14 +98,14 @@ caption: ${bookname}阅读记录
 > ''简要描述'': ${description || '未知'}
 >  Maked By [[reading books with tiddlywiki|https://github.com/oeyoews/reading-books-with-tiddlywiki]]
 
-> <button>[[开始阅读 |${zeroString} ${bookname}主页]]</button>
+> <button>[[开始阅读 |${zeroString} ${homepagefilename}]]</button>
 
 `;
 
   const plugininfo = {
     updatetime: new Date().toLocaleString(),
     size: kb,
-    title: `${pluginPrefix}/${bookname}`,
+    title: pluginfilename,
     author: 'oeyoews',
     'book#author': author,
     description: bookname,
@@ -114,7 +121,7 @@ caption: ${bookname}阅读记录
   fs.writeFileSync(path.join(outputDir, bookname, 'status.tid'), statuscontent);
   fs.writeFileSync(path.join(outputDir, bookname, 'toc.tid'), tocContent);
   fs.writeFileSync(
-    path.join(outputDir, bookname, `${bookname}主页.tid`),
+    path.join(outputDir, bookname, `${homepagefilename}.tid`),
     homepagecontent,
   );
   fs.writeFileSync(

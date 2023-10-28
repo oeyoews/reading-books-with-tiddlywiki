@@ -4,7 +4,3 @@
 
 > [!NOTE]
 > 书籍更新中 ...
-
-## TODO
-
-* [ ] refactor `generateBookinfo.ts`

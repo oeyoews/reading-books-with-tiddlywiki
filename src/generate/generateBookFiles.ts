@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { Element } from 'cheerio';
 import { getLinkNode } from '@/lib/getLinkNode';
+import getfilename from './getfilename';
 
 /**
  * Generates book files based on the provided parameters.
@@ -41,7 +42,9 @@ export const generateBookFiles = (
     : `@@display: flex;justify-content: flex-end;\n`;
   const nextChapterLink = nextChapterLinkNode
     ? `[[${nextChapterLinkNode?.vanillatitle} »|${nextChapterLinkNode?.currentLink}]] \n@@`
-    : `[[回到目录↝|${'0'.repeat(padLength)} ${bookname}主页]]\n@@`;
+    : `[[回到目录↝|${'0'.repeat(padLength)} ${
+        getfilename(bookname).homepagefilename
+      }]]\n@@`;
 
   const content = `${headingAllContent}\n\n${prevChapterLink}${nextChapterLink}`;
 
