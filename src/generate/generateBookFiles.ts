@@ -25,7 +25,7 @@ export const generateBookFiles = (
   padLength,
 ) => {
   // 不对章节内容生成内容
-  // indent 的style 仍然会对全局有效, 暂时禁用
+  // TODO: indent 的style 仍然会对全局有效, 暂时禁用, tiddlywiki大量使用p标签, 即使用选择器, 也会又元素受到影响
   const { bookname, indent = false }: BookInfo = bookinfo;
   // 如果是章节, 不生成文件
   if (toc[index].chapter) return;
@@ -41,8 +41,8 @@ export const generateBookFiles = (
   // maybe this footer customize can use tiddlywiki template to soloute
   const indentstyle = indent ? '<style>p{text-indent:32px;}</style>\n\n' : '';
   const prevChapterLink = prevChapterLinkNode
-    ? `@@display: flex;justify-content: space-between;\n[[« ${prevChapterLinkNode?.vanillatitle}|${prevChapterLinkNode?.currentLink}]]`
-    : `@@display: flex;justify-content: flex-end;\n`;
+    ? `@@display:flex;justify-content:space-between;\n[[« ${prevChapterLinkNode?.vanillatitle}|${prevChapterLinkNode?.currentLink}]]`
+    : `@@display:flex;justify-content:flex-end;\n`;
   const nextChapterLink = nextChapterLinkNode
     ? `[[${nextChapterLinkNode?.vanillatitle} »|${nextChapterLinkNode?.currentLink}]] \n@@`
     : `[[回到目录↝|${'0'.repeat(padLength)} ${
