@@ -46,10 +46,9 @@ export const generateBookInfo = (toc: TOC[], bookinfo, padLength) => {
     .join('\n');
 
   const tocContent = `title: ${tocfilename}
-  caption: ${tocfilename}
+caption: ${tocfilename}
 
-  ${tocText};
-  `;
+${tocText}`;
 
   const homepagecontent = `title: ${zeroString} ${homepagefilename}
 caption: ${homepagefilename}

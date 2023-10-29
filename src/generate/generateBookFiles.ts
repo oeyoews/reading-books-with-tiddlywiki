@@ -33,13 +33,18 @@ export const generateBookFiles = (
   const headingContent = $(heading);
   const headingAllContent = headingContent.nextUntil(headingarrange);
 
+  // TODO:
+  // headingAllContent.find('p').each(function () {
+  //   $(this).html('&emsp;&emsp;' + $(this).html());
+  //   console.log('findp', bookname);
+  // });
+
   const currentLink = toc[index]?.currentLink;
 
   const prevChapterLinkNode = getLinkNode(toc, index, 'pre');
   const nextChapterLinkNode = getLinkNode(toc, index, 'next');
 
   // maybe this footer customize can use tiddlywiki template to soloute
-  const indentstyle = indent ? '<style>p{text-indent:32px;}</style>\n\n' : '';
   const prevChapterLink = prevChapterLinkNode
     ? `@@display:flex;justify-content:space-between;\n[[« ${prevChapterLinkNode?.vanillatitle}|${prevChapterLinkNode?.currentLink}]]`
     : `@@display:flex;justify-content:flex-end;\n`;
@@ -49,7 +54,7 @@ export const generateBookFiles = (
         getfilename(bookname).homepagefilename
       }]]\n@@`;
 
-  const content = `${headingAllContent}\n\n${indentstyle}${prevChapterLink}${nextChapterLink}`;
+  const content = `${headingAllContent}\n\n${prevChapterLink}${nextChapterLink}`;
 
   try {
     const filename = path.join(pluginfiledir, `${currentLink}.tid`);
