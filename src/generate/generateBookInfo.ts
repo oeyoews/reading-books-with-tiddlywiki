@@ -55,7 +55,7 @@ export const generateBookInfo = (toc: TOC[], bookinfo, padLength) => {
 caption: ${homepagefilename}
 tags: ${bookname}
 
- <<tabs "${tocfilename} ${statusfilename}" "${tocfilename}">>`;
+<<tabs "${tocfilename} ${statusfilename}" "${tocfilename}">>`;
 
   const { kb } = getFolderSize(path.join(outputDir, bookname));
   // 生成 TiddlyWiki 文件和目录结构
@@ -84,8 +84,7 @@ caption: ${bookname}阅读记录
   <$tocstatus bookname=${bookname}/>
 <% else %>
 @@color:red;font-weight:bold;Please Install [[bookstatus|https://oeyoews.github.io/tiddlywiki-starter-kit//#%24%3A%2Fplugins%2Foeyoews%2Fbook-status]] plugin@@
-<% endif %>
-`;
+<% endif %>`;
 
   const readmecontent = `title: ${readmefilename}
 
@@ -98,9 +97,7 @@ caption: ${bookname}阅读记录
 > ''简要描述'': ${description || '未知'}
 >  Maked By [[reading books with tiddlywiki|https://github.com/oeyoews/reading-books-with-tiddlywiki]]
 
-> <button>[[开始阅读 |${zeroString} ${homepagefilename}]]</button>
-
-`;
+> <button>[[开始阅读 |${zeroString} ${homepagefilename}]]</button>`;
 
   const plugininfo = {
     updatetime: new Date().toLocaleString(),

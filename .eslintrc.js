@@ -18,7 +18,7 @@ module.exports = {
       files: ['*.ts', '*.tsx'],
       rules: {
         '@typescript-eslint/ban-ts-comment': 1,
-        'no-unused-vars': 1,
+        '@typescript-eslint/no-unused-vars': 1,
       },
     },
   ],

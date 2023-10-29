@@ -6,6 +6,7 @@ interface TOC {
 
 interface BookInfo {
   bookname: string;
+  indent?: boolean;
   author?: string;
   description?: string;
   disabled?: boolean;

@@ -8,7 +8,7 @@
     "build:books": "ts-node ./src/index.ts",
     "build:ibooks": "ts-node ./src/index.ts -i",
     "format": "prettier  --write src/**",
-    "lint": "eslint src/**.ts",
+    "lint": "eslint src",
     "build": "ts-node ./src/index.ts && tiddlywiki --build"
   },
   "keywords": [

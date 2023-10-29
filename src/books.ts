@@ -35,6 +35,7 @@ export const booklist: BookInfo[] = [
     bookname: 'tiddlywiki-starter-kit-使用手册',
     author: 'oeyoews',
     description: 'tiddlywiki starter kit',
+    indent: false,
     cover:
       'https://github.com/oeyoews/tiddlywiki-starter-kit/blob/main/img/snapshot02.png?raw=true',
     version: '0.0.2',
@@ -42,6 +43,7 @@ export const booklist: BookInfo[] = [
   {
     bookname: 'reading-with-tiddlywiki-使用手册',
     author: 'oeyoews',
+    indent: false,
     description: 'reading with tiddlywiki 使用手册',
     cover:
       'https://github.com/oeyoews/reading-books-with-tiddlywiki/blob/main/banner.png?raw=true',
