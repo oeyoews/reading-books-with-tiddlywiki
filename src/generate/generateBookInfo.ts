@@ -3,6 +3,7 @@ import path from 'path';
 import { getFolderSize } from '@/lib/getFolderSize';
 import chalk from 'chalk';
 import getfilename from './getfilename';
+import { IPluginInfo } from 'tiddlywiki';
 
 /**
  * Generates book information and creates the necessary files and directories.
@@ -46,15 +47,11 @@ export const generateBookInfo = (toc: TOC[], bookinfo, padLength) => {
     .join('\n');
 
   const tocContent = `title: ${tocfilename}
-caption: ${tocfilename}
-
-${tocText}`;
+caption: ${tocfilename}\n\n${tocText}`;
 
   const homepagecontent = `title: ${zeroString} ${homepagefilename}
 caption: ${homepagefilename}
-tags: ${bookname}
-
-<<tabs "${tocfilename} ${statusfilename}" "${tocfilename}">>`;
+tags: ${bookname}\n\n<<tabs "${tocfilename} ${statusfilename}" "${tocfilename}">>`;
 
   const { kb } = getFolderSize(path.join(outputDir, bookname));
   // 生成 TiddlyWiki 文件和目录结构
@@ -77,17 +74,13 @@ tags: ${bookname}
   };
 
   const statuscontent = `title: ${statusfilename}
-caption: ${bookname}阅读记录
-
-<% if [[$:/plugins/oeyoews/book-status]has[plugin-type]] %>
+caption: ${bookname}阅读记录\n\n<% if [[$:/plugins/oeyoews/book-status]has[plugin-type]] %>
   <$tocstatus bookname=${bookname}/>
 <% else %>
 @@color:red;font-weight:bold;Please Install [[bookstatus|https://oeyoews.github.io/tiddlywiki-starter-kit//#%24%3A%2Fplugins%2Foeyoews%2Fbook-status]] plugin@@
 <% endif %>`;
 
-  const readmecontent = `title: ${readmefilename}
-
-<img src='${cover}' alt='' class="spotlight ${bookname}" width=128/>
+  const readmecontent = `title: ${readmefilename}\n\n<img src='${cover}' alt='' class="spotlight ${bookname}" width=128/>
 
 > ''书籍'': ${bookname || '未知'}\n
 > ''作者'': ${author || '未知'}\n
@@ -98,7 +91,7 @@ caption: ${bookname}阅读记录
 
 > <button>[[开始阅读 |${zeroString} ${homepagefilename}]]</button>`;
 
-  const plugininfo = {
+  const plugininfo: Partial<IPluginInfo> = {
     updatetime: new Date().toLocaleString(),
     size: kb,
     title: pluginfilename,
@@ -108,7 +101,7 @@ caption: ${bookname}阅读记录
     cover,
     caption: bookname,
     book: bookname,
-    type: 'plugin',
+    'plugin-type': 'plugin',
     version,
     list: `readme status`,
   };

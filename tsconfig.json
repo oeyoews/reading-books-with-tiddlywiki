@@ -5,6 +5,10 @@
 		"declaration": true,
 		"jsx": "preserve",
 		"baseUrl": "src",
+		"types": [
+			"node",
+			"tw5-typed"
+		],
 		"paths": {
 			"@/*": [
 				"./*"
