@@ -14,7 +14,7 @@ import { IPluginInfo } from 'tiddlywiki';
  */
 export const generateBookInfo = (toc: TOC[], bookinfo, padLength) => {
   const zeroString = '0'.repeat(padLength);
-  const defaultcover = `//github.com/oeyoews/reading-books-with-tiddlywiki/blob/main/image/${bookinfo.bookname}-banner.png?raw=true`;
+  const defaultcover = `//github.com/oeyoews/reading-books-with-tiddlywiki/blob/main/image/${bookinfo.bookname}.png?raw=true`;
   const {
     bookname,
     author,
