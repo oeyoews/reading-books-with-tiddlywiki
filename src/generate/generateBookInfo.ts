@@ -98,7 +98,7 @@ caption: ${bookname}阅读记录\n\n<% if [[$:/plugins/oeyoews/book-status]has[p
     author: 'oeyoews',
     'book#author': author,
     description: bookname,
-    cover,
+    'page-cover': cover,
     caption: bookname,
     book: bookname,
     'plugin-type': 'plugin',
