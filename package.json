@@ -9,8 +9,7 @@
     "build:ibooks": "ts-node ./src/index.ts -i",
     "format": "prettier  --write src/**",
     "lint": "eslint src",
-    "build": "ts-node ./src/index.ts && tiddlywiki --build",
-    "update:image": " find image -type f -name '*.png' ! -name '*-banner.png' -exec pngquant --ext .png --force {}"
+    "build": "ts-node ./src/index.ts && tiddlywiki --build"
   },
   "keywords": [
     "books",
