@@ -1,5 +1,5 @@
 created: 20231024032007663
-modified: 20231105094317760
+modified: 20231105100807909
 tags: Journal
 title: books
 type: text/vnd.tiddlywiki
@@ -9,7 +9,7 @@ type: text/vnd.tiddlywiki
 </h2>
 </center>
 
-<$cards filter="[prefix[$:/plugins/books/]has[plugin-type]]"  standard=false/>
+<$cards filter="[prefix[$:/plugins/books/]has[plugin-type]]"  standard=false cols=5 />
 
 <$list filter="[plugin-type[plugin]author[oeyoews]has[book]]">
 <li><$link to={{!!title}} >{{!!caption}}</$link> ({{!!size}} kb)
