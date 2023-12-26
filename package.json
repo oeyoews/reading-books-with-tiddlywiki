@@ -4,7 +4,7 @@
   "description": "reading book with tiddlywiki",
   "main": "index.js",
   "scripts": {
-    "start": "tiddlywiki --listen",
+    "dev": "tiddlywiki --listen",
     "build:books": "ts-node ./src/index.ts",
     "build:ibooks": "ts-node ./src/index.ts -i",
     "format": "prettier  --write src/**",
