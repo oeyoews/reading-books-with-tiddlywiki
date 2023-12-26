@@ -63,8 +63,8 @@ dependencies:
     specifier: ^5.0.5
     version: 5.0.5
   tiddlywiki:
-    specifier: github:Jermolene/TiddlyWiki5
-    version: github.com/Jermolene/TiddlyWiki5/902c7f55ba2673d2fe961b9fbc98237b02ec3611
+    specifier: 5.3.3
+    version: 5.3.3
   ts-node:
     specifier: ^10.9.1
     version: 10.9.1(@types/node@20.8.9)(typescript@5.2.2)
@@ -1405,6 +1405,13 @@ packages:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
     dev: true
 
+  /tiddlywiki@5.3.3:
+    resolution: {integrity: sha512-PkgVfZNpFFHyMmfFw91igXOJn8Z7IWg3NGXOX5EBqJwzGNeYYOIUg4FqCNsWoqBece20HxtkDue/vTf2jDtdZQ==}
+    engines: {node: '>=0.8.2'}
+    hasBin: true
+    dev: false
+    bundledDependencies: []
+
   /to-regex-range@5.0.1:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
     engines: {node: '>=8.0'}
@@ -1546,12 +1553,3 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
-
-  github.com/Jermolene/TiddlyWiki5/902c7f55ba2673d2fe961b9fbc98237b02ec3611:
-    resolution: {tarball: https://codeload.github.com/Jermolene/TiddlyWiki5/tar.gz/902c7f55ba2673d2fe961b9fbc98237b02ec3611}
-    name: tiddlywiki
-    version: 5.3.2-prerelease
-    engines: {node: '>=0.8.2'}
-    hasBin: true
-    dev: false
-    bundledDependencies: []
